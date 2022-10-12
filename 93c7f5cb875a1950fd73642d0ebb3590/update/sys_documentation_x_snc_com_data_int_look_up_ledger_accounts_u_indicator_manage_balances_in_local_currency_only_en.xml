@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="u_indicator_manage_balances_in_local_currency_only" label=" Indicator: Manage Balances in Local Currency Only" language="en" table="x_snc_com_data_int_look_up_ledger_accounts">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_indicator_manage_balances_in_local_currency_only</element>
+            <help/>
+            <hint/>
+            <label> Indicator: Manage Balances in Local Currency Only</label>
+            <language>en</language>
+            <name>x_snc_com_data_int_look_up_ledger_accounts</name>
+            <plural> Indicator: Manage Balances in Local Currency Onlies</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>bcone</sys_created_by>
+            <sys_created_on>2022-10-12 14:14:57</sys_created_on>
+            <sys_id>883b65b44762d15096fcb777746d43f3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Indicator: Manage Balances in Local Currency Only</sys_name>
+            <sys_package display_value="Primary Data Integration for SAP" source="x_snc_com_data_int">93c7f5cb875a1950fd73642d0ebb3590</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
+            <sys_update_name>sys_documentation_x_snc_com_data_int_look_up_ledger_accounts_u_indicator_manage_balances_in_local_currency_only_en</sys_update_name>
+            <sys_updated_by>bcone</sys_updated_by>
+            <sys_updated_on>2022-10-12 14:14:57</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

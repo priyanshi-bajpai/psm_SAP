@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="u_indicator_is_account_only_posted_to_automatically" label=" Indicator: Is account only posted to automatically?" language="en" table="x_snc_com_data_int_look_up_ledger_accounts">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_indicator_is_account_only_posted_to_automatically</element>
+            <help/>
+            <hint/>
+            <label> Indicator: Is account only posted to automatically?</label>
+            <language>en</language>
+            <name>x_snc_com_data_int_look_up_ledger_accounts</name>
+            <plural> Indicator: Is account only posted to automatically?s</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>bcone</sys_created_by>
+            <sys_created_on>2022-10-12 13:51:09</sys_created_on>
+            <sys_id>dfb5edbc4722d15096fcb777746d43c6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Indicator: Is account only posted to automatically?</sys_name>
+            <sys_package display_value="Primary Data Integration for SAP" source="x_snc_com_data_int">93c7f5cb875a1950fd73642d0ebb3590</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
+            <sys_update_name>sys_documentation_x_snc_com_data_int_look_up_ledger_accounts_u_indicator_is_account_only_posted_to_automatically_en</sys_update_name>
+            <sys_updated_by>bcone</sys_updated_by>
+            <sys_updated_on>2022-10-12 13:51:09</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

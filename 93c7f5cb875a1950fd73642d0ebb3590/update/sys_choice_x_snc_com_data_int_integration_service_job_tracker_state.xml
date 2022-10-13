@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="state" table="x_snc_com_data_int_integration_service_job_tracker" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>state</element>
+            <name>x_snc_com_data_int_integration_service_job_tracker</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>Mayank</sys_created_by>
+            <sys_created_on>2022-10-11 14:14:58</sys_created_on>
+            <sys_id>ae9168a0876a9d50fd73642d0ebb351c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>state</sys_name>
+            <sys_package display_value="Primary Data Integration for SAP" source="x_snc_com_data_int">93c7f5cb875a1950fd73642d0ebb3590</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
+            <sys_update_name>sys_choice_x_snc_com_data_int_integration_service_job_tracker_state</sys_update_name>
+            <sys_updated_by>Mayank</sys_updated_by>
+            <sys_updated_on>2022-10-11 14:14:58</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Cancelled</label>
+            <language>en</language>
+            <name>x_snc_com_data_int_integration_service_job_tracker</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>Mayank</sys_created_by>
+            <sys_created_on>2022-10-11 14:15:15</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ba9168a0876a9d50fd73642d0ebb353e</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>Mayank</sys_updated_by>
+            <sys_updated_on>2022-10-11 14:15:26</sys_updated_on>
+            <value>cancelled</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Cancel requested</label>
+            <language>en</language>
+            <name>x_snc_com_data_int_integration_service_job_tracker</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>Mayank</sys_created_by>
+            <sys_created_on>2022-10-11 14:14:58</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>db8168a0876a9d50fd73642d0ebb353c</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>Mayank</sys_updated_by>
+            <sys_updated_on>2022-10-11 14:15:07</sys_updated_on>
+            <value>cancel_requested</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Complete</label>
+            <language>en</language>
+            <name>x_snc_com_data_int_integration_service_job_tracker</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>Mayank</sys_created_by>
+            <sys_created_on>2022-10-11 14:15:34</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>76a1e8a0876a9d50fd73642d0ebb3532</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>Mayank</sys_updated_by>
+            <sys_updated_on>2022-10-11 14:15:45</sys_updated_on>
+            <value>complete</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Complete with errors</label>
+            <language>en</language>
+            <name>x_snc_com_data_int_integration_service_job_tracker</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>Mayank</sys_created_by>
+            <sys_created_on>2022-10-11 14:15:54</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>97b1a8a0876a9d50fd73642d0ebb3545</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>Mayank</sys_updated_by>
+            <sys_updated_on>2022-10-11 14:16:06</sys_updated_on>
+            <value>complete_with_errors</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Failed</label>
+            <language>en</language>
+            <name>x_snc_com_data_int_integration_service_job_tracker</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>Mayank</sys_created_by>
+            <sys_created_on>2022-10-11 14:16:37</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a9e120e0876a9d50fd73642d0ebb3531</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>Mayank</sys_updated_by>
+            <sys_updated_on>2022-10-11 14:16:42</sys_updated_on>
+            <value>failed</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Hold</label>
+            <language>en</language>
+            <name>x_snc_com_data_int_integration_service_job_tracker</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>Mayank</sys_created_by>
+            <sys_created_on>2022-10-11 14:16:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3ef1eca0876a9d50fd73642d0ebb359a</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>Mayank</sys_updated_by>
+            <sys_updated_on>2022-10-11 14:16:57</sys_updated_on>
+            <value>hold</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Did not complete</label>
+            <language>en</language>
+            <name>x_snc_com_data_int_integration_service_job_tracker</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>Mayank</sys_created_by>
+            <sys_created_on>2022-10-11 14:16:15</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ecd16ca0876a9d50fd73642d0ebb35ab</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>Mayank</sys_updated_by>
+            <sys_updated_on>2022-10-11 14:16:26</sys_updated_on>
+            <value>incomplete</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Loaded</label>
+            <language>en</language>
+            <name>x_snc_com_data_int_integration_service_job_tracker</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>Mayank</sys_created_by>
+            <sys_created_on>2022-10-11 14:17:05</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4a02a0e0876a9d50fd73642d0ebb35be</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>Mayank</sys_updated_by>
+            <sys_updated_on>2022-10-11 14:17:10</sys_updated_on>
+            <value>loaded</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Loading</label>
+            <language>en</language>
+            <name>x_snc_com_data_int_integration_service_job_tracker</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>Mayank</sys_created_by>
+            <sys_created_on>2022-10-11 14:17:18</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7512a0e0876a9d50fd73642d0ebb35ba</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>Mayank</sys_updated_by>
+            <sys_updated_on>2022-10-11 14:17:23</sys_updated_on>
+            <value>loading</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Pending</label>
+            <language>en</language>
+            <name>x_snc_com_data_int_integration_service_job_tracker</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>Mayank</sys_created_by>
+            <sys_created_on>2022-10-11 14:17:34</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7422a0e0876a9d50fd73642d0ebb35bd</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>Mayank</sys_updated_by>
+            <sys_updated_on>2022-10-11 14:17:39</sys_updated_on>
+            <value>pending</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Running</label>
+            <language>en</language>
+            <name>x_snc_com_data_int_integration_service_job_tracker</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>Mayank</sys_created_by>
+            <sys_created_on>2022-10-11 14:17:46</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7c32a4e0876a9d50fd73642d0ebb351b</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>Mayank</sys_updated_by>
+            <sys_updated_on>2022-10-11 14:17:51</sys_updated_on>
+            <value>running</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

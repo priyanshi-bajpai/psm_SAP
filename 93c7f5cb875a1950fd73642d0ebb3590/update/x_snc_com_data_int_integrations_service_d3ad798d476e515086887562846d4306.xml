@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="x_snc_com_data_int_integrations_service">
+    <x_snc_com_data_int_integrations_service action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <flow display_value="Import Legal Entity from SAP">2b619fd0472add1086887562846d437e</flow>
+        <import_set_tables>x_snc_com_data_int_look_up_legal_entity</import_set_tables>
+        <name>Legal Entity</name>
+        <order>200</order>
+        <properties/>
+        <source display_value="SAP ECC">b59ee0a087aa9d50fd73642d0ebb35f8</source>
+        <sys_class_name>x_snc_com_data_int_integrations_service</sys_class_name>
+        <sys_created_by>akash</sys_created_by>
+        <sys_created_on>2022-10-13 10:15:24</sys_created_on>
+        <sys_id>d3ad798d476e515086887562846d4306</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Legal Entity</sys_name>
+        <sys_package display_value="Primary Data Integration for SAP" source="x_snc_com_data_int">93c7f5cb875a1950fd73642d0ebb3590</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
+        <sys_update_name>x_snc_com_data_int_integrations_service_d3ad798d476e515086887562846d4306</sys_update_name>
+        <sys_updated_by>bcone</sys_updated_by>
+        <sys_updated_on>2022-10-20 04:24:32</sys_updated_on>
+    </x_snc_com_data_int_integrations_service>
+</record_update>

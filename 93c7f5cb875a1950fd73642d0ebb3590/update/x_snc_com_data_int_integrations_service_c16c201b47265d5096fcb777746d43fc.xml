@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="x_snc_com_data_int_integrations_service">
+    <x_snc_com_data_int_integrations_service action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <flow display_value="Retrieve Vendors">fd461ed08726d51093264085dabb357e</flow>
+        <import_set_tables>x_snc_supl_mgmt_in_vendor_master_staging</import_set_tables>
+        <name>Vendor Master</name>
+        <order>2000</order>
+        <properties>{"temp_row_count":"7","temp_until_rows":"7"}</properties>
+        <source display_value="SAP ECC">b59ee0a087aa9d50fd73642d0ebb35f8</source>
+        <sys_class_name>x_snc_com_data_int_integrations_service</sys_class_name>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-10-20 04:06:21</sys_created_on>
+        <sys_id>c16c201b47265d5096fcb777746d43fc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Vendor Master</sys_name>
+        <sys_package display_value="Primary Data Integration for SAP" source="x_snc_com_data_int">93c7f5cb875a1950fd73642d0ebb3590</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
+        <sys_update_name>x_snc_com_data_int_integrations_service_c16c201b47265d5096fcb777746d43fc</sys_update_name>
+        <sys_updated_by>bcone</sys_updated_by>
+        <sys_updated_on>2022-10-20 04:06:21</sys_updated_on>
+    </x_snc_com_data_int_integrations_service>
+</record_update>

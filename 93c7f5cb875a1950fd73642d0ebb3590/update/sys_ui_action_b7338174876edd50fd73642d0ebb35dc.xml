@@ -31,12 +31,24 @@
         <onclick/>
         <order>1001</order>
         <script><![CDATA[var inputs = {};
-inputs['source'] = current ;
-inputs['job_name'] =  current.name + ' Job' ;
-//sn_fd.FlowAPI.startSubflow('sn_sap_ecc_rfc_spo.run_job', inputs);	
-sn_fd.FlowAPI.getRunner().subflow('x_snc_com_data_int.run_job').inBackground().withInputs(inputs).run();
-//sn_fd.FlowAPI.getRunner().subflow('sn_sap_ecc_rfc_spo.run_job').inForeground().withInputs(inputs).run();
-]]></script>
+gs.info("inside run Job ");
+var conn = current.connection;
+gs.info("inside run Job conn " + conn);
+var arr = [];
+arr = conn.split(',');
+for (var i = 0; i < arr.length; i++) {
+    var gr_con = new GlideRecord('sys_alias');
+    gr_con.addQuery('sys_id', arr[i]);
+    gr_con.query();
+    if (gr_con.next()) {
+
+        gs.info("inside run Job arr[i] " + arr[i]);
+        inputs['source'] = current;
+        inputs['job_name'] = current.name + ' Job';
+        inputs['connection_name'] = gr_con;
+        sn_fd.FlowAPI.getRunner().subflow('x_snc_com_data_int.run_job').inBackground().withInputs(inputs).run();
+    }
+}]]></script>
         <show_insert>false</show_insert>
         <show_multiple_update>false</show_multiple_update>
         <show_query>false</show_query>
@@ -47,7 +59,7 @@ sn_fd.FlowAPI.getRunner().subflow('x_snc_com_data_int.run_job').inBackground().w
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>b7338174876edd50fd73642d0ebb35dc</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name>Run Job</sys_name>
         <sys_overrides/>
         <sys_package display_value="Primary Data Integration for SAP" source="x_snc_com_data_int">93c7f5cb875a1950fd73642d0ebb3590</sys_package>
@@ -55,7 +67,7 @@ sn_fd.FlowAPI.getRunner().subflow('x_snc_com_data_int.run_job').inBackground().w
         <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name>sys_ui_action_b7338174876edd50fd73642d0ebb35dc</sys_update_name>
         <sys_updated_by>Mayank</sys_updated_by>
-        <sys_updated_on>2022-10-12 15:03:25</sys_updated_on>
+        <sys_updated_on>2022-10-20 11:45:18</sys_updated_on>
         <table>x_snc_com_data_int_integrations_source</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

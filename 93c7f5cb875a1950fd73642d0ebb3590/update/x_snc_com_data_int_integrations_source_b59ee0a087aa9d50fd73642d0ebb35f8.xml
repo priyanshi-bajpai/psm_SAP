@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="x_snc_com_data_int_integrations_source">
     <x_snc_com_data_int_integrations_source action="INSERT_OR_UPDATE">
-        <name>SAP ECC</name>
-        <properties/>
+        <connection>d0578871dbad8010ea4494d9db9619d9,ad28dfbd87dad150fd73642d0ebb3563</connection>
+        <name>SAP ECC US</name>
+        <properties>{"connection alias":""}</properties>
         <sys_class_name>x_snc_com_data_int_integrations_source</sys_class_name>
         <sys_created_by>Mayank</sys_created_by>
         <sys_created_on>2022-10-11 15:11:50</sys_created_on>
         <sys_id>b59ee0a087aa9d50fd73642d0ebb35f8</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_name>SAP ECC</sys_name>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>SAP ECC US</sys_name>
         <sys_package display_value="Primary Data Integration for SAP" source="x_snc_com_data_int">93c7f5cb875a1950fd73642d0ebb3590</sys_package>
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name>x_snc_com_data_int_integrations_source_b59ee0a087aa9d50fd73642d0ebb35f8</sys_update_name>
         <sys_updated_by>Mayank</sys_updated_by>
-        <sys_updated_on>2022-10-12 06:57:37</sys_updated_on>
+        <sys_updated_on>2022-10-20 08:57:47</sys_updated_on>
     </x_snc_com_data_int_integrations_source>
 </record_update>

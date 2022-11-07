@@ -19,14 +19,14 @@
         <sys_created_by>Prama</sys_created_by>
         <sys_created_on>2022-10-28 04:00:06</sys_created_on>
         <sys_id>87c7353987be111093264085dabb356d</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>payment_term</sys_name>
         <sys_package display_value="Primary Data Integration for SAP" source="x_snc_com_data_int">93c7f5cb875a1950fd73642d0ebb3590</sys_package>
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name>sys_transform_entry_87c7353987be111093264085dabb356d</sys_update_name>
         <sys_updated_by>Prama</sys_updated_by>
-        <sys_updated_on>2022-10-28 04:00:06</sys_updated_on>
+        <sys_updated_on>2022-11-07 07:05:06</sys_updated_on>
         <target_field>payment_term</target_field>
         <target_table>sn_shop_payment_term</target_table>
         <use_source_script>false</use_source_script>

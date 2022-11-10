@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="account_number_of_vendor_or_creditor" label="Account Number of Vendor or Creditor" language="en" table="x_snc_com_data_int_vendor_masters_staging">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>account_number_of_vendor_or_creditor</element>
+            <help/>
+            <hint/>
+            <label>Account Number of Vendor or Creditor</label>
+            <language>en</language>
+            <name>x_snc_com_data_int_vendor_masters_staging</name>
+            <plural>Account Number of Vendor or Creditors</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>Prama</sys_created_by>
+            <sys_created_on>2022-11-08 14:37:42</sys_created_on>
+            <sys_id>e0537ce987cb5d1093264085dabb3508</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Account Number of Vendor or Creditor</sys_name>
+            <sys_package display_value="Primary Data Integration for SAP" source="x_snc_com_data_int">93c7f5cb875a1950fd73642d0ebb3590</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
+            <sys_update_name>sys_documentation_x_snc_com_data_int_vendor_masters_staging_account_number_of_vendor_or_creditor_en</sys_update_name>
+            <sys_updated_by>Prama</sys_updated_by>
+            <sys_updated_on>2022-11-08 14:37:42</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

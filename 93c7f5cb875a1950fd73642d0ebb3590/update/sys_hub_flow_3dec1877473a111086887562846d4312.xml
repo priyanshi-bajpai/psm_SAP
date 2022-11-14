@@ -1,0 +1,2449 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>retrieve_purchase_group_from_sap</internal_name>
+        <label_cache>[{"name":"da3568fc-25c3-43f1-913a-ea1a27e94288.purchase_group.TEL_NUMBER","label":"6 - Segregate Purchasing Group Response➛Purchase Group➛Telephone no.: dialling code+number","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"da3568fc-25c3-43f1-913a-ea1a27e94288.purchase_group.TEL_EXTENS","label":"6 - Segregate Purchasing Group Response➛Purchase Group➛Telephone no.: Extension","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"da3568fc-25c3-43f1-913a-ea1a27e94288.purchase_group.LDEST","label":"6 - Segregate Purchasing Group Response➛Purchase Group➛Spool: Output device","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"da3568fc-25c3-43f1-913a-ea1a27e94288.purchase_group.TELFX","label":"6 - Segregate Purchasing Group Response➛Purchase Group➛Fax number of purchasing (buyer) group","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"da3568fc-25c3-43f1-913a-ea1a27e94288.purchase_group.SMTP_ADDR","label":"6 - Segregate Purchasing Group Response➛Purchase Group➛E-Mail Address","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"da3568fc-25c3-43f1-913a-ea1a27e94288.purchase_group.EKTEL","label":"6 - Segregate Purchasing Group Response➛Purchase Group➛Telephone number of purchasing group (buyer group)","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"da3568fc-25c3-43f1-913a-ea1a27e94288.purchase_group.EKNAM","label":"6 - Segregate Purchasing Group Response➛Purchase Group➛Description of purchasing group","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"da3568fc-25c3-43f1-913a-ea1a27e94288.purchase_group.EKGRP","label":"6 - Segregate Purchasing Group Response➛Purchase Group➛Purchasing Group","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"da3568fc-25c3-43f1-913a-ea1a27e94288.purchase_group.MANDT","label":"6 - Segregate Purchasing Group Response➛Purchase Group➛Client","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"512b82fe-0bf8-4172-9a73-6d898cc7c898.output","label":"1 - Execute RFC➛Response","reference_display":"Response","type":"dynamic_object","base_type":"dynamic_object","attributes":{"dynamic":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"ec3feb55-c033-40de-b020-c5065f65edc0"}},{"name":"512b82fe-0bf8-4172-9a73-6d898cc7c898.status","label":"1 - Execute RFC➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"success","order":0.0},{"label":"Error","value":"error","order":1.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"be013fc8-8a66-424c-a986-bc6c2270b27c"}},{"name":"512b82fe-0bf8-4172-9a73-6d898cc7c898.err","label":"1 - Execute RFC➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"8fb55a2b-1b65-43aa-b9d2-242ee67e399c"}},{"name":"512b82fe-0bf8-4172-9a73-6d898cc7c898.__action_status__","label":"1 - Execute RFC➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FD840763bca9ba9910755ead1f372a1d58","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"fbc20c78-5e59-42ca-a81b-a51060512856"}},{"name":"512b82fe-0bf8-4172-9a73-6d898cc7c898.__dont_treat_as_error__","label":"1 - Execute RFC➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"0106b8ba-b8e7-4190-952f-e25862d919f4"}},{"name":"50b129df-1240-4fd2-98f6-32e7ef7002fa.json_array","label":"3 - Parse_RFC_Response➛Json array","reference_display":"Json array","type":"array.string","base_type":"array.string","attributes":{"uiTypeLabel":"Array.String","co_type_name":"FD935c7ab1e356d5101cb326721344486c","child_label":"Json_array_obj","child_type_label":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"array.string","child_type":"string","child_name":"Json_array_obj","child_uiUniqueId":"26c7fe1f-0bf2-4ca2-b23c-223c139d7829","uiUniqueId":"4a462491-f357-4b32-a56a-6f38798c3ad3"}},{"name":"50b129df-1240-4fd2-98f6-32e7ef7002fa.__action_status__","label":"3 - Parse_RFC_Response➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FD575c7ab13c56d51028a081482d93ba6e","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"d12f1232-cf85-4627-95bf-540799baf9fd"}},{"name":"50b129df-1240-4fd2-98f6-32e7ef7002fa.__dont_treat_as_error__","label":"3 - Parse_RFC_Response➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"0b918dd2-4aeb-4bf6-b06e-83d3b4e98e93"}},{"name":"50b129df-1240-4fd2-98f6-32e7ef7002fa.total_rows","label":"3 - Parse_RFC_Response➛Total Rows","reference_display":"Total Rows","type":"integer","base_type":"integer","attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"994da5cf-82b5-42f2-88be-e297383278d4"}},{"name":"512b82fe-0bf8-4172-9a73-6d898cc7c898.__action_status__.code","label":"1 - Execute RFC➛Action Status➛Code","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","attributes":{}},{"name":"751ddc1b-310d-41ae-9e6f-0739d0ac2a77.item","label":"5 - For Each➛Json_array_obj","reference_display":"Json_array_obj","type":"string","base_type":"string","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"da3568fc-25c3-43f1-913a-ea1a27e94288.__action_status__","label":"6 - Segregate Purchasing Group Response➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FD4259b5883c4f5110c8a85a1b0dde3b66","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"921cfaf9-ab14-4c35-891d-b85afab9d34f"}},{"name":"da3568fc-25c3-43f1-913a-ea1a27e94288.purchase_group","label":"6 - Segregate Purchasing Group Response➛Purchase Group","reference_display":"Purchase Group","type":"object","base_type":"object","attributes":{"sourceId":"4015fb9d-1c6d-4869-bdf1-1b1d686c246f","uiTypeLabel":"Object","co_type_name":"FDc259b588d24f51100d9f9b468ceeb668","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"step","sourceUiUniqueId":"054c4c7f-48b8-4ba7-a418-cf4cce294d99","uiType":"object","uiUniqueId":"78c5aa13-66d8-47e7-a200-f5a10b485475"}},{"name":"da3568fc-25c3-43f1-913a-ea1a27e94288.__dont_treat_as_error__","label":"6 - Segregate Purchasing Group Response➛__dont_treat_as_error__","reference_display":"__dont_treat_as_error__","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"959265b2-551c-4236-a502-dbf9363b42e6"}},{"name":"da3568fc-25c3-43f1-913a-ea1a27e94288.__action_status__.code","label":"6 - Segregate Purchasing Group Response➛Action Status➛Code","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","attributes":{}},{"name":"3e0658ba-bfec-41bc-89df-04a8a1403e38.record","label":"8 - Create or Update Record➛Lookup Purchase Group Record","reference":"x_snc_com_data_int_lookup_purchase_group","reference_display":"Lookup Purchase Group","type":"reference","base_type":"reference","attributes":{"uiType":"document_id","uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"3e0658ba-bfec-41bc-89df-04a8a1403e38.table_name","label":"8 - Create or Update Record➛Lookup Purchase Group Table","reference":"x_snc_com_data_int_lookup_purchase_group","reference_display":"Lookup Purchase Group","type":"table_name","base_type":"table_name","attributes":{"uiType":"table_name","uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"3e0658ba-bfec-41bc-89df-04a8a1403e38.status","label":"8 - Create or Update Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Created","value":"created","order":1.0},{"label":"Updated","value":"updated","order":2.0},{"label":"Error","value":"error","order":3.0}],"attributes":{"uiType":"choice","uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"3e0658ba-bfec-41bc-89df-04a8a1403e38.error_message","label":"8 - Create or Update Record➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"3e0658ba-bfec-41bc-89df-04a8a1403e38.__action_status__","label":"8 - Create or Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"3e0658ba-bfec-41bc-89df-04a8a1403e38.__dont_treat_as_error__","label":"8 - Create or Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"da3568fc-25c3-43f1-913a-ea1a27e94288.purchase_group.Client","label":"6 - Segregate Purchasing Group Response➛Purchase Group➛Client","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"da3568fc-25c3-43f1-913a-ea1a27e94288.purchase_group.Purchasing_Group","label":"6 - Segregate Purchasing Group Response➛Purchase Group➛Purchasing Group","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"da3568fc-25c3-43f1-913a-ea1a27e94288.purchase_group.Description_of_purchasing_group","label":"6 - Segregate Purchasing Group Response➛Purchase Group➛Description of purchasing group","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"da3568fc-25c3-43f1-913a-ea1a27e94288.purchase_group.E_Mail_Address","label":"6 - Segregate Purchasing Group Response➛Purchase Group➛E-Mail Address","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"da3568fc-25c3-43f1-913a-ea1a27e94288.purchase_group.Fax_number_of_purchasing_buyer_group","label":"6 - Segregate Purchasing Group Response➛Purchase Group➛Fax number of purchasing (buyer) group","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"da3568fc-25c3-43f1-913a-ea1a27e94288.purchase_group.Spool_Output_device","label":"6 - Segregate Purchasing Group Response➛Purchase Group➛Spool: Output device","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"da3568fc-25c3-43f1-913a-ea1a27e94288.purchase_group.Telephone_no_Extension","label":"6 - Segregate Purchasing Group Response➛Purchase Group➛Telephone no.: Extension","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"da3568fc-25c3-43f1-913a-ea1a27e94288.purchase_group.Telephone_no_dialling_code_number","label":"6 - Segregate Purchasing Group Response➛Purchase Group➛Telephone no.: dialling code+number","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"da3568fc-25c3-43f1-913a-ea1a27e94288.purchase_group.Telephone_number_of_purchasing_group_buyer_group","label":"6 - Segregate Purchasing Group Response➛Purchase Group➛Telephone number of purchasing group (buyer group)","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"da3568fc-25c3-43f1-913a-ea1a27e94288.__action_status__.message","label":"6 - Segregate Purchasing Group Response➛Action Status➛Message","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"50b129df-1240-4fd2-98f6-32e7ef7002fa.__action_status__.message","label":"3 - Parse_RFC_Response➛Action Status➛Message","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}}]</label_cache>
+        <master_snapshot>c29eb140478f511086887562846d439a</master_snapshot>
+        <name>Retrieve Purchase Group from SAP</name>
+        <natlang/>
+        <outputs/>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-11-03 02:30:23</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>3dec1877473a111086887562846d4312</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>Retrieve Purchase Group from SAP</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Primary Data Integration for SAP" source="x_snc_com_data_int">93c7f5cb875a1950fd73642d0ebb3590</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
+        <sys_update_name>sys_hub_flow_3dec1877473a111086887562846d4312</sys_update_name>
+        <sys_updated_by>rahul.tadisetti@snc</sys_updated_by>
+        <sys_updated_on>2022-11-09 04:29:07</sys_updated_on>
+        <type>subflow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=3dec1877473a111086887562846d4312"/>
+    <sys_variable_value action="delete_multiple" query="document_key=3dec1877473a111086887562846d4312"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_3dec1877473a111086887562846d4312^id=3dec1877473a111086887562846d4312"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=3dec1877473a111086887562846d4312"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=3dec1877473a111086887562846d4312"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=3dec1877473a111086887562846d4312^sys_idNOT INf9ec1877473a111086887562846d4314"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>3dec1877473a111086887562846d4312</id>
+        <name>Retrieve Purchase Group from SAP</name>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-11-03 02:30:23</sys_created_on>
+        <sys_id>f9ec1877473a111086887562846d4314</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>bcone</sys_updated_by>
+        <sys_updated_on>2022-11-03 02:30:23</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=f9ec1877473a111086887562846d4314"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=3dec1877473a111086887562846d4312^sys_idNOT INcf0fd83b473a111086887562846d43a2"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=0adc0c0b-327b-4211-8ab3-c4946a9576c0</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>x_snc_com_data_int_integration_service_job_tracker</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>service_record</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Service record</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Retrieve Purchase Group from SAP">3dec1877473a111086887562846d4312</model>
+        <model_id>3dec1877473a111086887562846d4312</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_3dec1877473a111086887562846d4312</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="x_snc_com_data_int_integration_service_job_tracker">x_snc_com_data_int_integration_service_job_tracker</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-11-03 02:39:44</sys_created_on>
+        <sys_id>cf0fd83b473a111086887562846d43a2</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>bcone</sys_updated_by>
+        <sys_updated_on>2022-11-03 02:39:45</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_output action="delete_multiple" query="model=3dec1877473a111086887562846d4312^sys_idNOT IN030fd83b473a111086887562846d43ab,d70fd83b473a111086887562846d43af"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=13e5c9b4-62b1-454a-b585-f7c6ddef1b29</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>error</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Error</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Retrieve Purchase Group from SAP">3dec1877473a111086887562846d4312</model>
+        <model_id>3dec1877473a111086887562846d4312</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_output_3dec1877473a111086887562846d4312</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-11-03 02:39:45</sys_created_on>
+        <sys_id>030fd83b473a111086887562846d43ab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>bcone</sys_updated_by>
+        <sys_updated_on>2022-11-03 02:39:45</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=choice,uiTypeLabel=Choice,uiUniqueId=ba442257-a687-4d32-9d4a-fbb76edfca14</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice>3</choice>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>Error</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>status</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Choice">choice</internal_type>
+        <label>Status</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Retrieve Purchase Group from SAP">3dec1877473a111086887562846d4312</model>
+        <model_id>3dec1877473a111086887562846d4312</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_output_3dec1877473a111086887562846d4312</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-11-03 02:39:45</sys_created_on>
+        <sys_id>d70fd83b473a111086887562846d43af</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>bcone</sys_updated_by>
+        <sys_updated_on>2022-11-03 02:39:46</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=3dec1877473a111086887562846d4312"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=3dec1877473a111086887562846d4312^sys_idNOT IN805e3d00478f511086887562846d4346,8c5e3d00478f511086887562846d4354,f85e3d00478f511086887562846d4383,ff4e3d00478f511086887562846d4335"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Parse_RFC_Response">3e5c7ab14756d51096fcb777746d4335</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Retrieve Purchase Group from SAP">3dec1877473a111086887562846d4312</flow>
+        <order>3</order>
+        <parent_ui_id>417bab80-5f7f-4dcb-9eda-b6f52a3c33e4</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-11-04 04:14:27</sys_created_on>
+        <sys_id>805e3d00478f511086887562846d4346</sys_id>
+        <sys_mod_count>24</sys_mod_count>
+        <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2022-11-09 04:48:51</sys_updated_on>
+        <ui_id>50b129df-1240-4fd2-98f6-32e7ef7002fa</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=805e3d00478f511086887562846d4346"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>805e3d00478f511086887562846d4346</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-11-04 04:14:27</sys_created_on>
+        <sys_id>0c5e3d00478f511086887562846d4347</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bcone</sys_updated_by>
+        <sys_updated_on>2022-11-04 04:14:27</sys_updated_on>
+        <value>,﻿</value>
+        <variable display_value="Delimiter">39b15c20472edd1086887562846d438d</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=805e3d00478f511086887562846d4346"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>deli</field>
+        <id>805e3d00478f511086887562846d4346</id>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-11-04 04:14:27</sys_created_on>
+        <sys_id>c45e3d00478f511086887562846d4347</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bcone</sys_updated_by>
+        <sys_updated_on>2022-11-04 04:14:27</sys_updated_on>
+        <table>var__m_sys_hub_action_input_3e5c7ab14756d51096fcb777746d4335</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>json_string</field>
+        <id>805e3d00478f511086887562846d4346</id>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-11-04 04:14:27</sys_created_on>
+        <sys_id>885e3d00478f511086887562846d4347</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bcone</sys_updated_by>
+        <sys_updated_on>2022-11-04 04:14:27</sys_updated_on>
+        <table>var__m_sys_hub_action_input_3e5c7ab14756d51096fcb777746d4335</table>
+        <value>{{512b82fe-0bf8-4172-9a73-6d898cc7c898.output}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=805e3d00478f511086887562846d4346"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=805e3d00478f511086887562846d4346"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Segregate Purchasing Group Response">4d597588474f511086887562846d43f8</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Retrieve Purchase Group from SAP">3dec1877473a111086887562846d4312</flow>
+        <order>6</order>
+        <parent_ui_id>751ddc1b-310d-41ae-9e6f-0739d0ac2a77</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-11-04 04:14:27</sys_created_on>
+        <sys_id>8c5e3d00478f511086887562846d4354</sys_id>
+        <sys_mod_count>24</sys_mod_count>
+        <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2022-11-09 04:48:51</sys_updated_on>
+        <ui_id>da3568fc-25c3-43f1-913a-ea1a27e94288</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=8c5e3d00478f511086887562846d4354"/>
+    <sys_element_mapping action="delete_multiple" query="id=8c5e3d00478f511086887562846d4354"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>json_string</field>
+        <id>8c5e3d00478f511086887562846d4354</id>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-11-04 04:14:27</sys_created_on>
+        <sys_id>905e3d00478f511086887562846d4356</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bcone</sys_updated_by>
+        <sys_updated_on>2022-11-04 04:14:27</sys_updated_on>
+        <table>var__m_sys_hub_action_input_4d597588474f511086887562846d43f8</table>
+        <value>{{751ddc1b-310d-41ae-9e6f-0739d0ac2a77.item}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=8c5e3d00478f511086887562846d4354"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=8c5e3d00478f511086887562846d4354"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create or Update Record">ab575ae253b3230034c6ddeeff7b12f1</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Retrieve Purchase Group from SAP">3dec1877473a111086887562846d4312</flow>
+        <order>8</order>
+        <parent_ui_id>c02ba83d-6db3-4168-adb1-76336e8ca27b</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-11-04 04:14:30</sys_created_on>
+        <sys_id>f85e3d00478f511086887562846d4383</sys_id>
+        <sys_mod_count>24</sys_mod_count>
+        <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2022-11-09 04:48:51</sys_updated_on>
+        <ui_id>3e0658ba-bfec-41bc-89df-04a8a1403e38</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=f85e3d00478f511086887562846d4383"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>f85e3d00478f511086887562846d4383</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-11-04 04:14:30</sys_created_on>
+        <sys_id>745e3d00478f511086887562846d4385</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bcone</sys_updated_by>
+        <sys_updated_on>2022-11-04 04:14:30</sys_updated_on>
+        <value>x_snc_com_data_int_lookup_purchase_group</value>
+        <variable display_value="Table Name">27575ae253b3230034c6ddeeff7b12f4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=f85e3d00478f511086887562846d4383"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>fields</field>
+        <id>f85e3d00478f511086887562846d4383</id>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-11-04 04:14:30</sys_created_on>
+        <sys_id>305e3d00478f511086887562846d4385</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>rahul.tadisetti@snc</sys_updated_by>
+        <sys_updated_on>2022-11-06 12:19:21</sys_updated_on>
+        <table>var__m_sys_hub_action_input_ab575ae253b3230034c6ddeeff7b12f1</table>
+        <value>client={{da3568fc-25c3-43f1-913a-ea1a27e94288.purchase_group.MANDT}}^description_of_purchasing_group={{da3568fc-25c3-43f1-913a-ea1a27e94288.purchase_group.EKNAM}}^e_mail_address={{da3568fc-25c3-43f1-913a-ea1a27e94288.purchase_group.SMTP_ADDR}}^fax_number_of_purchasing_buyer_group={{da3568fc-25c3-43f1-913a-ea1a27e94288.purchase_group.TELFX}}^purchasing_group={{da3568fc-25c3-43f1-913a-ea1a27e94288.purchase_group.EKGRP}}^spool_output_device={{da3568fc-25c3-43f1-913a-ea1a27e94288.purchase_group.LDEST}}^telephone_no_extension={{da3568fc-25c3-43f1-913a-ea1a27e94288.purchase_group.TEL_EXTENS}}^telephone_no_dialling_code_number={{da3568fc-25c3-43f1-913a-ea1a27e94288.purchase_group.TEL_NUMBER}}^telephone_number_of_purchasing_group_buyer_group={{da3568fc-25c3-43f1-913a-ea1a27e94288.purchase_group.EKTEL}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>f85e3d00478f511086887562846d4383</id>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-11-04 04:14:30</sys_created_on>
+        <sys_id>f05e3d00478f511086887562846d4385</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bcone</sys_updated_by>
+        <sys_updated_on>2022-11-04 04:14:30</sys_updated_on>
+        <table>var__m_sys_hub_action_input_ab575ae253b3230034c6ddeeff7b12f1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=f85e3d00478f511086887562846d4383"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=f85e3d00478f511086887562846d4383"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Execute RFC">878053f3c7043010678d208c95c26025</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Retrieve Purchase Group from SAP">3dec1877473a111086887562846d4312</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-11-04 04:14:26</sys_created_on>
+        <sys_id>ff4e3d00478f511086887562846d4335</sys_id>
+        <sys_mod_count>24</sys_mod_count>
+        <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2022-11-09 04:48:51</sys_updated_on>
+        <ui_id>512b82fe-0bf8-4172-9a73-6d898cc7c898</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=ff4e3d00478f511086887562846d4335"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>ff4e3d00478f511086887562846d4335</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-11-04 04:14:26</sys_created_on>
+        <sys_id>3b4e3d00478f511086887562846d4339</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>rahul.tadisetti@snc</sys_updated_by>
+        <sys_updated_on>2022-11-09 04:28:49</sys_updated_on>
+        <value>fb2b979947cfd51086887562846d435f</value>
+        <variable display_value="RFC">478053f3c7043010678d208c95c2602f</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>ff4e3d00478f511086887562846d4335</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-11-04 04:14:26</sys_created_on>
+        <sys_id>774e3d00478f511086887562846d4339</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bcone</sys_updated_by>
+        <sys_updated_on>2022-11-04 04:14:26</sys_updated_on>
+        <value>d0578871dbad8010ea4494d9db9619d9</value>
+        <variable display_value="Connection Alias">4b8053f3c7043010678d208c95c26026</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>ff4e3d00478f511086887562846d4335</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-11-04 04:14:26</sys_created_on>
+        <sys_id>b34e3d00478f511086887562846d4339</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>rahul.tadisetti@snc</sys_updated_by>
+        <sys_updated_on>2022-11-06 12:19:19</sys_updated_on>
+        <value>{"children":[{"children":[{"name":"TYPE","label":"TYPE","type":"string"},{"name":"ID","label":"ID","type":"string"},{"name":"NUMBER","label":"NUMBER","type":"string"},{"name":"MESSAGE","label":"MESSAGE","type":"string"},{"name":"LOG_NO","label":"LOG_NO","type":"string"},{"name":"LOG_MSG_NO","label":"LOG_MSG_NO","type":"string"},{"name":"MESSAGE_V1","label":"MESSAGE_V1","type":"string"},{"name":"MESSAGE_V2","label":"MESSAGE_V2","type":"string"},{"name":"MESSAGE_V3","label":"MESSAGE_V3","type":"string"},{"name":"MESSAGE_V4","label":"MESSAGE_V4","type":"string"},{"name":"PARAMETER","label":"PARAMETER","type":"string"},{"name":"ROW","label":"ROW","type":"integer"},{"name":"FIELD","label":"FIELD","type":"string"},{"name":"SYSTEM","label":"SYSTEM","type":"string"}],"name":"ET_RETURN","attributes":{"child_type":"object"},"label":"Return table [ ET_RETURN ]","type":"array.object"},{"children":[{"name":"WA","label":"Application data [ WA ]","type":"string"},{"name":"WA1","label":"Application data [ WA1 ]","type":"string"},{"name":"WA2","label":"Application data [ WA2 ]","type":"string"},{"name":"WA3","label":"Application data [ WA3 ]","type":"string"},{"name":"WA4","label":"Application data [ WA4 ]","type":"string"},{"name":"WA5","label":"Application data [ WA5 ]","type":"string"},{"name":"WA6","label":"Application data [ WA6 ]","type":"string"},{"name":"WA7","label":"Application data [ WA7 ]","type":"string"},{"name":"WA8","label":"Application data [ WA8 ]","type":"string"},{"name":"WA9","label":"Application data [ WA9 ]","type":"string"},{"name":"WA10","label":"Application data [ WA10 ]","type":"string"},{"name":"WA11","label":"Application data [ WA11 ]","type":"string"},{"name":"WA12","label":"Application data [ WA12 ]","type":"string"},{"name":"WA13","label":"Application data [ WA13 ]","type":"string"},{"name":"WA14","label":"Application data [ WA14 ]","type":"string"},{"name":"WA15","label":"Application data [ WA15 ]","type":"string"},{"name":"WA16","label":"Application data [ WA16 ]","type":"string"},{"name":"WA17","label":"Application data [ WA17 ]","type":"string"},{"name":"WA18","label":"Application data [ WA18 ]","type":"string"},{"name":"WA19","label":"Application data [ WA19 ]","type":"string"},{"name":"WA20","label":"Application data [ WA20 ]","type":"string"},{"name":"WA21","label":"Application data [ WA21 ]","type":"string"},{"name":"WA22","label":"Application data [ WA22 ]","type":"string"},{"name":"WA23","label":"Application data [ WA23 ]","type":"string"},{"name":"WA24","label":"Application data [ WA24 ]","type":"string"},{"name":"WA25","label":"Application data [ WA25 ]","type":"string"},{"name":"WA26","label":"Application data [ WA26 ]","type":"string"},{"name":"WA27","label":"Application data [ WA27 ]","type":"string"},{"name":"WA28","label":"Application data [ WA28 ]","type":"string"},{"name":"WA29","label":"Application data [ WA29 ]","type":"string"},{"name":"WA30","label":"Application data [ WA30 ]","type":"string"}],"name":"IT_DATA","attributes":{"child_type":"object"},"label":"Search Result Format: 8000-Byte Field [ IT_DATA ]","type":"array.object"},{"children":[{"name":"FIELDNAME","label":"Field Name","type":"string"},{"name":"OFFSET","label":"Offset of a field","type":"string"},{"name":"LENGTH","label":"No of Characters","type":"string"},{"name":"TYPE","label":"ABAP type","type":"string"},{"name":"FIELDTEXT","label":"Short Description","type":"string"}],"name":"IT_FIELDS","attributes":{"child_type":"object"},"label":"RFC Table Read: Description of Fields to Retrieve [ IT_FIELDS ]","type":"array.object"},{"children":[{"name":"TEXT","label":"Text field","type":"string"}],"name":"IT_OPTIONS","attributes":{"child_type":"object"},"label":"RFC Table Read: Select Options / WHERE Clause [ IT_OPTIONS ]","type":"array.object"}],"type":"object","attributes":{"dynamic":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"ec3feb55-c033-40de-b020-c5065f65edc0"}}</value>
+        <variable display_value="Response">078053f3c7043010678d208c95c26045</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>ff4e3d00478f511086887562846d4335</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-11-04 04:14:26</sys_created_on>
+        <sys_id>fb4e3d00478f511086887562846d4339</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>rahul.tadisetti@snc</sys_updated_by>
+        <sys_updated_on>2022-11-09 04:28:49</sys_updated_on>
+        <value>IV_QUERY_TABLE=T024^IV_DELIMITER=,</value>
+        <variable display_value="Import and Changing Tab Inputs">878053f3c7043010678d208c95c26037</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_input_878053f3c7043010678d208c95c26025^id=ff4e3d00478f511086887562846d4335"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=ff4e3d00478f511086887562846d4335"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=ff4e3d00478f511086887562846d4335"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=3dec1877473a111086887562846d4312"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=3dec1877473a111086887562846d4312^sys_idNOT IN015e3d00478f511086887562846d43bb,045e3d00478f511086887562846d434c,415e3d00478f511086887562846d43b5,485e3d00478f511086887562846d4348,4d5e3d00478f511086887562846d43b7,895e3d00478f511086887562846d43d6,8d5e3d00478f511086887562846d43b1,9c5e3d00478f511086887562846d4356,b05e3d00478f511086887562846d4386,b34e3d00478f511086887562846d433b,bc5e3d00478f511086887562846d4388"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">495e3d00478f511086887562846d43ba</block>
+        <comment/>
+        <connected_to>417bab80-5f7f-4dcb-9eda-b6f52a3c33e4</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Retrieve Purchase Group from SAP">3dec1877473a111086887562846d4312</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>14</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-11-04 04:14:31</sys_created_on>
+        <sys_id>015e3d00478f511086887562846d43bb</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
+        <sys_updated_by>rahul.tadisetti@snc</sys_updated_by>
+        <sys_updated_on>2022-11-09 04:29:07</sys_updated_on>
+        <ui_id>f6d6cb12-ff43-4079-bdfb-87755a9ef5b8</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=015e3d00478f511086887562846d43bb"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_3dec1877473a111086887562846d4312^id=015e3d00478f511086887562846d43bb"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=015e3d00478f511086887562846d43bb"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=015e3d00478f511086887562846d43bb"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">4c5e3d00478f511086887562846d434b</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Retrieve Purchase Group from SAP">3dec1877473a111086887562846d4312</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>823590dc-8545-4cae-8c31-2640bd209d84</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-11-04 04:14:27</sys_created_on>
+        <sys_id>045e3d00478f511086887562846d434c</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
+        <sys_updated_by>rahul.tadisetti@snc</sys_updated_by>
+        <sys_updated_on>2022-11-09 04:29:07</sys_updated_on>
+        <ui_id>751ddc1b-310d-41ae-9e6f-0739d0ac2a77</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=045e3d00478f511086887562846d434c"/>
+    <sys_element_mapping action="delete_multiple" query="id=045e3d00478f511086887562846d434c"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>045e3d00478f511086887562846d434c</id>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-11-04 04:14:27</sys_created_on>
+        <sys_id>405e3d00478f511086887562846d434f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bcone</sys_updated_by>
+        <sys_updated_on>2022-11-04 04:14:27</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{50b129df-1240-4fd2-98f6-32e7ef7002fa.json_array}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_3dec1877473a111086887562846d4312^id=045e3d00478f511086887562846d434c"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=045e3d00478f511086887562846d434c"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=045e3d00478f511086887562846d434c"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">895e3d00478f511086887562846d43b4</block>
+        <comment/>
+        <connected_to>823590dc-8545-4cae-8c31-2640bd209d84</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Retrieve Purchase Group from SAP">3dec1877473a111086887562846d4312</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>12</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>417bab80-5f7f-4dcb-9eda-b6f52a3c33e4</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-11-04 04:14:31</sys_created_on>
+        <sys_id>415e3d00478f511086887562846d43b5</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
+        <sys_updated_by>rahul.tadisetti@snc</sys_updated_by>
+        <sys_updated_on>2022-11-09 04:29:07</sys_updated_on>
+        <ui_id>b0179f76-2ddc-4c39-87a2-be5e84eaa0a3</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=415e3d00478f511086887562846d43b5"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_3dec1877473a111086887562846d4312^id=415e3d00478f511086887562846d43b5"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=415e3d00478f511086887562846d43b5"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=415e3d00478f511086887562846d43b5"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">805e3d00478f511086887562846d4348</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Retrieve Purchase Group from SAP">3dec1877473a111086887562846d4312</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>417bab80-5f7f-4dcb-9eda-b6f52a3c33e4</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-11-04 04:14:27</sys_created_on>
+        <sys_id>485e3d00478f511086887562846d4348</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
+        <sys_updated_by>rahul.tadisetti@snc</sys_updated_by>
+        <sys_updated_on>2022-11-09 04:29:07</sys_updated_on>
+        <ui_id>823590dc-8545-4cae-8c31-2640bd209d84</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=485e3d00478f511086887562846d4348"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>485e3d00478f511086887562846d4348</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-11-04 04:14:27</sys_created_on>
+        <sys_id>485e3d00478f511086887562846d434b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bcone</sys_updated_by>
+        <sys_updated_on>2022-11-04 04:14:27</sys_updated_on>
+        <value>Parse RFC Response is Successful</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=485e3d00478f511086887562846d4348"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>485e3d00478f511086887562846d4348</id>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-11-04 04:14:27</sys_created_on>
+        <sys_id>c45e3d00478f511086887562846d434b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bcone</sys_updated_by>
+        <sys_updated_on>2022-11-04 04:14:27</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{512b82fe-0bf8-4172-9a73-6d898cc7c898.__action_status__.code}}=0</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>485e3d00478f511086887562846d4348</id>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-11-04 04:14:27</sys_created_on>
+        <sys_id>045e3d00478f511086887562846d434b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bcone</sys_updated_by>
+        <sys_updated_on>2022-11-04 04:14:27</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_3dec1877473a111086887562846d4312^id=485e3d00478f511086887562846d4348"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=485e3d00478f511086887562846d4348"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=485e3d00478f511086887562846d4348"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">855e3d00478f511086887562846d43b7</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Retrieve Purchase Group from SAP">3dec1877473a111086887562846d4312</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>13</order>
+        <outputs_assigned>error,status</outputs_assigned>
+        <outputs_to_assign/>
+        <outputs_to_assign/>
+        <parent_ui_id>b0179f76-2ddc-4c39-87a2-be5e84eaa0a3</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-11-04 04:14:31</sys_created_on>
+        <sys_id>4d5e3d00478f511086887562846d43b7</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
+        <sys_updated_by>rahul.tadisetti@snc</sys_updated_by>
+        <sys_updated_on>2022-11-09 04:29:07</sys_updated_on>
+        <ui_id>2f1ff459-4710-45ee-acac-0b89313a6b8d</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=4d5e3d00478f511086887562846d43b7"/>
+    <sys_element_mapping action="delete_multiple" query="id=4d5e3d00478f511086887562846d43b7"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>error</field>
+        <id>4d5e3d00478f511086887562846d43b7</id>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-11-04 04:14:31</sys_created_on>
+        <sys_id>855e3d00478f511086887562846d43ba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bcone</sys_updated_by>
+        <sys_updated_on>2022-11-04 04:14:31</sys_updated_on>
+        <table>var__m_sys_hub_flow_output_3dec1877473a111086887562846d4312</table>
+        <value>{{50b129df-1240-4fd2-98f6-32e7ef7002fa.__action_status__.message}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=4d5e3d00478f511086887562846d43b7"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=4d5e3d00478f511086887562846d43b7"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">c15e3d00478f511086887562846d43d6</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Retrieve Purchase Group from SAP">3dec1877473a111086887562846d4312</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>15</order>
+        <outputs_assigned>error,status</outputs_assigned>
+        <outputs_to_assign/>
+        <outputs_to_assign/>
+        <parent_ui_id>f6d6cb12-ff43-4079-bdfb-87755a9ef5b8</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-11-04 04:14:31</sys_created_on>
+        <sys_id>895e3d00478f511086887562846d43d6</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
+        <sys_updated_by>rahul.tadisetti@snc</sys_updated_by>
+        <sys_updated_on>2022-11-09 04:29:07</sys_updated_on>
+        <ui_id>d1f423e6-965d-41f6-bdf2-26709a47af55</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=895e3d00478f511086887562846d43d6"/>
+    <sys_element_mapping action="delete_multiple" query="id=895e3d00478f511086887562846d43d6"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>error</field>
+        <id>895e3d00478f511086887562846d43d6</id>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-11-04 04:14:31</sys_created_on>
+        <sys_id>c15e3d00478f511086887562846d43d9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bcone</sys_updated_by>
+        <sys_updated_on>2022-11-04 04:14:31</sys_updated_on>
+        <table>var__m_sys_hub_flow_output_3dec1877473a111086887562846d4312</table>
+        <value>{{512b82fe-0bf8-4172-9a73-6d898cc7c898.err}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=895e3d00478f511086887562846d43d6"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=895e3d00478f511086887562846d43d6"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">c55e3d00478f511086887562846d43b1</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Retrieve Purchase Group from SAP">3dec1877473a111086887562846d4312</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>11</order>
+        <outputs_assigned>status</outputs_assigned>
+        <outputs_to_assign/>
+        <parent_ui_id>823590dc-8545-4cae-8c31-2640bd209d84</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-11-04 04:14:31</sys_created_on>
+        <sys_id>8d5e3d00478f511086887562846d43b1</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
+        <sys_updated_by>rahul.tadisetti@snc</sys_updated_by>
+        <sys_updated_on>2022-11-09 04:29:07</sys_updated_on>
+        <ui_id>d051b6ea-17f0-4a1f-86c3-f8cbed16ea91</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=8d5e3d00478f511086887562846d43b1"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>8d5e3d00478f511086887562846d43b1</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-11-04 04:14:31</sys_created_on>
+        <sys_id>855e3d00478f511086887562846d43b4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bcone</sys_updated_by>
+        <sys_updated_on>2022-11-04 04:14:31</sys_updated_on>
+        <value>Success</value>
+        <variable display_value="Status">d70fd83b473a111086887562846d43af</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_3dec1877473a111086887562846d4312^id=8d5e3d00478f511086887562846d43b1"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=8d5e3d00478f511086887562846d43b1"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=8d5e3d00478f511086887562846d43b1"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">d45e3d00478f511086887562846d4356</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Retrieve Purchase Group from SAP">3dec1877473a111086887562846d4312</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>7</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>751ddc1b-310d-41ae-9e6f-0739d0ac2a77</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-11-04 04:14:28</sys_created_on>
+        <sys_id>9c5e3d00478f511086887562846d4356</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
+        <sys_updated_by>rahul.tadisetti@snc</sys_updated_by>
+        <sys_updated_on>2022-11-09 04:29:07</sys_updated_on>
+        <ui_id>c02ba83d-6db3-4168-adb1-76336e8ca27b</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=9c5e3d00478f511086887562846d4356"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>9c5e3d00478f511086887562846d4356</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-11-04 04:14:28</sys_created_on>
+        <sys_id>d05e3d00478f511086887562846d437f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bcone</sys_updated_by>
+        <sys_updated_on>2022-11-04 04:14:28</sys_updated_on>
+        <value>Segregate Purchasing Group Response is Successful</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=9c5e3d00478f511086887562846d4356"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>9c5e3d00478f511086887562846d4356</id>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-11-04 04:14:28</sys_created_on>
+        <sys_id>1c5e3d00478f511086887562846d4359</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bcone</sys_updated_by>
+        <sys_updated_on>2022-11-04 04:14:28</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{da3568fc-25c3-43f1-913a-ea1a27e94288.__action_status__.code}}=0</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>9c5e3d00478f511086887562846d4356</id>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-11-04 04:14:28</sys_created_on>
+        <sys_id>585e3d00478f511086887562846d4359</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bcone</sys_updated_by>
+        <sys_updated_on>2022-11-04 04:14:28</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_3dec1877473a111086887562846d4312^id=9c5e3d00478f511086887562846d4356"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=9c5e3d00478f511086887562846d4356"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=9c5e3d00478f511086887562846d4356"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">f85e3d00478f511086887562846d4385</block>
+        <comment/>
+        <connected_to>c02ba83d-6db3-4168-adb1-76336e8ca27b</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Retrieve Purchase Group from SAP">3dec1877473a111086887562846d4312</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>9</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>751ddc1b-310d-41ae-9e6f-0739d0ac2a77</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-11-04 04:14:30</sys_created_on>
+        <sys_id>b05e3d00478f511086887562846d4386</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
+        <sys_updated_by>rahul.tadisetti@snc</sys_updated_by>
+        <sys_updated_on>2022-11-09 04:29:07</sys_updated_on>
+        <ui_id>7dde83a3-1ba3-4072-bfe6-010de72d3dbc</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=b05e3d00478f511086887562846d4386"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_3dec1877473a111086887562846d4312^id=b05e3d00478f511086887562846d4386"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=b05e3d00478f511086887562846d4386"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=b05e3d00478f511086887562846d4386"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">734e3d00478f511086887562846d433a</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Retrieve Purchase Group from SAP">3dec1877473a111086887562846d4312</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-11-04 04:14:26</sys_created_on>
+        <sys_id>b34e3d00478f511086887562846d433b</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
+        <sys_updated_by>rahul.tadisetti@snc</sys_updated_by>
+        <sys_updated_on>2022-11-09 04:29:06</sys_updated_on>
+        <ui_id>417bab80-5f7f-4dcb-9eda-b6f52a3c33e4</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=b34e3d00478f511086887562846d433b"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>b34e3d00478f511086887562846d433b</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-11-04 04:14:27</sys_created_on>
+        <sys_id>805e3d00478f511086887562846d433f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bcone</sys_updated_by>
+        <sys_updated_on>2022-11-04 04:14:27</sys_updated_on>
+        <value>Execute RFC is Successful</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=b34e3d00478f511086887562846d433b"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>b34e3d00478f511086887562846d433b</id>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-11-04 04:14:27</sys_created_on>
+        <sys_id>005e3d00478f511086887562846d433f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bcone</sys_updated_by>
+        <sys_updated_on>2022-11-04 04:14:27</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{512b82fe-0bf8-4172-9a73-6d898cc7c898.status}}=success</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>b34e3d00478f511086887562846d433b</id>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-11-04 04:14:27</sys_created_on>
+        <sys_id>4c5e3d00478f511086887562846d433e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bcone</sys_updated_by>
+        <sys_updated_on>2022-11-04 04:14:27</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_3dec1877473a111086887562846d4312^id=b34e3d00478f511086887562846d433b"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=b34e3d00478f511086887562846d433b"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=b34e3d00478f511086887562846d433b"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">f45e3d00478f511086887562846d4388</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Retrieve Purchase Group from SAP">3dec1877473a111086887562846d4312</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>10</order>
+        <outputs_assigned>error,status</outputs_assigned>
+        <outputs_to_assign/>
+        <outputs_to_assign/>
+        <parent_ui_id>7dde83a3-1ba3-4072-bfe6-010de72d3dbc</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-11-04 04:14:30</sys_created_on>
+        <sys_id>bc5e3d00478f511086887562846d4388</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
+        <sys_updated_by>rahul.tadisetti@snc</sys_updated_by>
+        <sys_updated_on>2022-11-09 04:29:07</sys_updated_on>
+        <ui_id>1df1b372-52f1-4b7d-ad26-afc73d746214</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=bc5e3d00478f511086887562846d4388"/>
+    <sys_element_mapping action="delete_multiple" query="id=bc5e3d00478f511086887562846d4388"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>error</field>
+        <id>bc5e3d00478f511086887562846d4388</id>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-11-04 04:14:31</sys_created_on>
+        <sys_id>815e3d00478f511086887562846d43b1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bcone</sys_updated_by>
+        <sys_updated_on>2022-11-04 04:14:31</sys_updated_on>
+        <table>var__m_sys_hub_flow_output_3dec1877473a111086887562846d4312</table>
+        <value>{{da3568fc-25c3-43f1-913a-ea1a27e94288.__action_status__.message}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=bc5e3d00478f511086887562846d4388"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=bc5e3d00478f511086887562846d4388"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=3dec1877473a111086887562846d4312"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=3dec1877473a111086887562846d4312"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_3dec1877473a111086887562846d4312^sys_idNOT IN4f0fd83b473a111086887562846d43a8"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>service_record</element>
+        <help/>
+        <hint/>
+        <label>Service record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_3dec1877473a111086887562846d4312</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-11-03 02:39:45</sys_created_on>
+        <sys_id>4f0fd83b473a111086887562846d43a8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Primary Data Integration for SAP" source="x_snc_com_data_int">93c7f5cb875a1950fd73642d0ebb3590</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>bcone</sys_updated_by>
+        <sys_updated_on>2022-11-03 02:39:45</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_3dec1877473a111086887562846d4312"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_3dec1877473a111086887562846d4312^sys_idNOT IN0b0fd83b473a111086887562846d43ae,d30fd83b473a111086887562846d43ce"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>error</element>
+        <help/>
+        <hint/>
+        <label>Error</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_3dec1877473a111086887562846d4312</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-11-03 02:39:45</sys_created_on>
+        <sys_id>0b0fd83b473a111086887562846d43ae</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Primary Data Integration for SAP" source="x_snc_com_data_int">93c7f5cb875a1950fd73642d0ebb3590</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>bcone</sys_updated_by>
+        <sys_updated_on>2022-11-03 02:39:45</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>status</element>
+        <help/>
+        <hint/>
+        <label>Status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_3dec1877473a111086887562846d4312</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-11-03 02:39:46</sys_created_on>
+        <sys_id>d30fd83b473a111086887562846d43ce</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Primary Data Integration for SAP" source="x_snc_com_data_int">93c7f5cb875a1950fd73642d0ebb3590</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>bcone</sys_updated_by>
+        <sys_updated_on>2022-11-03 02:39:46</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_3dec1877473a111086887562846d4312^sys_idNOT IN130fd83b473a111086887562846d43ca,d70fd83b473a111086887562846d43ca"/>
+    <sys_choice field="status" table="var__m_sys_hub_flow_output_3dec1877473a111086887562846d4312">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Success</label>
+            <language>en</language>
+            <name>var__m_sys_hub_flow_output_3dec1877473a111086887562846d4312</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>bcone</sys_created_by>
+            <sys_created_on>2022-11-03 02:39:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>130fd83b473a111086887562846d43ca</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>bcone</sys_updated_by>
+            <sys_updated_on>2022-11-03 02:39:45</sys_updated_on>
+            <value>Success</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Error</label>
+            <language>en</language>
+            <name>var__m_sys_hub_flow_output_3dec1877473a111086887562846d4312</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>bcone</sys_created_by>
+            <sys_created_on>2022-11-03 02:39:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d70fd83b473a111086887562846d43ca</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>bcone</sys_updated_by>
+            <sys_updated_on>2022-11-03 02:39:45</sys_updated_on>
+            <value>Error</value>
+        </sys_choice>
+    </sys_choice>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=3dec1877473a111086887562846d4312"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=3dec1877473a111086887562846d4312^sys_idNOT INbcae3540478f511086887562846d4363"/>
+    <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_subflow_plan","id":"bcae3540478f511086887562846d4363","name":"plan","plan_signature":null}}</plan>
+        <plan_id display_value="Retrieve Purchase Group from SAP">3dec1877473a111086887562846d4312</plan_id>
+        <snapshot>7716bf2d4747991096fcb777746d4319</snapshot>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-11-04 04:15:52</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>bcae3540478f511086887562846d4363</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>rahul.tadisetti@snc</sys_updated_by>
+        <sys_updated_on>2022-11-09 04:29:06</sys_updated_on>
+    </sys_flow_subflow_plan>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>retrieve_purchase_group_from_sap</internal_name>
+        <label_cache>[{"name":"da3568fc-25c3-43f1-913a-ea1a27e94288.purchase_group.TEL_NUMBER","label":"6 - Segregate Purchasing Group Response➛Purchase Group➛Telephone no.: dialling code+number","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"da3568fc-25c3-43f1-913a-ea1a27e94288.purchase_group.TEL_EXTENS","label":"6 - Segregate Purchasing Group Response➛Purchase Group➛Telephone no.: Extension","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"da3568fc-25c3-43f1-913a-ea1a27e94288.purchase_group.LDEST","label":"6 - Segregate Purchasing Group Response➛Purchase Group➛Spool: Output device","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"da3568fc-25c3-43f1-913a-ea1a27e94288.purchase_group.TELFX","label":"6 - Segregate Purchasing Group Response➛Purchase Group➛Fax number of purchasing (buyer) group","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"da3568fc-25c3-43f1-913a-ea1a27e94288.purchase_group.SMTP_ADDR","label":"6 - Segregate Purchasing Group Response➛Purchase Group➛E-Mail Address","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"da3568fc-25c3-43f1-913a-ea1a27e94288.purchase_group.EKTEL","label":"6 - Segregate Purchasing Group Response➛Purchase Group➛Telephone number of purchasing group (buyer group)","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"da3568fc-25c3-43f1-913a-ea1a27e94288.purchase_group.EKNAM","label":"6 - Segregate Purchasing Group Response➛Purchase Group➛Description of purchasing group","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"da3568fc-25c3-43f1-913a-ea1a27e94288.purchase_group.EKGRP","label":"6 - Segregate Purchasing Group Response➛Purchase Group➛Purchasing Group","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"da3568fc-25c3-43f1-913a-ea1a27e94288.purchase_group.MANDT","label":"6 - Segregate Purchasing Group Response➛Purchase Group➛Client","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"512b82fe-0bf8-4172-9a73-6d898cc7c898.output","label":"1 - Execute RFC➛Response","reference_display":"Response","type":"dynamic_object","base_type":"dynamic_object","attributes":{"dynamic":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"ec3feb55-c033-40de-b020-c5065f65edc0"}},{"name":"512b82fe-0bf8-4172-9a73-6d898cc7c898.status","label":"1 - Execute RFC➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"success","order":0.0},{"label":"Error","value":"error","order":1.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"be013fc8-8a66-424c-a986-bc6c2270b27c"}},{"name":"512b82fe-0bf8-4172-9a73-6d898cc7c898.err","label":"1 - Execute RFC➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"8fb55a2b-1b65-43aa-b9d2-242ee67e399c"}},{"name":"512b82fe-0bf8-4172-9a73-6d898cc7c898.__action_status__","label":"1 - Execute RFC➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FD840763bca9ba9910755ead1f372a1d58","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"fbc20c78-5e59-42ca-a81b-a51060512856"}},{"name":"512b82fe-0bf8-4172-9a73-6d898cc7c898.__dont_treat_as_error__","label":"1 - Execute RFC➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"0106b8ba-b8e7-4190-952f-e25862d919f4"}},{"name":"50b129df-1240-4fd2-98f6-32e7ef7002fa.json_array","label":"3 - Parse_RFC_Response➛Json array","reference_display":"Json array","type":"array.string","base_type":"array.string","attributes":{"uiTypeLabel":"Array.String","co_type_name":"FD935c7ab1e356d5101cb326721344486c","child_label":"Json_array_obj","child_type_label":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"array.string","child_type":"string","child_name":"Json_array_obj","child_uiUniqueId":"26c7fe1f-0bf2-4ca2-b23c-223c139d7829","uiUniqueId":"4a462491-f357-4b32-a56a-6f38798c3ad3"}},{"name":"50b129df-1240-4fd2-98f6-32e7ef7002fa.__action_status__","label":"3 - Parse_RFC_Response➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FD575c7ab13c56d51028a081482d93ba6e","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"d12f1232-cf85-4627-95bf-540799baf9fd"}},{"name":"50b129df-1240-4fd2-98f6-32e7ef7002fa.__dont_treat_as_error__","label":"3 - Parse_RFC_Response➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"0b918dd2-4aeb-4bf6-b06e-83d3b4e98e93"}},{"name":"50b129df-1240-4fd2-98f6-32e7ef7002fa.total_rows","label":"3 - Parse_RFC_Response➛Total Rows","reference_display":"Total Rows","type":"integer","base_type":"integer","attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"994da5cf-82b5-42f2-88be-e297383278d4"}},{"name":"512b82fe-0bf8-4172-9a73-6d898cc7c898.__action_status__.code","label":"1 - Execute RFC➛Action Status➛Code","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","attributes":{}},{"name":"751ddc1b-310d-41ae-9e6f-0739d0ac2a77.item","label":"5 - For Each➛Json_array_obj","reference_display":"Json_array_obj","type":"string","base_type":"string","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"da3568fc-25c3-43f1-913a-ea1a27e94288.__action_status__","label":"6 - Segregate Purchasing Group Response➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FD4259b5883c4f5110c8a85a1b0dde3b66","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"921cfaf9-ab14-4c35-891d-b85afab9d34f"}},{"name":"da3568fc-25c3-43f1-913a-ea1a27e94288.purchase_group","label":"6 - Segregate Purchasing Group Response➛Purchase Group","reference_display":"Purchase Group","type":"object","base_type":"object","attributes":{"sourceId":"4015fb9d-1c6d-4869-bdf1-1b1d686c246f","uiTypeLabel":"Object","co_type_name":"FDc259b588d24f51100d9f9b468ceeb668","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"step","sourceUiUniqueId":"054c4c7f-48b8-4ba7-a418-cf4cce294d99","uiType":"object","uiUniqueId":"78c5aa13-66d8-47e7-a200-f5a10b485475"}},{"name":"da3568fc-25c3-43f1-913a-ea1a27e94288.__dont_treat_as_error__","label":"6 - Segregate Purchasing Group Response➛__dont_treat_as_error__","reference_display":"__dont_treat_as_error__","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"959265b2-551c-4236-a502-dbf9363b42e6"}},{"name":"da3568fc-25c3-43f1-913a-ea1a27e94288.__action_status__.code","label":"6 - Segregate Purchasing Group Response➛Action Status➛Code","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","attributes":{}},{"name":"3e0658ba-bfec-41bc-89df-04a8a1403e38.record","label":"8 - Create or Update Record➛Lookup Purchase Group Record","reference":"x_snc_com_data_int_lookup_purchase_group","reference_display":"Lookup Purchase Group","type":"reference","base_type":"reference","attributes":{"uiType":"document_id","uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"3e0658ba-bfec-41bc-89df-04a8a1403e38.table_name","label":"8 - Create or Update Record➛Lookup Purchase Group Table","reference":"x_snc_com_data_int_lookup_purchase_group","reference_display":"Lookup Purchase Group","type":"table_name","base_type":"table_name","attributes":{"uiType":"table_name","uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"3e0658ba-bfec-41bc-89df-04a8a1403e38.status","label":"8 - Create or Update Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Created","value":"created","order":1.0},{"label":"Updated","value":"updated","order":2.0},{"label":"Error","value":"error","order":3.0}],"attributes":{"uiType":"choice","uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"3e0658ba-bfec-41bc-89df-04a8a1403e38.error_message","label":"8 - Create or Update Record➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"3e0658ba-bfec-41bc-89df-04a8a1403e38.__action_status__","label":"8 - Create or Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"3e0658ba-bfec-41bc-89df-04a8a1403e38.__dont_treat_as_error__","label":"8 - Create or Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"da3568fc-25c3-43f1-913a-ea1a27e94288.purchase_group.Client","label":"6 - Segregate Purchasing Group Response➛Purchase Group➛Client","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"da3568fc-25c3-43f1-913a-ea1a27e94288.purchase_group.Purchasing_Group","label":"6 - Segregate Purchasing Group Response➛Purchase Group➛Purchasing Group","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"da3568fc-25c3-43f1-913a-ea1a27e94288.purchase_group.Description_of_purchasing_group","label":"6 - Segregate Purchasing Group Response➛Purchase Group➛Description of purchasing group","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"da3568fc-25c3-43f1-913a-ea1a27e94288.purchase_group.E_Mail_Address","label":"6 - Segregate Purchasing Group Response➛Purchase Group➛E-Mail Address","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"da3568fc-25c3-43f1-913a-ea1a27e94288.purchase_group.Fax_number_of_purchasing_buyer_group","label":"6 - Segregate Purchasing Group Response➛Purchase Group➛Fax number of purchasing (buyer) group","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"da3568fc-25c3-43f1-913a-ea1a27e94288.purchase_group.Spool_Output_device","label":"6 - Segregate Purchasing Group Response➛Purchase Group➛Spool: Output device","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"da3568fc-25c3-43f1-913a-ea1a27e94288.purchase_group.Telephone_no_Extension","label":"6 - Segregate Purchasing Group Response➛Purchase Group➛Telephone no.: Extension","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"da3568fc-25c3-43f1-913a-ea1a27e94288.purchase_group.Telephone_no_dialling_code_number","label":"6 - Segregate Purchasing Group Response➛Purchase Group➛Telephone no.: dialling code+number","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"da3568fc-25c3-43f1-913a-ea1a27e94288.purchase_group.Telephone_number_of_purchasing_group_buyer_group","label":"6 - Segregate Purchasing Group Response➛Purchase Group➛Telephone number of purchasing group (buyer group)","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"da3568fc-25c3-43f1-913a-ea1a27e94288.__action_status__.message","label":"6 - Segregate Purchasing Group Response➛Action Status➛Message","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"50b129df-1240-4fd2-98f6-32e7ef7002fa.__action_status__.message","label":"3 - Parse_RFC_Response➛Action Status➛Message","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}}]</label_cache>
+        <master>true</master>
+        <name>Retrieve Purchase Group from SAP</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Retrieve Purchase Group from SAP">3dec1877473a111086887562846d4312</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-11-04 04:15:41</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c29eb140478f511086887562846d439a</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>rahul.tadisetti@snc</sys_updated_by>
+        <sys_updated_on>2022-11-09 04:28:59</sys_updated_on>
+        <type>subflow</type>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=c29eb140478f511086887562846d439a"/>
+    <sys_variable_value action="delete_multiple" query="document_key=c29eb140478f511086887562846d439a"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_c29eb140478f511086887562846d439a^id=c29eb140478f511086887562846d439a"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=c29eb140478f511086887562846d439a"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=c29eb140478f511086887562846d439a"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=c29eb140478f511086887562846d439a^sys_idNOT IN0a9eb140478f511086887562846d439b"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>c29eb140478f511086887562846d439a</id>
+        <name>Retrieve Purchase Group from SAP</name>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-11-04 04:15:41</sys_created_on>
+        <sys_id>0a9eb140478f511086887562846d439b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>bcone</sys_updated_by>
+        <sys_updated_on>2022-11-04 04:15:41</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=0a9eb140478f511086887562846d439b"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=c29eb140478f511086887562846d439a^sys_idNOT INce9eb140478f511086887562846d439c"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=0adc0c0b-327b-4211-8ab3-c4946a9576c0</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>x_snc_com_data_int_integration_service_job_tracker</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>service_record</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Service record</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Retrieve Purchase Group from SAP">c29eb140478f511086887562846d439a</model>
+        <model_id>c29eb140478f511086887562846d439a</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_c29eb140478f511086887562846d439a</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="x_snc_com_data_int_integration_service_job_tracker">x_snc_com_data_int_integration_service_job_tracker</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-11-04 04:15:41</sys_created_on>
+        <sys_id>ce9eb140478f511086887562846d439c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>bcone</sys_updated_by>
+        <sys_updated_on>2022-11-04 04:15:43</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_output action="delete_multiple" query="model=c29eb140478f511086887562846d439a^sys_idNOT IN7e9eb140478f511086887562846d43ed,7e9eb140478f511086887562846d43f6"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=13e5c9b4-62b1-454a-b585-f7c6ddef1b29</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>error</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Error</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Retrieve Purchase Group from SAP">c29eb140478f511086887562846d439a</model>
+        <model_id>c29eb140478f511086887562846d439a</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_output_c29eb140478f511086887562846d439a</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-11-04 04:15:43</sys_created_on>
+        <sys_id>7e9eb140478f511086887562846d43ed</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>bcone</sys_updated_by>
+        <sys_updated_on>2022-11-04 04:15:43</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=choice,uiTypeLabel=Choice,uiUniqueId=ba442257-a687-4d32-9d4a-fbb76edfca14</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice>3</choice>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>Error</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>status</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Choice">choice</internal_type>
+        <label>Status</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Retrieve Purchase Group from SAP">c29eb140478f511086887562846d439a</model>
+        <model_id>c29eb140478f511086887562846d439a</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_output_c29eb140478f511086887562846d439a</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-11-04 04:15:44</sys_created_on>
+        <sys_id>7e9eb140478f511086887562846d43f6</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>bcone</sys_updated_by>
+        <sys_updated_on>2022-11-04 04:15:44</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=c29eb140478f511086887562846d439a"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=c29eb140478f511086887562846d439a^sys_idNOT IN239ef140478f511086887562846d436d,a79ef140478f511086887562846d4375,c4aef140478f511086887562846d437c,d39ef140478f511086887562846d4362"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Parse_RFC_Response">3e5c7ab14756d51096fcb777746d4335</action_type>
+        <action_type_parent display_value="Parse_RFC_Response">d24abebd4716d51096fcb777746d43e6</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="Retrieve Purchase Group from SAP">c29eb140478f511086887562846d439a</flow>
+        <order>3</order>
+        <parent_ui_id>417bab80-5f7f-4dcb-9eda-b6f52a3c33e4</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-11-04 04:15:46</sys_created_on>
+        <sys_id>239ef140478f511086887562846d436d</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
+        <sys_updated_by>rahul.tadisetti@snc</sys_updated_by>
+        <sys_updated_on>2022-11-09 04:28:58</sys_updated_on>
+        <ui_id>50b129df-1240-4fd2-98f6-32e7ef7002fa</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=239ef140478f511086887562846d436d"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>239ef140478f511086887562846d436d</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-11-04 04:15:46</sys_created_on>
+        <sys_id>279ef140478f511086887562846d436e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bcone</sys_updated_by>
+        <sys_updated_on>2022-11-04 04:15:46</sys_updated_on>
+        <value>,﻿</value>
+        <variable display_value="Delimiter">39b15c20472edd1086887562846d438d</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=239ef140478f511086887562846d436d"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>deli</field>
+        <id>239ef140478f511086887562846d436d</id>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-11-04 04:15:46</sys_created_on>
+        <sys_id>ef9ef140478f511086887562846d436d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bcone</sys_updated_by>
+        <sys_updated_on>2022-11-04 04:15:46</sys_updated_on>
+        <table>var__m_sys_hub_action_input_3e5c7ab14756d51096fcb777746d4335</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>json_string</field>
+        <id>239ef140478f511086887562846d436d</id>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-11-04 04:15:46</sys_created_on>
+        <sys_id>a39ef140478f511086887562846d436e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bcone</sys_updated_by>
+        <sys_updated_on>2022-11-04 04:15:46</sys_updated_on>
+        <table>var__m_sys_hub_action_input_3e5c7ab14756d51096fcb777746d4335</table>
+        <value>{{512b82fe-0bf8-4172-9a73-6d898cc7c898.output}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=239ef140478f511086887562846d436d"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=239ef140478f511086887562846d436d"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Segregate Purchasing Group Response">4d597588474f511086887562846d43f8</action_type>
+        <action_type_parent display_value="Segregate Purchasing Group Response">13889873473a111086887562846d4303</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="Retrieve Purchase Group from SAP">c29eb140478f511086887562846d439a</flow>
+        <order>6</order>
+        <parent_ui_id>751ddc1b-310d-41ae-9e6f-0739d0ac2a77</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-11-04 04:15:47</sys_created_on>
+        <sys_id>a79ef140478f511086887562846d4375</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
+        <sys_updated_by>rahul.tadisetti@snc</sys_updated_by>
+        <sys_updated_on>2022-11-09 04:28:58</sys_updated_on>
+        <ui_id>da3568fc-25c3-43f1-913a-ea1a27e94288</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=a79ef140478f511086887562846d4375"/>
+    <sys_element_mapping action="delete_multiple" query="id=a79ef140478f511086887562846d4375"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>json_string</field>
+        <id>a79ef140478f511086887562846d4375</id>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-11-04 04:15:47</sys_created_on>
+        <sys_id>e39ef140478f511086887562846d4376</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bcone</sys_updated_by>
+        <sys_updated_on>2022-11-04 04:15:47</sys_updated_on>
+        <table>var__m_sys_hub_action_input_4d597588474f511086887562846d43f8</table>
+        <value>{{751ddc1b-310d-41ae-9e6f-0739d0ac2a77.item}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=a79ef140478f511086887562846d4375"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=a79ef140478f511086887562846d4375"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create or Update Record">ab575ae253b3230034c6ddeeff7b12f1</action_type>
+        <action_type_parent display_value="Create or Update Record">e057d2e253b3230034c6ddeeff7b1261</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="Retrieve Purchase Group from SAP">c29eb140478f511086887562846d439a</flow>
+        <order>8</order>
+        <parent_ui_id>c02ba83d-6db3-4168-adb1-76336e8ca27b</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-11-04 04:15:49</sys_created_on>
+        <sys_id>c4aef140478f511086887562846d437c</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
+        <sys_updated_by>rahul.tadisetti@snc</sys_updated_by>
+        <sys_updated_on>2022-11-09 04:28:59</sys_updated_on>
+        <ui_id>3e0658ba-bfec-41bc-89df-04a8a1403e38</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=c4aef140478f511086887562846d437c"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>c4aef140478f511086887562846d437c</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-11-04 04:15:49</sys_created_on>
+        <sys_id>c8aef140478f511086887562846d437d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bcone</sys_updated_by>
+        <sys_updated_on>2022-11-04 04:15:49</sys_updated_on>
+        <value>x_snc_com_data_int_lookup_purchase_group</value>
+        <variable display_value="Table Name">27575ae253b3230034c6ddeeff7b12f4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=c4aef140478f511086887562846d437c"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>fields</field>
+        <id>c4aef140478f511086887562846d437c</id>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-11-04 04:15:49</sys_created_on>
+        <sys_id>84aef140478f511086887562846d437d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>rahul.tadisetti@snc</sys_updated_by>
+        <sys_updated_on>2022-11-06 12:19:36</sys_updated_on>
+        <table>var__m_sys_hub_action_input_ab575ae253b3230034c6ddeeff7b12f1</table>
+        <value>client={{da3568fc-25c3-43f1-913a-ea1a27e94288.purchase_group.MANDT}}^description_of_purchasing_group={{da3568fc-25c3-43f1-913a-ea1a27e94288.purchase_group.EKNAM}}^e_mail_address={{da3568fc-25c3-43f1-913a-ea1a27e94288.purchase_group.SMTP_ADDR}}^fax_number_of_purchasing_buyer_group={{da3568fc-25c3-43f1-913a-ea1a27e94288.purchase_group.TELFX}}^purchasing_group={{da3568fc-25c3-43f1-913a-ea1a27e94288.purchase_group.EKGRP}}^spool_output_device={{da3568fc-25c3-43f1-913a-ea1a27e94288.purchase_group.LDEST}}^telephone_no_extension={{da3568fc-25c3-43f1-913a-ea1a27e94288.purchase_group.TEL_EXTENS}}^telephone_no_dialling_code_number={{da3568fc-25c3-43f1-913a-ea1a27e94288.purchase_group.TEL_NUMBER}}^telephone_number_of_purchasing_group_buyer_group={{da3568fc-25c3-43f1-913a-ea1a27e94288.purchase_group.EKTEL}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>c4aef140478f511086887562846d437c</id>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-11-04 04:15:49</sys_created_on>
+        <sys_id>48aef140478f511086887562846d437d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bcone</sys_updated_by>
+        <sys_updated_on>2022-11-04 04:15:49</sys_updated_on>
+        <table>var__m_sys_hub_action_input_ab575ae253b3230034c6ddeeff7b12f1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=c4aef140478f511086887562846d437c"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=c4aef140478f511086887562846d437c"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Execute RFC">878053f3c7043010678d208c95c26025</action_type>
+        <action_type_parent display_value="Execute RFC">006b07ffc7c03010678d208c95c26001</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="Retrieve Purchase Group from SAP">c29eb140478f511086887562846d439a</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-11-04 04:15:46</sys_created_on>
+        <sys_id>d39ef140478f511086887562846d4362</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
+        <sys_updated_by>rahul.tadisetti@snc</sys_updated_by>
+        <sys_updated_on>2022-11-09 04:28:58</sys_updated_on>
+        <ui_id>512b82fe-0bf8-4172-9a73-6d898cc7c898</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=d39ef140478f511086887562846d4362"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>d39ef140478f511086887562846d4362</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-11-04 04:15:46</sys_created_on>
+        <sys_id>179ef140478f511086887562846d4364</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>rahul.tadisetti@snc</sys_updated_by>
+        <sys_updated_on>2022-11-06 12:19:36</sys_updated_on>
+        <value>{"children":[{"children":[{"name":"TYPE","label":"TYPE","type":"string"},{"name":"ID","label":"ID","type":"string"},{"name":"NUMBER","label":"NUMBER","type":"string"},{"name":"MESSAGE","label":"MESSAGE","type":"string"},{"name":"LOG_NO","label":"LOG_NO","type":"string"},{"name":"LOG_MSG_NO","label":"LOG_MSG_NO","type":"string"},{"name":"MESSAGE_V1","label":"MESSAGE_V1","type":"string"},{"name":"MESSAGE_V2","label":"MESSAGE_V2","type":"string"},{"name":"MESSAGE_V3","label":"MESSAGE_V3","type":"string"},{"name":"MESSAGE_V4","label":"MESSAGE_V4","type":"string"},{"name":"PARAMETER","label":"PARAMETER","type":"string"},{"name":"ROW","label":"ROW","type":"integer"},{"name":"FIELD","label":"FIELD","type":"string"},{"name":"SYSTEM","label":"SYSTEM","type":"string"}],"name":"ET_RETURN","attributes":{"child_type":"object"},"label":"Return table [ ET_RETURN ]","type":"array.object"},{"children":[{"name":"WA","label":"Application data [ WA ]","type":"string"},{"name":"WA1","label":"Application data [ WA1 ]","type":"string"},{"name":"WA2","label":"Application data [ WA2 ]","type":"string"},{"name":"WA3","label":"Application data [ WA3 ]","type":"string"},{"name":"WA4","label":"Application data [ WA4 ]","type":"string"},{"name":"WA5","label":"Application data [ WA5 ]","type":"string"},{"name":"WA6","label":"Application data [ WA6 ]","type":"string"},{"name":"WA7","label":"Application data [ WA7 ]","type":"string"},{"name":"WA8","label":"Application data [ WA8 ]","type":"string"},{"name":"WA9","label":"Application data [ WA9 ]","type":"string"},{"name":"WA10","label":"Application data [ WA10 ]","type":"string"},{"name":"WA11","label":"Application data [ WA11 ]","type":"string"},{"name":"WA12","label":"Application data [ WA12 ]","type":"string"},{"name":"WA13","label":"Application data [ WA13 ]","type":"string"},{"name":"WA14","label":"Application data [ WA14 ]","type":"string"},{"name":"WA15","label":"Application data [ WA15 ]","type":"string"},{"name":"WA16","label":"Application data [ WA16 ]","type":"string"},{"name":"WA17","label":"Application data [ WA17 ]","type":"string"},{"name":"WA18","label":"Application data [ WA18 ]","type":"string"},{"name":"WA19","label":"Application data [ WA19 ]","type":"string"},{"name":"WA20","label":"Application data [ WA20 ]","type":"string"},{"name":"WA21","label":"Application data [ WA21 ]","type":"string"},{"name":"WA22","label":"Application data [ WA22 ]","type":"string"},{"name":"WA23","label":"Application data [ WA23 ]","type":"string"},{"name":"WA24","label":"Application data [ WA24 ]","type":"string"},{"name":"WA25","label":"Application data [ WA25 ]","type":"string"},{"name":"WA26","label":"Application data [ WA26 ]","type":"string"},{"name":"WA27","label":"Application data [ WA27 ]","type":"string"},{"name":"WA28","label":"Application data [ WA28 ]","type":"string"},{"name":"WA29","label":"Application data [ WA29 ]","type":"string"},{"name":"WA30","label":"Application data [ WA30 ]","type":"string"}],"name":"IT_DATA","attributes":{"child_type":"object"},"label":"Search Result Format: 8000-Byte Field [ IT_DATA ]","type":"array.object"},{"children":[{"name":"FIELDNAME","label":"Field Name","type":"string"},{"name":"OFFSET","label":"Offset of a field","type":"string"},{"name":"LENGTH","label":"No of Characters","type":"string"},{"name":"TYPE","label":"ABAP type","type":"string"},{"name":"FIELDTEXT","label":"Short Description","type":"string"}],"name":"IT_FIELDS","attributes":{"child_type":"object"},"label":"RFC Table Read: Description of Fields to Retrieve [ IT_FIELDS ]","type":"array.object"},{"children":[{"name":"TEXT","label":"Text field","type":"string"}],"name":"IT_OPTIONS","attributes":{"child_type":"object"},"label":"RFC Table Read: Select Options / WHERE Clause [ IT_OPTIONS ]","type":"array.object"}],"type":"object","attributes":{"dynamic":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"ec3feb55-c033-40de-b020-c5065f65edc0"}}</value>
+        <variable display_value="Response">078053f3c7043010678d208c95c26045</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>d39ef140478f511086887562846d4362</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-11-04 04:15:46</sys_created_on>
+        <sys_id>5f9ef140478f511086887562846d4364</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>rahul.tadisetti@snc</sys_updated_by>
+        <sys_updated_on>2022-11-09 04:28:57</sys_updated_on>
+        <value>IV_QUERY_TABLE=T024^IV_DELIMITER=,</value>
+        <variable display_value="Import and Changing Tab Inputs">878053f3c7043010678d208c95c26037</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>d39ef140478f511086887562846d4362</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-11-04 04:15:46</sys_created_on>
+        <sys_id>9b9ef140478f511086887562846d4364</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>rahul.tadisetti@snc</sys_updated_by>
+        <sys_updated_on>2022-11-09 04:28:57</sys_updated_on>
+        <value>fb2b979947cfd51086887562846d435f</value>
+        <variable display_value="RFC">478053f3c7043010678d208c95c2602f</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>d39ef140478f511086887562846d4362</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-11-04 04:15:46</sys_created_on>
+        <sys_id>d79ef140478f511086887562846d4364</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bcone</sys_updated_by>
+        <sys_updated_on>2022-11-04 04:15:46</sys_updated_on>
+        <value>d0578871dbad8010ea4494d9db9619d9</value>
+        <variable display_value="Connection Alias">4b8053f3c7043010678d208c95c26026</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_input_878053f3c7043010678d208c95c26025^id=d39ef140478f511086887562846d4362"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=d39ef140478f511086887562846d4362"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=d39ef140478f511086887562846d4362"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=c29eb140478f511086887562846d439a"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=c29eb140478f511086887562846d439a^sys_idNOT IN079ef140478f511086887562846d4318,0b9ef140478f511086887562846d4314,439ef140478f511086887562846d4309,439ef140478f511086887562846d4338,479ef140478f511086887562846d433b,839ef140478f511086887562846d4311,839ef140478f511086887562846d4334,839ef140478f511086887562846d433e,879ef140478f511086887562846d430d,879ef140478f511086887562846d4341,c39ef140478f511086887562846d4344"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">f85e3d00478f511086887562846d4385</block>
+        <comment/>
+        <connected_to>c02ba83d-6db3-4168-adb1-76336e8ca27b</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Retrieve Purchase Group from SAP">c29eb140478f511086887562846d439a</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>9</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>751ddc1b-310d-41ae-9e6f-0739d0ac2a77</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-11-04 04:15:45</sys_created_on>
+        <sys_id>079ef140478f511086887562846d4318</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
+        <sys_updated_by>rahul.tadisetti@snc</sys_updated_by>
+        <sys_updated_on>2022-11-09 04:28:59</sys_updated_on>
+        <ui_id>7dde83a3-1ba3-4072-bfe6-010de72d3dbc</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=079ef140478f511086887562846d4318"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_c29eb140478f511086887562846d439a^id=079ef140478f511086887562846d4318"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=079ef140478f511086887562846d4318"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=079ef140478f511086887562846d4318"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">d45e3d00478f511086887562846d4356</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Retrieve Purchase Group from SAP">c29eb140478f511086887562846d439a</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>7</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>751ddc1b-310d-41ae-9e6f-0739d0ac2a77</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-11-04 04:15:45</sys_created_on>
+        <sys_id>0b9ef140478f511086887562846d4314</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
+        <sys_updated_by>rahul.tadisetti@snc</sys_updated_by>
+        <sys_updated_on>2022-11-09 04:28:59</sys_updated_on>
+        <ui_id>c02ba83d-6db3-4168-adb1-76336e8ca27b</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=0b9ef140478f511086887562846d4314"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>0b9ef140478f511086887562846d4314</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-11-04 04:15:45</sys_created_on>
+        <sys_id>0b9ef140478f511086887562846d4317</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bcone</sys_updated_by>
+        <sys_updated_on>2022-11-04 04:15:45</sys_updated_on>
+        <value>Segregate Purchasing Group Response is Successful</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=0b9ef140478f511086887562846d4314"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>0b9ef140478f511086887562846d4314</id>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-11-04 04:15:45</sys_created_on>
+        <sys_id>879ef140478f511086887562846d4317</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bcone</sys_updated_by>
+        <sys_updated_on>2022-11-04 04:15:45</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{da3568fc-25c3-43f1-913a-ea1a27e94288.__action_status__.code}}=0</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>0b9ef140478f511086887562846d4314</id>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-11-04 04:15:45</sys_created_on>
+        <sys_id>c39ef140478f511086887562846d4317</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bcone</sys_updated_by>
+        <sys_updated_on>2022-11-04 04:15:45</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_c29eb140478f511086887562846d439a^id=0b9ef140478f511086887562846d4314"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=0b9ef140478f511086887562846d4314"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=0b9ef140478f511086887562846d4314"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">734e3d00478f511086887562846d433a</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Retrieve Purchase Group from SAP">c29eb140478f511086887562846d439a</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-11-04 04:15:44</sys_created_on>
+        <sys_id>439ef140478f511086887562846d4309</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
+        <sys_updated_by>rahul.tadisetti@snc</sys_updated_by>
+        <sys_updated_on>2022-11-09 04:28:58</sys_updated_on>
+        <ui_id>417bab80-5f7f-4dcb-9eda-b6f52a3c33e4</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=439ef140478f511086887562846d4309"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>439ef140478f511086887562846d4309</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-11-04 04:15:44</sys_created_on>
+        <sys_id>8b9ef140478f511086887562846d430c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bcone</sys_updated_by>
+        <sys_updated_on>2022-11-04 04:15:44</sys_updated_on>
+        <value>Execute RFC is Successful</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=439ef140478f511086887562846d4309"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>439ef140478f511086887562846d4309</id>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-11-04 04:15:44</sys_created_on>
+        <sys_id>0b9ef140478f511086887562846d430c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bcone</sys_updated_by>
+        <sys_updated_on>2022-11-04 04:15:44</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{512b82fe-0bf8-4172-9a73-6d898cc7c898.status}}=success</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>439ef140478f511086887562846d4309</id>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-11-04 04:15:44</sys_created_on>
+        <sys_id>479ef140478f511086887562846d430c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bcone</sys_updated_by>
+        <sys_updated_on>2022-11-04 04:15:44</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_c29eb140478f511086887562846d439a^id=439ef140478f511086887562846d4309"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=439ef140478f511086887562846d4309"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=439ef140478f511086887562846d4309"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">c55e3d00478f511086887562846d43b1</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Retrieve Purchase Group from SAP">c29eb140478f511086887562846d439a</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>11</order>
+        <outputs_assigned>status</outputs_assigned>
+        <outputs_to_assign/>
+        <parent_ui_id>823590dc-8545-4cae-8c31-2640bd209d84</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-11-04 04:15:45</sys_created_on>
+        <sys_id>439ef140478f511086887562846d4338</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
+        <sys_updated_by>rahul.tadisetti@snc</sys_updated_by>
+        <sys_updated_on>2022-11-09 04:28:59</sys_updated_on>
+        <ui_id>d051b6ea-17f0-4a1f-86c3-f8cbed16ea91</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=439ef140478f511086887562846d4338"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>439ef140478f511086887562846d4338</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-11-04 04:15:45</sys_created_on>
+        <sys_id>4b9ef140478f511086887562846d433a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bcone</sys_updated_by>
+        <sys_updated_on>2022-11-04 04:15:45</sys_updated_on>
+        <value>Success</value>
+        <variable display_value="Status">7e9eb140478f511086887562846d43f6</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_c29eb140478f511086887562846d439a^id=439ef140478f511086887562846d4338"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=439ef140478f511086887562846d4338"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=439ef140478f511086887562846d4338"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">895e3d00478f511086887562846d43b4</block>
+        <comment/>
+        <connected_to>823590dc-8545-4cae-8c31-2640bd209d84</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Retrieve Purchase Group from SAP">c29eb140478f511086887562846d439a</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>12</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>417bab80-5f7f-4dcb-9eda-b6f52a3c33e4</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-11-04 04:15:45</sys_created_on>
+        <sys_id>479ef140478f511086887562846d433b</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
+        <sys_updated_by>rahul.tadisetti@snc</sys_updated_by>
+        <sys_updated_on>2022-11-09 04:28:59</sys_updated_on>
+        <ui_id>b0179f76-2ddc-4c39-87a2-be5e84eaa0a3</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=479ef140478f511086887562846d433b"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_c29eb140478f511086887562846d439a^id=479ef140478f511086887562846d433b"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=479ef140478f511086887562846d433b"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=479ef140478f511086887562846d433b"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">4c5e3d00478f511086887562846d434b</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Retrieve Purchase Group from SAP">c29eb140478f511086887562846d439a</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>823590dc-8545-4cae-8c31-2640bd209d84</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-11-04 04:15:44</sys_created_on>
+        <sys_id>839ef140478f511086887562846d4311</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
+        <sys_updated_by>rahul.tadisetti@snc</sys_updated_by>
+        <sys_updated_on>2022-11-09 04:28:58</sys_updated_on>
+        <ui_id>751ddc1b-310d-41ae-9e6f-0739d0ac2a77</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=839ef140478f511086887562846d4311"/>
+    <sys_element_mapping action="delete_multiple" query="id=839ef140478f511086887562846d4311"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>839ef140478f511086887562846d4311</id>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-11-04 04:15:45</sys_created_on>
+        <sys_id>4f9ef140478f511086887562846d4313</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bcone</sys_updated_by>
+        <sys_updated_on>2022-11-04 04:15:45</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{50b129df-1240-4fd2-98f6-32e7ef7002fa.json_array}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_c29eb140478f511086887562846d439a^id=839ef140478f511086887562846d4311"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=839ef140478f511086887562846d4311"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=839ef140478f511086887562846d4311"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">f45e3d00478f511086887562846d4388</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Retrieve Purchase Group from SAP">c29eb140478f511086887562846d439a</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>10</order>
+        <outputs_assigned>error,status</outputs_assigned>
+        <outputs_to_assign/>
+        <outputs_to_assign/>
+        <parent_ui_id>7dde83a3-1ba3-4072-bfe6-010de72d3dbc</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-11-04 04:15:45</sys_created_on>
+        <sys_id>839ef140478f511086887562846d4334</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
+        <sys_updated_by>rahul.tadisetti@snc</sys_updated_by>
+        <sys_updated_on>2022-11-09 04:28:59</sys_updated_on>
+        <ui_id>1df1b372-52f1-4b7d-ad26-afc73d746214</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=839ef140478f511086887562846d4334"/>
+    <sys_element_mapping action="delete_multiple" query="id=839ef140478f511086887562846d4334"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>error</field>
+        <id>839ef140478f511086887562846d4334</id>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-11-04 04:15:45</sys_created_on>
+        <sys_id>079ef140478f511086887562846d4337</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bcone</sys_updated_by>
+        <sys_updated_on>2022-11-04 04:15:45</sys_updated_on>
+        <table>var__m_sys_hub_flow_output_c29eb140478f511086887562846d439a</table>
+        <value>{{da3568fc-25c3-43f1-913a-ea1a27e94288.__action_status__.message}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=839ef140478f511086887562846d4334"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=839ef140478f511086887562846d4334"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">855e3d00478f511086887562846d43b7</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Retrieve Purchase Group from SAP">c29eb140478f511086887562846d439a</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>13</order>
+        <outputs_assigned>error,status</outputs_assigned>
+        <outputs_to_assign/>
+        <outputs_to_assign/>
+        <parent_ui_id>b0179f76-2ddc-4c39-87a2-be5e84eaa0a3</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-11-04 04:15:45</sys_created_on>
+        <sys_id>839ef140478f511086887562846d433e</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
+        <sys_updated_by>rahul.tadisetti@snc</sys_updated_by>
+        <sys_updated_on>2022-11-09 04:28:59</sys_updated_on>
+        <ui_id>2f1ff459-4710-45ee-acac-0b89313a6b8d</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=839ef140478f511086887562846d433e"/>
+    <sys_element_mapping action="delete_multiple" query="id=839ef140478f511086887562846d433e"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>error</field>
+        <id>839ef140478f511086887562846d433e</id>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-11-04 04:15:45</sys_created_on>
+        <sys_id>cb9ef140478f511086887562846d4340</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bcone</sys_updated_by>
+        <sys_updated_on>2022-11-04 04:15:45</sys_updated_on>
+        <table>var__m_sys_hub_flow_output_c29eb140478f511086887562846d439a</table>
+        <value>{{50b129df-1240-4fd2-98f6-32e7ef7002fa.__action_status__.message}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=839ef140478f511086887562846d433e"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=839ef140478f511086887562846d433e"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">805e3d00478f511086887562846d4348</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Retrieve Purchase Group from SAP">c29eb140478f511086887562846d439a</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>417bab80-5f7f-4dcb-9eda-b6f52a3c33e4</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-11-04 04:15:44</sys_created_on>
+        <sys_id>879ef140478f511086887562846d430d</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
+        <sys_updated_by>rahul.tadisetti@snc</sys_updated_by>
+        <sys_updated_on>2022-11-09 04:28:58</sys_updated_on>
+        <ui_id>823590dc-8545-4cae-8c31-2640bd209d84</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=879ef140478f511086887562846d430d"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>879ef140478f511086887562846d430d</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-11-04 04:15:44</sys_created_on>
+        <sys_id>879ef140478f511086887562846d4310</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bcone</sys_updated_by>
+        <sys_updated_on>2022-11-04 04:15:44</sys_updated_on>
+        <value>Parse RFC Response is Successful</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=879ef140478f511086887562846d430d"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>879ef140478f511086887562846d430d</id>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-11-04 04:15:44</sys_created_on>
+        <sys_id>079ef140478f511086887562846d4310</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bcone</sys_updated_by>
+        <sys_updated_on>2022-11-04 04:15:44</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{512b82fe-0bf8-4172-9a73-6d898cc7c898.__action_status__.code}}=0</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>879ef140478f511086887562846d430d</id>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-11-04 04:15:44</sys_created_on>
+        <sys_id>439ef140478f511086887562846d4310</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bcone</sys_updated_by>
+        <sys_updated_on>2022-11-04 04:15:44</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_c29eb140478f511086887562846d439a^id=879ef140478f511086887562846d430d"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=879ef140478f511086887562846d430d"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=879ef140478f511086887562846d430d"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">495e3d00478f511086887562846d43ba</block>
+        <comment/>
+        <connected_to>417bab80-5f7f-4dcb-9eda-b6f52a3c33e4</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Retrieve Purchase Group from SAP">c29eb140478f511086887562846d439a</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>14</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-11-04 04:15:45</sys_created_on>
+        <sys_id>879ef140478f511086887562846d4341</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
+        <sys_updated_by>rahul.tadisetti@snc</sys_updated_by>
+        <sys_updated_on>2022-11-09 04:28:59</sys_updated_on>
+        <ui_id>f6d6cb12-ff43-4079-bdfb-87755a9ef5b8</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=879ef140478f511086887562846d4341"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_c29eb140478f511086887562846d439a^id=879ef140478f511086887562846d4341"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=879ef140478f511086887562846d4341"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=879ef140478f511086887562846d4341"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">c15e3d00478f511086887562846d43d6</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Retrieve Purchase Group from SAP">c29eb140478f511086887562846d439a</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>15</order>
+        <outputs_assigned>error,status</outputs_assigned>
+        <outputs_to_assign/>
+        <outputs_to_assign/>
+        <parent_ui_id>f6d6cb12-ff43-4079-bdfb-87755a9ef5b8</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-11-04 04:15:45</sys_created_on>
+        <sys_id>c39ef140478f511086887562846d4344</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
+        <sys_updated_by>rahul.tadisetti@snc</sys_updated_by>
+        <sys_updated_on>2022-11-09 04:28:59</sys_updated_on>
+        <ui_id>d1f423e6-965d-41f6-bdf2-26709a47af55</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=c39ef140478f511086887562846d4344"/>
+    <sys_element_mapping action="delete_multiple" query="id=c39ef140478f511086887562846d4344"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>error</field>
+        <id>c39ef140478f511086887562846d4344</id>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-11-04 04:15:45</sys_created_on>
+        <sys_id>0f9ef140478f511086887562846d4346</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bcone</sys_updated_by>
+        <sys_updated_on>2022-11-04 04:15:45</sys_updated_on>
+        <table>var__m_sys_hub_flow_output_c29eb140478f511086887562846d439a</table>
+        <value>{{512b82fe-0bf8-4172-9a73-6d898cc7c898.err}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=c39ef140478f511086887562846d4344"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=c39ef140478f511086887562846d4344"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=c29eb140478f511086887562846d439a"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=c29eb140478f511086887562846d439a"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_c29eb140478f511086887562846d439a^sys_idNOT IN729eb140478f511086887562846d43e9"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>service_record</element>
+        <help/>
+        <hint/>
+        <label>Service record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_c29eb140478f511086887562846d439a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-11-04 04:15:43</sys_created_on>
+        <sys_id>729eb140478f511086887562846d43e9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Primary Data Integration for SAP" source="x_snc_com_data_int">93c7f5cb875a1950fd73642d0ebb3590</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>bcone</sys_updated_by>
+        <sys_updated_on>2022-11-04 04:15:43</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_c29eb140478f511086887562846d439a"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_c29eb140478f511086887562846d439a^sys_idNOT IN369eb140478f511086887562846d43f3,7a9ef140478f511086887562846d4302"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>error</element>
+        <help/>
+        <hint/>
+        <label>Error</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_c29eb140478f511086887562846d439a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-11-04 04:15:44</sys_created_on>
+        <sys_id>369eb140478f511086887562846d43f3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Primary Data Integration for SAP" source="x_snc_com_data_int">93c7f5cb875a1950fd73642d0ebb3590</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>bcone</sys_updated_by>
+        <sys_updated_on>2022-11-04 04:15:44</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>status</element>
+        <help/>
+        <hint/>
+        <label>Status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_c29eb140478f511086887562846d439a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-11-04 04:15:44</sys_created_on>
+        <sys_id>7a9ef140478f511086887562846d4302</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Primary Data Integration for SAP" source="x_snc_com_data_int">93c7f5cb875a1950fd73642d0ebb3590</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>bcone</sys_updated_by>
+        <sys_updated_on>2022-11-04 04:15:44</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_c29eb140478f511086887562846d439a^sys_idNOT INb29eb140478f511086887562846d43fa,b29eb140478f511086887562846d43fc"/>
+    <sys_choice field="status" table="var__m_sys_hub_flow_output_c29eb140478f511086887562846d439a">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Success</label>
+            <language>en</language>
+            <name>var__m_sys_hub_flow_output_c29eb140478f511086887562846d439a</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>bcone</sys_created_by>
+            <sys_created_on>2022-11-04 04:15:44</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b29eb140478f511086887562846d43fa</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>bcone</sys_updated_by>
+            <sys_updated_on>2022-11-04 04:15:44</sys_updated_on>
+            <value>Success</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Error</label>
+            <language>en</language>
+            <name>var__m_sys_hub_flow_output_c29eb140478f511086887562846d439a</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>bcone</sys_created_by>
+            <sys_created_on>2022-11-04 04:15:44</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b29eb140478f511086887562846d43fc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>bcone</sys_updated_by>
+            <sys_updated_on>2022-11-04 04:15:44</sys_updated_on>
+            <value>Error</value>
+        </sys_choice>
+    </sys_choice>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>3dec1877473a111086887562846d4312</sys_id>
+        <latest_snapshot>c29eb140478f511086887562846d439a</latest_snapshot>
+        <compiler_build>glide-sandiego-12-22-2021__patch7a-09-20-2022_10-04-2022_1309.zip</compiler_build>
+    </sys_hub_flow>
+</record_update>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Integration Source(not required)" max_length="40" name="x_snc_com_data_int_integration_source" sizeclass="0" type="collection">
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" default="javascript:(((typeof parent == 'object') &amp;&amp; parent != null &amp;&amp; parent.getTableName() == 'sys_app') ? parent.sys_id : gs.getCurrentApplicationId())" label="Application" max_length="32" name="application" reference="sys_scope" type="reference"/>
+        <element label="Name" max_length="40" name="name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Properties" max_length="4000" name="properties" type="simple_name_values"/>
+        <index name="index">
+            <element name="application"/>
+        </index>
+    </element>
+</database>

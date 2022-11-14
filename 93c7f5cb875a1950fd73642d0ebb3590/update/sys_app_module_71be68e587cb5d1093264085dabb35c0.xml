@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
     <sys_app_module action="INSERT_OR_UPDATE">
         <active>true</active>
-        <application display_value="Vendor Master Staging">1d353bc087ee95103844b8c4dabb35b5</application>
+        <application display_value="">1d353bc087ee95103844b8c4dabb35b5</application>
         <assessment/>
         <device_type/>
         <filter/>

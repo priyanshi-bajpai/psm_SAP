@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="mode" table="var__m_sys_hub_action_input_420e2c3487eadd50fd73642d0ebb35fe" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>mode</element>
+            <name>var__m_sys_hub_action_input_420e2c3487eadd50fd73642d0ebb35fe</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>Mayank</sys_created_by>
+            <sys_created_on>2022-10-13 09:58:49</sys_created_on>
+            <sys_id>c22afdcd47e2155096fcb777746d43ce</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>mode</sys_name>
+            <sys_package display_value="Primary Data Integration for SAP" source="x_snc_com_data_int">93c7f5cb875a1950fd73642d0ebb3590</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
+            <sys_update_name>sys_choice_var__m_sys_hub_action_input_420e2c3487eadd50fd73642d0ebb35fe_mode</sys_update_name>
+            <sys_updated_by>Mayank</sys_updated_by>
+            <sys_updated_on>2022-10-13 09:58:49</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>mode</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Asynchronous</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_420e2c3487eadd50fd73642d0ebb35fe</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>Mayank</sys_created_by>
+            <sys_created_on>2022-10-12 09:47:47</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>960e6c3487eadd50fd73642d0ebb3518</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Mayank</sys_updated_by>
+            <sys_updated_on>2022-10-12 09:47:47</sys_updated_on>
+            <value>asynchronous</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>mode</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Synchronous</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_420e2c3487eadd50fd73642d0ebb35fe</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>Mayank</sys_created_by>
+            <sys_created_on>2022-10-12 09:47:47</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5e0e6c3487eadd50fd73642d0ebb3518</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Mayank</sys_updated_by>
+            <sys_updated_on>2022-10-12 09:47:47</sys_updated_on>
+            <value>synchronous</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="indicator_updating_sd_in_cash_mgmt_forecast_activated" label="Indicator: Updating SD in Cash Mgmt/Forecast activated?" language="en" table="x_snc_com_data_int_look_up_legal_entity">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>indicator_updating_sd_in_cash_mgmt_forecast_activated</element>
+            <help/>
+            <hint/>
+            <label>Indicator: Updating SD in Cash Mgmt/Forecast activated?</label>
+            <language>en</language>
+            <name>x_snc_com_data_int_look_up_legal_entity</name>
+            <plural>Indicator: Updating SD in Cash Mgmt/Forecast activated?s</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>akash</sys_created_by>
+            <sys_created_on>2022-10-20 10:56:13</sys_created_on>
+            <sys_id>f26a825b47ae151086887562846d43f4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Indicator: Updating SD in Cash Mgmt/Forecast activated?</sys_name>
+            <sys_package display_value="Primary Data Integration for SAP" source="x_snc_com_data_int">93c7f5cb875a1950fd73642d0ebb3590</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
+            <sys_update_name>sys_documentation_x_snc_com_data_int_look_up_legal_entity_indicator_updating_sd_in_cash_mgmt_forecast_activated_en</sys_update_name>
+            <sys_updated_by>akash</sys_updated_by>
+            <sys_updated_on>2022-10-20 10:56:13</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="general_assignments_of_application_objects" label="General assignments of application objects" language="en" table="x_snc_com_data_int_cost_center_staging_table_sap_ecc">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>general_assignments_of_application_objects</element>
+            <help/>
+            <hint/>
+            <label>General assignments of application objects</label>
+            <language>en</language>
+            <name>x_snc_com_data_int_cost_center_staging_table_sap_ecc</name>
+            <plural>General assignments of application objects</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>Swati</sys_created_by>
+            <sys_created_on>2022-10-26 11:07:59</sys_created_on>
+            <sys_id>79a6c51547721d1086887562846d43e9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>General assignments of application objects</sys_name>
+            <sys_package display_value="Primary Data Integration for SAP" source="x_snc_com_data_int">93c7f5cb875a1950fd73642d0ebb3590</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
+            <sys_update_name>sys_documentation_x_snc_com_data_int_cost_center_staging_table_sap_ecc_general_assignments_of_application_objects_en</sys_update_name>
+            <sys_updated_by>Swati</sys_updated_by>
+            <sys_updated_on>2022-10-26 11:07:59</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

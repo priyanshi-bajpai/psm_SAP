@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="primary_sap_currency_code_for_iso_code" label="Primary SAP Currency Code for ISO Code" language="en" table="x_snc_com_data_int_currency_code_staging">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>primary_sap_currency_code_for_iso_code</element>
+            <help/>
+            <hint/>
+            <label>Primary SAP Currency Code for ISO Code</label>
+            <language>en</language>
+            <name>x_snc_com_data_int_currency_code_staging</name>
+            <plural>Primary SAP Currency Code for ISO Codes</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>shreenag.araga</sys_created_by>
+            <sys_created_on>2022-10-11 09:49:28</sys_created_on>
+            <sys_id>a9d4a31447e6515096fcb777746d43e5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Primary SAP Currency Code for ISO Code</sys_name>
+            <sys_package display_value="Primary Data Integration for SAP" source="x_snc_com_data_int">93c7f5cb875a1950fd73642d0ebb3590</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
+            <sys_update_name>sys_documentation_x_snc_com_data_int_currency_code_staging_primary_sap_currency_code_for_iso_code_en</sys_update_name>
+            <sys_updated_by>shreenag.araga</sys_updated_by>
+            <sys_updated_on>2022-10-11 09:49:28</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

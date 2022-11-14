@@ -9,11 +9,11 @@
         <sys_package display_value="Primary Data Integration for SAP" source="x_snc_com_data_int">93c7f5cb875a1950fd73642d0ebb3590</sys_package>
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
-        <sys_security_acl display_value="x_snc_com_data_int_integration_service">b410102c87e69d50fd73642d0ebb35a7</sys_security_acl>
+        <sys_security_acl display_value="Primary Data Integration for SAP">b410102c87e69d50fd73642d0ebb35a7</sys_security_acl>
         <sys_update_name>sys_security_acl_role_fc10102c87e69d50fd73642d0ebb35aa</sys_update_name>
         <sys_updated_by>Mayank</sys_updated_by>
         <sys_updated_on>2022-10-11 12:58:23</sys_updated_on>
-        <sys_user_role display_value="x_snc_com_data_int.integration_service_user" name="x_snc_com_data_int.integration_service_user">e810102c87e69d50fd73642d0ebb3556</sys_user_role>
+        <sys_user_role display_value="Primary Data Integration for SAP" name="x_snc_com_data_int.integration_service_user">e810102c87e69d50fd73642d0ebb3556</sys_user_role>
         <transaction_id/>
     </sys_security_acl_role>
 </record_update>

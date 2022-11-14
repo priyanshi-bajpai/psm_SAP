@@ -25,7 +25,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>12bf78fc872edd50fd73642d0ebb3567</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>Transform Import Set</sys_name>
         <sys_overrides/>
         <sys_package display_value="Primary Data Integration for SAP" source="x_snc_com_data_int">93c7f5cb875a1950fd73642d0ebb3590</sys_package>
@@ -33,7 +33,7 @@
         <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_12bf78fc872edd50fd73642d0ebb3567</sys_update_name>
         <sys_updated_by>Mayank</sys_updated_by>
-        <sys_updated_on>2022-10-12 11:05:51</sys_updated_on>
+        <sys_updated_on>2022-10-13 09:58:43</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -128,30 +128,6 @@
         <variable display_value="MID Application">f5e56d79b3101300176b051a16a8dce4</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=aebf78fc872edd50fd73642d0ebb357f"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>application</field>
-        <id>aebf78fc872edd50fd73642d0ebb357f</id>
-        <sys_created_by>Mayank</sys_created_by>
-        <sys_created_on>2022-10-12 11:05:05</sys_created_on>
-        <sys_id>b2bf78fc872edd50fd73642d0ebb358c</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>Mayank</sys_updated_by>
-        <sys_updated_on>2022-10-12 11:05:05</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>script</field>
-        <id>aebf78fc872edd50fd73642d0ebb357f</id>
-        <sys_created_by>Mayank</sys_created_by>
-        <sys_created_on>2022-10-12 11:05:05</sys_created_on>
-        <sys_id>76bf78fc872edd50fd73642d0ebb358c</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>Mayank</sys_updated_by>
-        <sys_updated_on>2022-10-12 11:05:05</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
-        <value/>
-    </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>set_id</field>
         <id>aebf78fc872edd50fd73642d0ebb357f</id>
@@ -530,11 +506,11 @@
         <sys_created_on>2022-10-12 11:05:05</sys_created_on>
         <sys_id>6ebf78fc872edd50fd73642d0ebb357d</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Set</sys_name>
         <sys_package display_value="Primary Data Integration for SAP" source="x_snc_com_data_int">93c7f5cb875a1950fd73642d0ebb3590</sys_package>
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_12bf78fc872edd50fd73642d0ebb3567_set_en</sys_update_name>
         <sys_updated_by>Mayank</sys_updated_by>
         <sys_updated_on>2022-10-12 11:05:05</sys_updated_on>
         <url/>
@@ -555,11 +531,11 @@
         <sys_created_on>2022-10-12 11:05:05</sys_created_on>
         <sys_id>b6bf78fc872edd50fd73642d0ebb3597</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Action Status</sys_name>
         <sys_package display_value="Primary Data Integration for SAP" source="x_snc_com_data_int">93c7f5cb875a1950fd73642d0ebb3590</sys_package>
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_12bf78fc872edd50fd73642d0ebb3567___action_status___en</sys_update_name>
         <sys_updated_by>Mayank</sys_updated_by>
         <sys_updated_on>2022-10-12 11:05:05</sys_updated_on>
         <url/>
@@ -578,11 +554,11 @@
         <sys_created_on>2022-10-12 11:05:05</sys_created_on>
         <sys_id>fabf78fc872edd50fd73642d0ebb359e</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Don't Treat as Error</sys_name>
         <sys_package display_value="Primary Data Integration for SAP" source="x_snc_com_data_int">93c7f5cb875a1950fd73642d0ebb3590</sys_package>
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_12bf78fc872edd50fd73642d0ebb3567___dont_treat_as_error___en</sys_update_name>
         <sys_updated_by>Mayank</sys_updated_by>
         <sys_updated_on>2022-10-12 11:05:05</sys_updated_on>
         <url/>
@@ -717,30 +693,6 @@
         <variable display_value="MID Application">f5e56d79b3101300176b051a16a8dce4</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=71ef7cfc872edd50fd73642d0ebb353f"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>application</field>
-        <id>71ef7cfc872edd50fd73642d0ebb353f</id>
-        <sys_created_by>Mayank</sys_created_by>
-        <sys_created_on>2022-10-12 11:05:50</sys_created_on>
-        <sys_id>3def7cfc872edd50fd73642d0ebb3549</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>Mayank</sys_updated_by>
-        <sys_updated_on>2022-10-12 11:05:50</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>script</field>
-        <id>71ef7cfc872edd50fd73642d0ebb353f</id>
-        <sys_created_by>Mayank</sys_created_by>
-        <sys_created_on>2022-10-12 11:05:50</sys_created_on>
-        <sys_id>fdef7cfc872edd50fd73642d0ebb3549</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>Mayank</sys_updated_by>
-        <sys_updated_on>2022-10-12 11:05:50</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
-        <value/>
-    </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>set_id</field>
         <id>71ef7cfc872edd50fd73642d0ebb353f</id>
@@ -1119,11 +1071,11 @@
         <sys_created_on>2022-10-12 11:05:50</sys_created_on>
         <sys_id>b1ef7cfc872edd50fd73642d0ebb353d</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Set</sys_name>
         <sys_package display_value="Primary Data Integration for SAP" source="x_snc_com_data_int">93c7f5cb875a1950fd73642d0ebb3590</sys_package>
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_91ef7cfc872edd50fd73642d0ebb3510_set_en</sys_update_name>
         <sys_updated_by>Mayank</sys_updated_by>
         <sys_updated_on>2022-10-12 11:05:50</sys_updated_on>
         <url/>
@@ -1144,11 +1096,11 @@
         <sys_created_on>2022-10-12 11:05:51</sys_created_on>
         <sys_id>79ef7cfc872edd50fd73642d0ebb355a</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Don't Treat as Error</sys_name>
         <sys_package display_value="Primary Data Integration for SAP" source="x_snc_com_data_int">93c7f5cb875a1950fd73642d0ebb3590</sys_package>
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_91ef7cfc872edd50fd73642d0ebb3510___dont_treat_as_error___en</sys_update_name>
         <sys_updated_by>Mayank</sys_updated_by>
         <sys_updated_on>2022-10-12 11:05:51</sys_updated_on>
         <url/>
@@ -1167,11 +1119,11 @@
         <sys_created_on>2022-10-12 11:05:50</sys_created_on>
         <sys_id>7def7cfc872edd50fd73642d0ebb3553</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Action Status</sys_name>
         <sys_package display_value="Primary Data Integration for SAP" source="x_snc_com_data_int">93c7f5cb875a1950fd73642d0ebb3590</sys_package>
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_91ef7cfc872edd50fd73642d0ebb3510___action_status___en</sys_update_name>
         <sys_updated_by>Mayank</sys_updated_by>
         <sys_updated_on>2022-10-12 11:05:50</sys_updated_on>
         <url/>
@@ -1181,6 +1133,6 @@
     <sys_hub_action_type_definition action="UPDATE">
         <sys_id>12bf78fc872edd50fd73642d0ebb3567</sys_id>
         <latest_snapshot>91ef7cfc872edd50fd73642d0ebb3510</latest_snapshot>
-        <compiler_build>glide-sandiego-12-22-2021_05-23-2022_1900.zip</compiler_build>
+        <compiler_build>glide-sandiego-12-22-2021__patch4a-06-21-2022_07-12-2022_1907.zip</compiler_build>
     </sys_hub_action_type_definition>
 </record_update>

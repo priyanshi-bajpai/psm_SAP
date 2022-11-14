@@ -6,7 +6,7 @@
         <condition/>
         <description>Default access control on x_snc_com_data_int_vendor_masters_staging</description>
         <name>x_snc_com_data_int_vendor_masters_staging</name>
-        <operation display_value="create">create</operation>
+        <operation display_value="Global">create</operation>
         <script/>
         <sys_class_name>sys_security_acl</sys_class_name>
         <sys_created_by>Prama</sys_created_by>
@@ -20,6 +20,6 @@
         <sys_update_name>sys_security_acl_7dbe68e587cb5d1093264085dabb35c4</sys_update_name>
         <sys_updated_by>Prama</sys_updated_by>
         <sys_updated_on>2022-11-08 14:17:35</sys_updated_on>
-        <type display_value="record">record</type>
+        <type display_value="Global">record</type>
     </sys_security_acl>
 </record_update>

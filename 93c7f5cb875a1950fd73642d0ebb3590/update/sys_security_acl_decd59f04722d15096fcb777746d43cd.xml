@@ -6,7 +6,7 @@
         <condition/>
         <description>Default access control on x_snc_com_data_int_look_up_ledger_accounts</description>
         <name>x_snc_com_data_int_look_up_ledger_accounts</name>
-        <operation display_value="write">write</operation>
+        <operation display_value="Global">write</operation>
         <script/>
         <sys_class_name>sys_security_acl</sys_class_name>
         <sys_created_by>bcone</sys_created_by>
@@ -20,6 +20,6 @@
         <sys_update_name>sys_security_acl_decd59f04722d15096fcb777746d43cd</sys_update_name>
         <sys_updated_by>bcone</sys_updated_by>
         <sys_updated_on>2022-10-12 13:16:23</sys_updated_on>
-        <type display_value="record">record</type>
+        <type display_value="Global">record</type>
     </sys_security_acl>
 </record_update>

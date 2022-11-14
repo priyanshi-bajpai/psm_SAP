@@ -5,7 +5,7 @@
         <coalesce_case_sensitive>false</coalesce_case_sensitive>
         <coalesce_empty_fields>false</coalesce_empty_fields>
         <date_format>yyyy-MM-dd HH:mm:ss</date_format>
-        <map display_value="u_imp_tmpl_sn_fin_gl_account">ddadcb3d8743dd1093264085dabb3500</map>
+        <map display_value="Primary Data Integration for SAP">ddadcb3d8743dd1093264085dabb3500</map>
         <reference_value_field/>
         <source_field>u_number</source_field>
         <source_script><![CDATA[answer = (function transformEntry(source) {

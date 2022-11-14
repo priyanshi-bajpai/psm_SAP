@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="sys_import_set_row" label="GL Account List" max_length="40" name="x_snc_com_data_int_gl_account_list" sizeclass="112510" type="collection">
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Account currency" label="Account currency" max_length="40" name="u_account_currency" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Account ID" label="Account ID" max_length="40" name="u_account_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Acct Managed in Ext. System" label="Acct Managed in Ext. System" max_length="40" name="u_acct_managed_in_ext__system" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Alternative Account No." label="Alternative Account No." max_length="40" name="u_alternative_account_no_" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Authorization Group" label="Authorization Group" max_length="40" name="u_authorization_group" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Balances in Local Crcy Only" label="Balances in Local Crcy Only" max_length="40" name="u_balances_in_local_crcy_only" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Blocked for Posting" label="Blocked for Posting" max_length="40" name="u_blocked_for_posting" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Clearing Specific to Ledger Groups" label="Clearing Specific to Ledger Groups" max_length="40" name="u_clearing_spe__ledger_groups" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Clerk Abbreviation" label="Clerk Abbreviation" max_length="40" name="u_clerk_abbreviation" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Commitment item" label="Commitment item" max_length="40" name="u_commitment_item" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Company Code" label="Company Code" max_length="40" name="u_company_code" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Created by" label="Created by" max_length="40" name="u_created_by" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Created on" label="Created on" max_length="40" name="u_created_on" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Date of last interest run" label="Date of last interest run" max_length="40" name="u_date_of_last_interest_run" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Exchange rate difference key" label="Exchange rate difference key" max_length="40" name="u_exchange_rate_difference_key" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Field status group" label="Field status group" max_length="40" name="u_field_status_group" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Financial budget" label="Financial budget" max_length="40" name="u_financial_budget" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=G/L Account" label="G/L Account" max_length="40" name="u_g_l_account" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=G/L account additional text" label="G/L account additional text" max_length="40" name="u_g_l_account_additional_text" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=House bank" label="House bank" max_length="40" name="u_house_bank" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Inflation key" label="Inflation key" max_length="40" name="u_inflation_key" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Interest Calc. Frequency" label="Interest Calc. Frequency" max_length="40" name="u_interest_calc__frequency" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Interest indicator" label="Interest indicator" max_length="40" name="u_interest_indicator" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Key Date of Last Int. Calc." label="Key Date of Last Int. Calc." max_length="40" name="u_key_date_of_last_int__calc_" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Line Item Display Possible" label="Line Item Display Possible" max_length="40" name="u_line_item_display_possible" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Mark for Deletion" label="Mark for Deletion" max_length="40" name="u_mark_for_deletion" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=MCA  Key" label="MCA  Key" max_length="40" name="u_mca__key" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Open Item Management" label="Open Item Management" max_length="40" name="u_open_item_management" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Planning group" label="Planning group" max_length="40" name="u_planning_group" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Planning Level" label="Planning Level" max_length="40" name="u_planning_level" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Posting without tax allowed" label="Posting without tax allowed" max_length="40" name="u_posting_without_tax_allowed" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Post Automatically Only" label="Post Automatically Only" max_length="40" name="u_post_automatically_only" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Recon. account for acct type" label="Recon. account for acct type" max_length="40" name="u_recon__account_for_acct_type" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Recon. acct ready for input" label="Recon. acct ready for input" max_length="40" name="u_recon__acct_ready_for_input" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Recovery Indicator" label="Recovery Indicator" max_length="40" name="u_recovery_indicator" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Relevant to cash flow" label="Relevant to cash flow" max_length="40" name="u_relevant_to_cash_flow" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Sort key" label="Sort key" max_length="40" name="u_sort_key" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Supplement auto. postings" label="Supplement auto. postings" max_length="40" name="u_supplement_auto__postings" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Tax category" label="Tax category" max_length="40" name="u_tax_category" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Tolerance group" label="Tolerance group" max_length="40" name="u_tolerance_group" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Valuation group" label="Valuation group" max_length="40" name="u_valuation_group" type="string"/>
+    </element>
+</database>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="x_snc_com_data_int_integrations_service">
+    <x_snc_com_data_int_integrations_service action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <flow display_value="Copy of Test Import Service Master From SAP T">eca306754707d91096fcb777746d4325</flow>
+        <import_set_tables>x_snc_com_data_int_look_up_service_master</import_set_tables>
+        <name>Service Master New</name>
+        <order>200</order>
+        <properties/>
+        <source display_value="Service Master New">131b3ace47cb1d1096fcb777746d4340</source>
+        <sys_class_name>x_snc_com_data_int_integrations_service</sys_class_name>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-11-10 13:53:42</sys_created_on>
+        <sys_id>c69bf202470f1d1096fcb777746d436d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>93c7f5cb875a1950fd73642d0ebb3590</sys_name>
+        <sys_package display_value="Primary Data Integration for SAP" source="x_snc_com_data_int">93c7f5cb875a1950fd73642d0ebb3590</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
+        <sys_update_name>x_snc_com_data_int_integrations_service_c69bf202470f1d1096fcb777746d436d</sys_update_name>
+        <sys_updated_by>bcone</sys_updated_by>
+        <sys_updated_on>2022-11-10 13:53:42</sys_updated_on>
+    </x_snc_com_data_int_integrations_service>
+</record_update>

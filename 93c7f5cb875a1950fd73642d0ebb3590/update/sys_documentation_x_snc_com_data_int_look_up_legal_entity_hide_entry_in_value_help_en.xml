@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="hide_entry_in_value_help" label="Hide Entry in Value Help" language="en" table="x_snc_com_data_int_look_up_legal_entity">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>hide_entry_in_value_help</element>
+            <help/>
+            <hint/>
+            <label>Hide Entry in Value Help</label>
+            <language>en</language>
+            <name>x_snc_com_data_int_look_up_legal_entity</name>
+            <plural>Hide Entry in Value Helps</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>akash</sys_created_by>
+            <sys_created_on>2022-10-11 08:12:20</sys_created_on>
+            <sys_id>f29ec750472add1086887562846d433a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Hide Entry in Value Help</sys_name>
+            <sys_package display_value="Primary Data Integration for SAP" source="x_snc_com_data_int">93c7f5cb875a1950fd73642d0ebb3590</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
+            <sys_update_name>sys_documentation_x_snc_com_data_int_look_up_legal_entity_hide_entry_in_value_help_en</sys_update_name>
+            <sys_updated_by>akash</sys_updated_by>
+            <sys_updated_on>2022-10-11 08:12:20</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

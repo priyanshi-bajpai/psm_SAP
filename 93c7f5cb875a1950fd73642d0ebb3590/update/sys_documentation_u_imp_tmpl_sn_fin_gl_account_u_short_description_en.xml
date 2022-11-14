@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="u_short_description" label="Short description" language="en" table="u_imp_tmpl_sn_fin_gl_account">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_short_description</element>
+            <help/>
+            <hint/>
+            <label>Short description</label>
+            <language>en</language>
+            <name>u_imp_tmpl_sn_fin_gl_account</name>
+            <plural>Short descriptions</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>bcone</sys_created_by>
+            <sys_created_on>2022-11-10 10:13:54</sys_created_on>
+            <sys_id>b31a4a4e47c71d1096fcb777746d431e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Short description</sys_name>
+            <sys_package display_value="Primary Data Integration for SAP" source="x_snc_com_data_int">93c7f5cb875a1950fd73642d0ebb3590</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
+            <sys_update_name>sys_documentation_u_imp_tmpl_sn_fin_gl_account_u_short_description_en</sys_update_name>
+            <sys_updated_by>bcone</sys_updated_by>
+            <sys_updated_on>2022-11-10 10:13:54</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

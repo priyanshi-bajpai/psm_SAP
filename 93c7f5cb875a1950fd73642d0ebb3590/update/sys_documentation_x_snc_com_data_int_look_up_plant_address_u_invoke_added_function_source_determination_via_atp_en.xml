@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="u_invoke_added_function_source_determination_via_atp" label=" Invoke Added-Function Source Determination via ATP" language="en" table="x_snc_com_data_int_look_up_plant_address">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_invoke_added_function_source_determination_via_atp</element>
+            <help/>
+            <hint/>
+            <label> Invoke Added-Function Source Determination via ATP</label>
+            <language>en</language>
+            <name>x_snc_com_data_int_look_up_plant_address</name>
+            <plural> Invoke Added-Function Source Determination via ATPs</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>bcone</sys_created_by>
+            <sys_created_on>2022-10-13 02:48:44</sys_created_on>
+            <sys_id>75b7180d472ed15096fcb777746d43dc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Invoke Added-Function Source Determination via ATP</sys_name>
+            <sys_package display_value="Primary Data Integration for SAP" source="x_snc_com_data_int">93c7f5cb875a1950fd73642d0ebb3590</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
+            <sys_update_name>sys_documentation_x_snc_com_data_int_look_up_plant_address_u_invoke_added_function_source_determination_via_atp_en</sys_update_name>
+            <sys_updated_by>bcone</sys_updated_by>
+            <sys_updated_on>2022-10-13 02:48:44</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

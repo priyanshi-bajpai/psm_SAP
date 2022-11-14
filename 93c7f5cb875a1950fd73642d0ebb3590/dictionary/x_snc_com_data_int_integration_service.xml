@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Integration Service(Not required)" max_length="40" name="x_snc_com_data_int_integration_service" sizeclass="0" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Active" max_length="40" name="active" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" default="javascript:(((typeof parent == 'object') &amp;&amp; parent != null &amp;&amp; parent.getTableName() == 'sys_app') ? parent.sys_id : gs.getCurrentApplicationId())" label="Application" max_length="32" name="application" reference="sys_scope" type="reference"/>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" default="javascript:current.getTableName();" dynamic_default_value="b5cb83a85f220100a9ad2572f2b4773c" label="Class" max_length="32" name="class" reference="x_snc_com_data_int_system_class_name" type="reference" use_dynamic_default="true"/>
+        <element label="Display name" max_length="40" name="display_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Flow" max_length="32" name="flow" reference="sys_hub_flow" type="reference"/>
+        <element attributes="edge_encryption_enabled=true,no_sort=true,slushbucket_ref_no_expand=true" label="Import set tables" max_length="1024" name="import_set_tables" type="glide_list"/>
+        <element label="Name" max_length="151" name="name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Order" max_length="40" name="order" type="integer"/>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Package" max_length="32" name="package" reference="sys_package" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Properties" max_length="4000" name="properties" type="simple_name_values"/>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Source" max_length="32" name="source" reference="x_snc_com_data_int_integration_source" type="reference"/>
+        <index name="index">
+            <element name="package"/>
+        </index>
+        <index name="index2">
+            <element name="application"/>
+        </index>
+        <index name="index3">
+            <element name="source"/>
+        </index>
+        <index name="index4">
+            <element name="class"/>
+        </index>
+        <index name="index5">
+            <element name="flow"/>
+        </index>
+    </element>
+</database>

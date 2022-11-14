@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="payment_terms" label="Payment Terms" language="en" table="var__m_sys_hub_action_output_2bfa55cd87431d1093264085dabb3593">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>payment_terms</element>
+            <help/>
+            <hint/>
+            <label>Payment Terms</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_output_2bfa55cd87431d1093264085dabb3593</name>
+            <plural/>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>Prama</sys_created_by>
+            <sys_created_on>2022-11-07 04:14:09</sys_created_on>
+            <sys_id>f80b95cd87431d1093264085dabb3537</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Payment Terms</sys_name>
+            <sys_package display_value="Primary Data Integration for SAP" source="x_snc_com_data_int">93c7f5cb875a1950fd73642d0ebb3590</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
+            <sys_update_name>sys_documentation_var__m_sys_hub_action_output_2bfa55cd87431d1093264085dabb3593_payment_terms_en</sys_update_name>
+            <sys_updated_by>Prama</sys_updated_by>
+            <sys_updated_on>2022-11-07 04:14:09</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

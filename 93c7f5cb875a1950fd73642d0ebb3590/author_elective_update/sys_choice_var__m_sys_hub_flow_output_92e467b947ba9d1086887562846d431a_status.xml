@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="status" table="var__m_sys_hub_flow_output_92e467b947ba9d1086887562846d431a" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>status</element>
+            <name>var__m_sys_hub_flow_output_92e467b947ba9d1086887562846d431a</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>akash</sys_created_by>
+            <sys_created_on>2022-10-28 11:56:25</sys_created_on>
+            <sys_id>7ae467b947ba9d1086887562846d438d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name/>
+            <sys_package display_value="Primary Data Integration for SAP" source="x_snc_com_data_int">93c7f5cb875a1950fd73642d0ebb3590</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
+            <sys_update_name/>
+            <sys_updated_by>akash</sys_updated_by>
+            <sys_updated_on>2022-10-28 11:56:25</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Success</label>
+            <language>en</language>
+            <name>var__m_sys_hub_flow_output_92e467b947ba9d1086887562846d431a</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>akash</sys_created_by>
+            <sys_created_on>2022-10-28 11:56:25</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>36e467b947ba9d1086887562846d438d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>akash</sys_updated_by>
+            <sys_updated_on>2022-10-28 11:56:25</sys_updated_on>
+            <value>Success</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Error</label>
+            <language>en</language>
+            <name>var__m_sys_hub_flow_output_92e467b947ba9d1086887562846d431a</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>akash</sys_created_by>
+            <sys_created_on>2022-10-28 11:56:26</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>cfe467b947ba9d1086887562846d438e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>akash</sys_updated_by>
+            <sys_updated_on>2022-10-28 11:56:26</sys_updated_on>
+            <value>Error</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

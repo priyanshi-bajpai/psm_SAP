@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="business_area" label="Business Area" language="en" table="x_snc_com_data_int_cost_center_staging_table_sap_ecc">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>business_area</element>
+            <help/>
+            <hint/>
+            <label>Business Area</label>
+            <language>en</language>
+            <name>x_snc_com_data_int_cost_center_staging_table_sap_ecc</name>
+            <plural>Business Areas</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>Swati</sys_created_by>
+            <sys_created_on>2022-10-26 09:19:56</sys_created_on>
+            <sys_id>c3ede45947fed91086887562846d4341</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Business Area</sys_name>
+            <sys_package display_value="Primary Data Integration for SAP" source="x_snc_com_data_int">93c7f5cb875a1950fd73642d0ebb3590</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
+            <sys_update_name>sys_documentation_x_snc_com_data_int_cost_center_staging_table_sap_ecc_business_area_en</sys_update_name>
+            <sys_updated_by>Swati</sys_updated_by>
+            <sys_updated_on>2022-10-26 09:19:56</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

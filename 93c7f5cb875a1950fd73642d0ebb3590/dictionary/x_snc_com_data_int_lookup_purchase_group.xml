@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="sys_import_set_row" label="Lookup Purchase Group" max_length="40" name="x_snc_com_data_int_lookup_purchase_group" sizeclass="527" type="collection">
+        <element label="Client" max_length="3" name="client" type="string"/>
+        <element label="Description of purchasing group" max_length="18" name="description_of_purchasing_group" type="string"/>
+        <element label="E-Mail Address" max_length="241" name="e_mail_address" type="string"/>
+        <element label="Fax number of purchasing (buyer) group" max_length="31" name="fax_number_of_purchasing_buyer_group" type="string"/>
+        <element label="Purchasing Group" max_length="3" name="purchasing_group" type="string"/>
+        <element label="Spool: Output device" max_length="4" name="spool_output_device" type="string"/>
+        <element label="Telephone no.: dialling code+number" max_length="30" name="telephone_no_dialling_code_number" type="string"/>
+        <element label="Telephone no.: Extension" max_length="10" name="telephone_no_extension" type="string"/>
+        <element label="Telephone number of purchasing group (buyer group)" max_length="12" name="telephone_number_of_purchasing_group_buyer_group" type="string"/>
+    </element>
+</database>

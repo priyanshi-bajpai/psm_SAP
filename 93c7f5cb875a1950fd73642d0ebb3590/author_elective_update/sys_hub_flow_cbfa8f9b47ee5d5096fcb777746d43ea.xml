@@ -1,0 +1,1042 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="DELETE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build>glide-sandiego-12-22-2021__patch4a-06-21-2022_07-12-2022_1907.zip</compiler_build>
+        <copied_from>a73ded384762d15096fcb777746d4353</copied_from>
+        <copied_from_name>Ledger Account Master Data Pull </copied_from_name>
+        <description/>
+        <internal_name>copy_of_ledger_account_master_data_pull_from_sap</internal_name>
+        <label_cache>[{"name":"f813fa0c-12d7-49e9-bdd1-feba6dc811c9.ledger_account_details.valuation_group","label":"5➛Ledger Account Details➛Valuation Group","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"f813fa0c-12d7-49e9-bdd1-feba6dc811c9.ledger_account_details.tolerance_group_for_g_l_accounts","label":"5➛Ledger Account Details➛Tolerance Group for G/L Accounts","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"f813fa0c-12d7-49e9-bdd1-feba6dc811c9.ledger_account_details.tax_category_in_account_master_record","label":"5➛Ledger Account Details➛Tax Category in Account Master Record","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"f813fa0c-12d7-49e9-bdd1-feba6dc811c9.ledger_account_details.short_key_for_a_house_bank","label":"5➛Ledger Account Details➛Short key for a house bank","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"f813fa0c-12d7-49e9-bdd1-feba6dc811c9.ledger_account_details.recovery_indicator","label":"5➛Ledger Account Details➛Recovery Indicator","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"f813fa0c-12d7-49e9-bdd1-feba6dc811c9.ledger_account_details.planning_level","label":"5➛Ledger Account Details➛Planning Level","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"f813fa0c-12d7-49e9-bdd1-feba6dc811c9.ledger_account_details.planning_group","label":"5➛Ledger Account Details➛Planning group","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"f813fa0c-12d7-49e9-bdd1-feba6dc811c9.ledger_account_details.name_of_person_who_created_the_object","label":"5➛Ledger Account Details➛Name of Person who Created the Object","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"f813fa0c-12d7-49e9-bdd1-feba6dc811c9.ledger_account_details.mca_key","label":"5➛Ledger Account Details➛MCA Key","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"f813fa0c-12d7-49e9-bdd1-feba6dc811c9.ledger_account_details.key_for_sorting_according_to_assignment_numbers","label":"5➛Ledger Account Details➛Key for sorting according to assignment numbers","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"f813fa0c-12d7-49e9-bdd1-feba6dc811c9.ledger_account_details.key_for_exchange_rate_differences_in_foreign_currency_accts","label":"5➛Ledger Account Details➛Key for Exchange Rate Differences in Foreign Currency Accts","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"f813fa0c-12d7-49e9-bdd1-feba6dc811c9.ledger_account_details.key_date_of_last_interest_calculation","label":"5➛Ledger Account Details➛Key Date of Last Interest Calculation","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"f813fa0c-12d7-49e9-bdd1-feba6dc811c9.ledger_account_details.interest_calculation_indicator","label":"5➛Ledger Account Details➛Interest calculation indicator","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"f813fa0c-12d7-49e9-bdd1-feba6dc811c9.ledger_account_details.interest_calculation_frequency_in_months","label":"5➛Ledger Account Details➛Interest Calculation Frequency in Months","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"f813fa0c-12d7-49e9-bdd1-feba6dc811c9.ledger_account_details.inflation_key","label":"5➛Ledger Account Details➛Inflation Key","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"f813fa0c-12d7-49e9-bdd1-feba6dc811c9.ledger_account_details.indicator_tax_code_is_not_a_required_field","label":"5➛Ledger Account Details➛Indicator: Tax code is not a required field","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"f813fa0c-12d7-49e9-bdd1-feba6dc811c9.ledger_account_details.indicator_supplement_for_automatic_postings","label":"5➛Ledger Account Details➛Indicator: Supplement for automatic postings ?","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"f813fa0c-12d7-49e9-bdd1-feba6dc811c9.ledger_account_details.indicator_reconcil_acct_ready_for_input_at_time_of_posting","label":"5➛Ledger Account Details➛Indicator: Reconcil.acct ready for input at time of posting?","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"f813fa0c-12d7-49e9-bdd1-feba6dc811c9.ledger_account_details.indicator_open_item_management","label":"5➛Ledger Account Details➛Indicator: Open Item Management?","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"f813fa0c-12d7-49e9-bdd1-feba6dc811c9.ledger_account_details.indicator_is_account_only_posted_to_automatically","label":"5➛Ledger Account Details➛Indicator: Is account only posted to automatically?","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"f813fa0c-12d7-49e9-bdd1-feba6dc811c9.ledger_account_details.client","label":"5➛Ledger Account Details➛Client","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"854a6d37-e668-49f8-a19a-d82aa0be6ca1.output","label":"1 - Execute RFC➛Response","reference_display":"Response","type":"dynamic_object","base_type":"dynamic_object","attributes":{"dynamic":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"ec3feb55-c033-40de-b020-c5065f65edc0"}},{"name":"854a6d37-e668-49f8-a19a-d82aa0be6ca1.status","label":"1 - Execute RFC➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"success","order":0.0},{"label":"Error","value":"error","order":1.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"be013fc8-8a66-424c-a986-bc6c2270b27c"}},{"name":"854a6d37-e668-49f8-a19a-d82aa0be6ca1.err","label":"1 - Execute RFC➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"8fb55a2b-1b65-43aa-b9d2-242ee67e399c"}},{"name":"854a6d37-e668-49f8-a19a-d82aa0be6ca1.__action_status__","label":"1 - Execute RFC➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"854a6d37-e668-49f8-a19a-d82aa0be6ca1.__dont_treat_as_error__","label":"1 - Execute RFC➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e11c8f9f-9691-4d2f-903c-f7ba106a1727.json_array","label":"3 - Parse_RFC_Response➛Json array","reference_display":"Json array","type":"array.string","base_type":"array.string","attributes":{"uiTypeLabel":"Array.String","co_type_name":"FD935c7ab1e356d5101cb326721344486c","child_label":"Json_array_obj","child_type_label":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"array.string","child_type":"string","child_name":"Json_array_obj","child_uiUniqueId":"26c7fe1f-0bf2-4ca2-b23c-223c139d7829","uiUniqueId":"4a462491-f357-4b32-a56a-6f38798c3ad3"}},{"name":"e11c8f9f-9691-4d2f-903c-f7ba106a1727.__action_status__","label":"3 - Parse_RFC_Response➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FD575c7ab13c56d51028a081482d93ba6e","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"d12f1232-cf85-4627-95bf-540799baf9fd"}},{"name":"e11c8f9f-9691-4d2f-903c-f7ba106a1727.__dont_treat_as_error__","label":"3 - Parse_RFC_Response➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"0b918dd2-4aeb-4bf6-b06e-83d3b4e98e93"}},{"name":"41b2368a-08f8-48f4-acf3-07e758693dc6.item","label":"4 - For Each➛Json_array_obj","reference_display":"Json_array_obj","type":"string","base_type":"string","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"5df9a504-6cab-4f62-8c7b-f056cf6cd66f.service_master","label":"5 - Segregate Service Master Response➛Service Master","reference_display":"Service Master","type":"object","base_type":"object","attributes":{"sourceId":"4abe81d1-4117-4736-b02b-6c263930bcb8","uiTypeLabel":"Object","co_type_name":"FDb3404fb5a756d51023b08b7b1e7f5bd1","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"step","sourceUiUniqueId":"2b7146b8-f1ec-474d-8648-4eb16d449733","uiType":"object","uiUniqueId":"3fd6a733-f5cd-45a6-a737-dd0dc355e256"}},{"name":"5df9a504-6cab-4f62-8c7b-f056cf6cd66f.__action_status__","label":"5 - Segregate Service Master Response➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FD84504fb59156d510014a9be314993bd3","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"134f731c-bf68-45d3-8d9d-65305cbad7a2"}},{"name":"5df9a504-6cab-4f62-8c7b-f056cf6cd66f.__dont_treat_as_error__","label":"5 - Segregate Service Master Response➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"5ed35a7b-bb3a-463d-9de8-3170db0f0e3c"}},{"name":"efc389ce-a046-4866-89fe-e8a7ad2ee36c.record","label":"6 - Create or Update Record➛Look Up Ledger Accounts Record","reference":"x_snc_com_data_int_look_up_ledger_accounts","reference_display":"Look Up Ledger Accounts","type":"reference","base_type":"reference","attributes":{"uiType":"document_id","uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"efc389ce-a046-4866-89fe-e8a7ad2ee36c.table_name","label":"6 - Create or Update Record➛Look Up Ledger Accounts Table","reference":"x_snc_com_data_int_look_up_ledger_accounts","reference_display":"Look Up Ledger Accounts","type":"table_name","base_type":"table_name","attributes":{"uiType":"table_name","uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"efc389ce-a046-4866-89fe-e8a7ad2ee36c.status","label":"6 - Create or Update Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Created","value":"created","order":1.0},{"label":"Updated","value":"updated","order":2.0},{"label":"Error","value":"error","order":3.0}],"attributes":{"uiType":"choice","uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"efc389ce-a046-4866-89fe-e8a7ad2ee36c.error_message","label":"6 - Create or Update Record➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"efc389ce-a046-4866-89fe-e8a7ad2ee36c.__action_status__","label":"6 - Create or Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"efc389ce-a046-4866-89fe-e8a7ad2ee36c.__dont_treat_as_error__","label":"6 - Create or Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5df9a504-6cab-4f62-8c7b-f056cf6cd66f.service_master.Client","label":"5 - Segregate Service Master Response➛Service Master➛Client","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"5df9a504-6cab-4f62-8c7b-f056cf6cd66f.service_master.Activity_Number","label":"5 - Segregate Service Master Response➛Service Master➛Activity Number","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"5df9a504-6cab-4f62-8c7b-f056cf6cd66f.service_master.Date_on_Which_Record_Was_Created","label":"5 - Segregate Service Master Response➛Service Master➛Date on Which Record Was Created","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"5df9a504-6cab-4f62-8c7b-f056cf6cd66f.service_master.Name_of_Person_Who_Created_the_Object","label":"5 - Segregate Service Master Response➛Service Master➛Name of Person Who Created the Object","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"5df9a504-6cab-4f62-8c7b-f056cf6cd66f.service_master.Date_of_Last_Change","label":"5 - Segregate Service Master Response➛Service Master➛Date of Last Change","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"5df9a504-6cab-4f62-8c7b-f056cf6cd66f.service_master.Name_of_person_who_changed_object","label":"5 - Segregate Service Master Response➛Service Master➛Name of person who changed object","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"5df9a504-6cab-4f62-8c7b-f056cf6cd66f.service_master.Deletion_Indicator","label":"5 - Segregate Service Master Response➛Service Master➛Deletion Indicator","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"5df9a504-6cab-4f62-8c7b-f056cf6cd66f.service_master.Material_Group","label":"5 - Segregate Service Master Response➛Service Master➛Material Group","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"5df9a504-6cab-4f62-8c7b-f056cf6cd66f.service_master.Base_Unit_of_Measure","label":"5 - Segregate Service Master Response➛Service Master➛Base Unit of Measure","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"5df9a504-6cab-4f62-8c7b-f056cf6cd66f.service_master.Service_Category","label":"5 - Segregate Service Master Response➛Service Master➛Service Category","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"5df9a504-6cab-4f62-8c7b-f056cf6cd66f.service_master.Package_number","label":"5 - Segregate Service Master Response➛Service Master➛Package number","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"5df9a504-6cab-4f62-8c7b-f056cf6cd66f.service_master.International_Article_Number","label":"5 - Segregate Service Master Response➛Service Master➛International Article Number","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"5df9a504-6cab-4f62-8c7b-f056cf6cd66f.service_master.Category_of_International_Article_Number","label":"5 - Segregate Service Master Response➛Service Master➛Category of International Article Number","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"5df9a504-6cab-4f62-8c7b-f056cf6cd66f.service_master.Division","label":"5 - Segregate Service Master Response➛Service Master➛Division","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"5df9a504-6cab-4f62-8c7b-f056cf6cd66f.service_master.Authorization_Group","label":"5 - Segregate Service Master Response➛Service Master➛Authorization Group","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"5df9a504-6cab-4f62-8c7b-f056cf6cd66f.service_master.General_Purchasing_Status_for_Serviceq","label":"5 - Segregate Service Master Response➛Service Master➛General Purchasing Status for Serviceq","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"5df9a504-6cab-4f62-8c7b-f056cf6cd66f.service_master.Validity_Date_for_Purchasing_Status","label":"5 - Segregate Service Master Response➛Service Master➛Validity Date for Purchasing Status","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"5df9a504-6cab-4f62-8c7b-f056cf6cd66f.service_master.Valuation_Class","label":"5 - Segregate Service Master Response➛Service Master➛Valuation Class","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"5df9a504-6cab-4f62-8c7b-f056cf6cd66f.service_master.Hierarchy_Service_Number","label":"5 - Segregate Service Master Response➛Service Master➛Hierarchy Service Number","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"5df9a504-6cab-4f62-8c7b-f056cf6cd66f.service_master.Primary_language_for_object_texts","label":"5 - Segregate Service Master Response➛Service Master➛Primary language for object texts","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"5df9a504-6cab-4f62-8c7b-f056cf6cd66f.service_master.Wage_type","label":"5 - Segregate Service Master Response➛Service Master➛Wage type","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"5df9a504-6cab-4f62-8c7b-f056cf6cd66f.service_master.Short_Description_of_Service_Type","label":"5 - Segregate Service Master Response➛Service Master➛Short Description of Service Type","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"5df9a504-6cab-4f62-8c7b-f056cf6cd66f.service_master.Edition_of_Service_Type","label":"5 - Segregate Service Master Response➛Service Master➛Edition of Service Type","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"5df9a504-6cab-4f62-8c7b-f056cf6cd66f.service_master.Standard_Service_Catalog_Item","label":"5 - Segregate Service Master Response➛Service Master➛Standard Service Catalog Item","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"5df9a504-6cab-4f62-8c7b-f056cf6cd66f.service_master.Tax_Indicator_for_Service_Purchasing_","label":"5 - Segregate Service Master Response➛Service Master➛Tax Indicator for Service (Purchasing)","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"5df9a504-6cab-4f62-8c7b-f056cf6cd66f.service_master.Denominator_for_Conversion_MEINS_IWEIN_","label":"5 - Segregate Service Master Response➛Service Master➛Denominator for Conversion (MEINS \u003c-\u003e IWEIN)","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"5df9a504-6cab-4f62-8c7b-f056cf6cd66f.service_master.Unit_for_Work","label":"5 - Segregate Service Master Response➛Service Master➛Unit for Work","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"5df9a504-6cab-4f62-8c7b-f056cf6cd66f.service_master.Formula_Number","label":"5 - Segregate Service Master Response➛Service Master➛Formula Number","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"5df9a504-6cab-4f62-8c7b-f056cf6cd66f.service_master.Uniform_resource_locator","label":"5 - Segregate Service Master Response➛Service Master➛Uniform resource locator","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"5df9a504-6cab-4f62-8c7b-f056cf6cd66f.service_master.Tax_Tariff_Code","label":"5 - Segregate Service Master Response➛Service Master➛Tax Tariff Code","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"5df9a504-6cab-4f62-8c7b-f056cf6cd66f.service_master.Short_Text_Change_Allowed","label":"5 - Segregate Service Master Response➛Service Master➛Short Text Change Allowed","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"5df9a504-6cab-4f62-8c7b-f056cf6cd66f.service_master.Numerator_for_conversion_of_MEINS_into_IWEIN","label":"5 - Segregate Service Master Response➛Service Master➛Numerator for conversion of MEINS into IWEIN","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"75f3e37e-b965-4608-8c13-041e82fb3b2a.__action_status__","label":"5 - Segregate Response Ledger Account➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FD0653638f8c12d9106b3833c5e540e421","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"164cbf55-890e-4aed-bbff-4a113c5a9e2c"}},{"name":"75f3e37e-b965-4608-8c13-041e82fb3b2a.__dont_treat_as_error__","label":"5 - Segregate Response Ledger Account➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"5ef916ba-54c2-42c7-9e58-43bd55fa8906"}},{"name":"75f3e37e-b965-4608-8c13-041e82fb3b2a.ledger_account_details","label":"5 - Segregate Response Ledger Account➛Ledger Account Details","reference_display":"Ledger Account Details","type":"object","base_type":"object","attributes":{"sourceId":"49517c56-dd7f-4847-a7c1-5519ae09bb7e","uiTypeLabel":"Object","co_type_name":"FD4653638f6e12d91081e576a76cb27c23","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"step","sourceUiUniqueId":"0943d0fb-bf0e-441c-bb3c-28607f55c070","uiType":"object","uiUniqueId":"68544708-badc-4f99-afb4-8a73479e441c"}},{"name":"12a4d28b-df3d-4f57-b439-d2574898f8cc.__action_status__","label":"5 - Segregate Response Ledger Account➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FD0653638f8c12d9106b3833c5e540e421","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"164cbf55-890e-4aed-bbff-4a113c5a9e2c"}},{"name":"12a4d28b-df3d-4f57-b439-d2574898f8cc.__dont_treat_as_error__","label":"5 - Segregate Response Ledger Account➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"5ef916ba-54c2-42c7-9e58-43bd55fa8906"}},{"name":"12a4d28b-df3d-4f57-b439-d2574898f8cc.ledger_account_details","label":"5 - Segregate Response Ledger Account➛Ledger Account Details","reference_display":"Ledger Account Details","type":"object","base_type":"object","attributes":{"sourceId":"49517c56-dd7f-4847-a7c1-5519ae09bb7e","uiTypeLabel":"Object","co_type_name":"FD4653638f6e12d91081e576a76cb27c23","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"step","sourceUiUniqueId":"0943d0fb-bf0e-441c-bb3c-28607f55c070","uiType":"object","uiUniqueId":"68544708-badc-4f99-afb4-8a73479e441c"}},{"name":"f813fa0c-12d7-49e9-bdd1-feba6dc811c9.__action_status__","label":"5 - Segregate Ledger Account Response➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FD0653638f8c12d9106b3833c5e540e421","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"faa3c225-cd3a-4ba0-8aaf-300beea1a422"}},{"name":"f813fa0c-12d7-49e9-bdd1-feba6dc811c9.__dont_treat_as_error__","label":"5 - Segregate Ledger Account Response➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"7e619967-aa8b-499e-91a4-d93bb3ae1ab6"}},{"name":"f813fa0c-12d7-49e9-bdd1-feba6dc811c9.ledger_account_details","label":"5 - Segregate Ledger Account Response➛Ledger Account Details","reference_display":"Ledger Account Details","type":"object","base_type":"object","attributes":{"sourceId":"49517c56-dd7f-4847-a7c1-5519ae09bb7e","uiTypeLabel":"Object","co_type_name":"FD4653638f6e12d91081e576a76cb27c23","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"step","sourceUiUniqueId":"0943d0fb-bf0e-441c-bb3c-28607f55c070","uiType":"object","uiUniqueId":"5105244b-b97c-4f52-8f46-6cfa9748f38b"}},{"name":"f813fa0c-12d7-49e9-bdd1-feba6dc811c9.ledger_account_details.Client","label":"5➛Ledger Account Details➛Client","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"f813fa0c-12d7-49e9-bdd1-feba6dc811c9.ledger_account_details.Company_Code","label":"5➛Ledger Account Details➛Company Code","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"f813fa0c-12d7-49e9-bdd1-feba6dc811c9.ledger_account_details.Authorization_Group","label":"5➛Ledger Account Details➛Authorization Group","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"f813fa0c-12d7-49e9-bdd1-feba6dc811c9.ledger_account_details.Accounting_Clerk_Abbreviation","label":"5➛Ledger Account Details➛Accounting Clerk Abbreviation","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"f813fa0c-12d7-49e9-bdd1-feba6dc811c9.ledger_account_details.Account_currency","label":"5➛Ledger Account Details➛Account currency","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"f813fa0c-12d7-49e9-bdd1-feba6dc811c9.ledger_account_details.Account_is_reconciliation_account","label":"5➛Ledger Account Details➛Account is reconciliation account","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"f813fa0c-12d7-49e9-bdd1-feba6dc811c9.ledger_account_details.Alternative_Account_Number_in_Company_Code","label":"5➛Ledger Account Details➛Alternative Account Number in Company Code","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"f813fa0c-12d7-49e9-bdd1-feba6dc811c9.ledger_account_details.Cash_receipt_account","label":"5➛Ledger Account Details➛Cash receipt account","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"f813fa0c-12d7-49e9-bdd1-feba6dc811c9.ledger_account_details.Clearing_Specific_to_Ledger_Groups","label":"5➛Ledger Account Details➛Clearing Specific to Ledger Groups","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"f813fa0c-12d7-49e9-bdd1-feba6dc811c9.ledger_account_details.Commitment_Item","label":"5➛Ledger Account Details➛Commitment Item","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"f813fa0c-12d7-49e9-bdd1-feba6dc811c9.ledger_account_details.G_L_Account_Number","label":"5➛Ledger Account Details➛G/L Account Number","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"f813fa0c-12d7-49e9-bdd1-feba6dc811c9.ledger_account_details.accounting_clerk_abbreviation","label":"5➛Ledger Account Details➛Accounting Clerk Abbreviation","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"f813fa0c-12d7-49e9-bdd1-feba6dc811c9.ledger_account_details.account_currency","label":"5➛Ledger Account Details➛Account currency","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"f813fa0c-12d7-49e9-bdd1-feba6dc811c9.ledger_account_details.account_is_reconciliation_account","label":"5➛Ledger Account Details➛Account is reconciliation account","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"f813fa0c-12d7-49e9-bdd1-feba6dc811c9.ledger_account_details.alternative_account_number_in_company_code","label":"5➛Ledger Account Details➛Alternative Account Number in Company Code","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"f813fa0c-12d7-49e9-bdd1-feba6dc811c9.ledger_account_details.authorization_group","label":"5➛Ledger Account Details➛Authorization Group","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"f813fa0c-12d7-49e9-bdd1-feba6dc811c9.ledger_account_details.cash_receipt_account","label":"5➛Ledger Account Details➛Cash receipt account","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"f813fa0c-12d7-49e9-bdd1-feba6dc811c9.ledger_account_details.clearing_specific_to_ledger_groups","label":"5➛Ledger Account Details➛Clearing Specific to Ledger Groups","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"f813fa0c-12d7-49e9-bdd1-feba6dc811c9.ledger_account_details.commitment_item","label":"5➛Ledger Account Details➛Commitment Item","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"f813fa0c-12d7-49e9-bdd1-feba6dc811c9.ledger_account_details.company_code","label":"5➛Ledger Account Details➛Company Code","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"f813fa0c-12d7-49e9-bdd1-feba6dc811c9.ledger_account_details.date_of_the_last_interest_calculation_run","label":"5➛Ledger Account Details➛Date of the last interest calculation run","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"f813fa0c-12d7-49e9-bdd1-feba6dc811c9.ledger_account_details.date_on_which_the_record_was_created","label":"5➛Ledger Account Details➛Date on which the Record Was Created","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"f813fa0c-12d7-49e9-bdd1-feba6dc811c9.ledger_account_details.field_status_group","label":"5➛Ledger Account Details➛Field status group","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"f813fa0c-12d7-49e9-bdd1-feba6dc811c9.ledger_account_details.financial_budget_item","label":"5➛Ledger Account Details➛Financial Budget Item","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"f813fa0c-12d7-49e9-bdd1-feba6dc811c9.ledger_account_details.g_l_account_additional_text","label":"5➛Ledger Account Details➛G/L account additional text","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"f813fa0c-12d7-49e9-bdd1-feba6dc811c9.ledger_account_details.g_l_account_number","label":"5➛Ledger Account Details➛G/L Account Number","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"f813fa0c-12d7-49e9-bdd1-feba6dc811c9.ledger_account_details.id_for_account_details","label":"5➛Ledger Account Details➛ID for account details","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"f813fa0c-12d7-49e9-bdd1-feba6dc811c9.ledger_account_details.indicator_account_managed_in_external_system","label":"5➛Ledger Account Details➛Indicator: Account Managed in External System","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"f813fa0c-12d7-49e9-bdd1-feba6dc811c9.ledger_account_details.indicator_account_marked_for_deletion","label":"5➛Ledger Account Details➛Indicator: Account marked for deletion?","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"f813fa0c-12d7-49e9-bdd1-feba6dc811c9.ledger_account_details.indicator_can_line_items_be_displayed_by_account","label":"5➛Ledger Account Details➛Indicator: Can Line Items Be Displayed by Account?","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"f813fa0c-12d7-49e9-bdd1-feba6dc811c9.ledger_account_details.indicator_is_account_blocked_for_posting","label":"5➛Ledger Account Details➛Indicator: Is account blocked for posting?","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"8b47cb10-bbd5-47b8-8a31-ad3bf7208485.__action_status__","label":"9 - Log➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"8b47cb10-bbd5-47b8-8a31-ad3bf7208485.__dont_treat_as_error__","label":"9 - Log➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"22057d33-ba15-4c7f-88d4-530ac78d22b1.__action_status__","label":"5 - Segregate Ledger Account Response➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FD20fa6103e32a1d50b225e27daf27d6e2","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"428e1a51-24e2-42c8-9875-1c5b09412099"}},{"name":"22057d33-ba15-4c7f-88d4-530ac78d22b1.__dont_treat_as_error__","label":"5 - Segregate Ledger Account Response➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"2403c26c-9f24-4978-a6ba-e82c0dc12fb1"}},{"name":"22057d33-ba15-4c7f-88d4-530ac78d22b1.ledger_account_details","label":"5 - Segregate Ledger Account Response➛Ledger Account Details","reference_display":"Ledger Account Details","type":"object","base_type":"object","attributes":{"sourceId":"49517c56-dd7f-4847-a7c1-5519ae09bb7e","uiTypeLabel":"Object","co_type_name":"FD24faa103ed2a1d5045ee546a73b28922","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"step","sourceUiUniqueId":"0943d0fb-bf0e-441c-bb3c-28607f55c070","uiType":"object","uiUniqueId":"c4b21ad8-5c88-40af-804d-a2f6410f13e7"}},{"name":"22057d33-ba15-4c7f-88d4-530ac78d22b1.ledger_account_details.client","label":"5 - Segregate Ledger Account Response➛Ledger Account Details➛MANDT","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"22057d33-ba15-4c7f-88d4-530ac78d22b1.ledger_account_details.company_code","label":"5 - Segregate Ledger Account Response➛Ledger Account Details➛Company Code","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"22057d33-ba15-4c7f-88d4-530ac78d22b1.ledger_account_details.BUKRS","label":"5 - Segregate Ledger Account Response➛Ledger Account Details➛Company Code","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"22057d33-ba15-4c7f-88d4-530ac78d22b1.ledger_account_details.MANDT","label":"5 - Segregate Ledger Account Response➛Ledger Account Details➛Client","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"22057d33-ba15-4c7f-88d4-530ac78d22b1.ledger_account_details.WAERS","label":"5 - Segregate Ledger Account Response➛Ledger Account Details➛Account currency","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"22057d33-ba15-4c7f-88d4-530ac78d22b1.ledger_account_details.SAKNR","label":"5 - Segregate Ledger Account Response➛Ledger Account Details➛G/L Account Number","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"22057d33-ba15-4c7f-88d4-530ac78d22b1.ledger_account_details.STEXT","label":"5 - Segregate Ledger Account Response➛Ledger Account Details➛G/L account additional text","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"22057d33-ba15-4c7f-88d4-530ac78d22b1.ledger_account_details.HKTID","label":"5 - Segregate Ledger Account Response➛Ledger Account Details➛ID for account details","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"22057d33-ba15-4c7f-88d4-530ac78d22b1.ledger_account_details.MWSKZ","label":"5 - Segregate Ledger Account Response➛Ledger Account Details➛Tax Category in Account Master Record","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"22057d33-ba15-4c7f-88d4-530ac78d22b1.ledger_account_details.XOPVW","label":"5 - Segregate Ledger Account Response➛Ledger Account Details➛Indicator: Open Item Management?","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"22057d33-ba15-4c7f-88d4-530ac78d22b1.ledger_account_details.XSPEB","label":"5 - Segregate Ledger Account Response➛Ledger Account Details➛Indicator: Is account blocked for posting?","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"22057d33-ba15-4c7f-88d4-530ac78d22b1.ledger_account_details.WMETH","label":"5 - Segregate Ledger Account Response➛Ledger Account Details➛Indicator: Account Managed in External System","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}}]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <name>Copy of Ledger Account Master Data Pull from SAP</name>
+        <natlang/>
+        <outputs/>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-10-20 15:38:17</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>cbfa8f9b47ee5d5096fcb777746d43ea</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Copy of Ledger Account Master Data Pull from SAP</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Primary Data Integration for SAP" source="x_snc_com_data_int">93c7f5cb875a1950fd73642d0ebb3590</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
+        <sys_update_name>sys_hub_flow_cbfa8f9b47ee5d5096fcb777746d43ea</sys_update_name>
+        <sys_updated_by>bcone</sys_updated_by>
+        <sys_updated_on>2022-10-20 15:38:23</sys_updated_on>
+        <type>subflow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="DELETE" query="documentkey=cbfa8f9b47ee5d5096fcb777746d43ea"/>
+    <sys_variable_value action="DELETE" query="document_key=cbfa8f9b47ee5d5096fcb777746d43ea"/>
+    <sys_element_mapping action="DELETE" query="table=var__m_sys_hub_flow_output_cbfa8f9b47ee5d5096fcb777746d43ea^id=cbfa8f9b47ee5d5096fcb777746d43ea"/>
+    <sys_hub_trigger_instance action="DELETE" query="flow=cbfa8f9b47ee5d5096fcb777746d43ea"/>
+    <sys_hub_flow_stage action="DELETE" query="flow=cbfa8f9b47ee5d5096fcb777746d43ea"/>
+    <sys_flow_cat_variable_model action="DELETE" query="id=cbfa8f9b47ee5d5096fcb777746d43ea^sys_idNOT IN47fa8f9b47ee5d5096fcb777746d43eb"/>
+    <sys_flow_cat_variable_model action="DELETE">
+        <id>cbfa8f9b47ee5d5096fcb777746d43ea</id>
+        <name>Copy of Ledger Account Master Data Pull from SAP</name>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-10-20 15:38:18</sys_created_on>
+        <sys_id>47fa8f9b47ee5d5096fcb777746d43eb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>bcone</sys_updated_by>
+        <sys_updated_on>2022-10-20 15:38:18</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="DELETE" query="flow_catalog_model=47fa8f9b47ee5d5096fcb777746d43eb"/>
+    <sys_hub_flow_input action="DELETE" query="model=cbfa8f9b47ee5d5096fcb777746d43ea^sys_idNOT INcffa8f9b47ee5d5096fcb777746d43ff"/>
+    <sys_hub_flow_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=73ca0c05-4551-4474-8dd7-4541408d5aec</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>x_snc_com_data_int_integration_service_job_tracker</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>service_record</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Service Record</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Copy of Ledger Account Master Data Pull from SAP">cbfa8f9b47ee5d5096fcb777746d43ea</model>
+        <model_id>cbfa8f9b47ee5d5096fcb777746d43ea</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_cbfa8f9b47ee5d5096fcb777746d43ea</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="x_snc_com_data_int_integration_service_job_tracker">x_snc_com_data_int_integration_service_job_tracker</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-10-20 15:38:18</sys_created_on>
+        <sys_id>cffa8f9b47ee5d5096fcb777746d43ff</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>bcone</sys_updated_by>
+        <sys_updated_on>2022-10-20 15:38:18</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_output action="DELETE" query="model=cbfa8f9b47ee5d5096fcb777746d43ea^sys_idNOT IN53facf9b47ee5d5096fcb777746d430f,93facf9b47ee5d5096fcb777746d4307"/>
+    <sys_hub_flow_output action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=15f4acd0-c4ed-43d7-8968-bbbcf433e481</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>error</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Error</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Copy of Ledger Account Master Data Pull from SAP">cbfa8f9b47ee5d5096fcb777746d43ea</model>
+        <model_id>cbfa8f9b47ee5d5096fcb777746d43ea</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_output_cbfa8f9b47ee5d5096fcb777746d43ea</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-10-20 15:38:19</sys_created_on>
+        <sys_id>53facf9b47ee5d5096fcb777746d430f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>bcone</sys_updated_by>
+        <sys_updated_on>2022-10-20 15:38:19</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_flow_output action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=choice,uiTypeLabel=Choice,uiUniqueId=d703808a-f7c4-446e-9f82-955137e781e7</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice>3</choice>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>Error</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>status</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Choice">choice</internal_type>
+        <label>Status</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Copy of Ledger Account Master Data Pull from SAP">cbfa8f9b47ee5d5096fcb777746d43ea</model>
+        <model_id>cbfa8f9b47ee5d5096fcb777746d43ea</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_output_cbfa8f9b47ee5d5096fcb777746d43ea</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-10-20 15:38:18</sys_created_on>
+        <sys_id>93facf9b47ee5d5096fcb777746d4307</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>bcone</sys_updated_by>
+        <sys_updated_on>2022-10-20 15:38:19</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=cbfa8f9b47ee5d5096fcb777746d43ea"/>
+    <sys_hub_action_instance action="DELETE" query="flow=cbfa8f9b47ee5d5096fcb777746d43ea^sys_idNOT IN080bcf9b47ee5d5096fcb777746d4374,080bcf9b47ee5d5096fcb777746d4387,5c0bcf9b47ee5d5096fcb777746d438d,800bcf9b47ee5d5096fcb777746d436d,fbfacf9b47ee5d5096fcb777746d4356"/>
+    <sys_hub_action_instance action="DELETE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Segregate Ledger Account Response">abea6103472a1d5096fcb777746d437f</action_type>
+        <action_type_parent display_value="Segregate Ledger Account Response">40d0598347a61d5096fcb777746d4335</action_type_parent>
+        <comment/>
+        <compiled_snapshot>abea6103472a1d5096fcb777746d437f</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Copy of Ledger Account Master Data Pull from SAP">cbfa8f9b47ee5d5096fcb777746d43ea</flow>
+        <order>5</order>
+        <parent_ui_id>41b2368a-08f8-48f4-acf3-07e758693dc6</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-10-20 15:38:22</sys_created_on>
+        <sys_id>080bcf9b47ee5d5096fcb777746d4374</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
+        <sys_updated_by>bcone</sys_updated_by>
+        <sys_updated_on>2022-10-20 15:38:22</sys_updated_on>
+        <ui_id>22057d33-ba15-4c7f-88d4-530ac78d22b1</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="DELETE" query="document_key=080bcf9b47ee5d5096fcb777746d4374"/>
+    <sys_element_mapping action="DELETE" query="id=080bcf9b47ee5d5096fcb777746d4374"/>
+    <sys_element_mapping action="DELETE">
+        <field>json_string</field>
+        <id>080bcf9b47ee5d5096fcb777746d4374</id>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-10-20 15:38:22</sys_created_on>
+        <sys_id>480bcf9b47ee5d5096fcb777746d4375</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bcone</sys_updated_by>
+        <sys_updated_on>2022-10-20 15:38:22</sys_updated_on>
+        <table>var__m_sys_hub_action_input_abea6103472a1d5096fcb777746d437f</table>
+        <value>{{41b2368a-08f8-48f4-acf3-07e758693dc6.item}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="DELETE" query="instance=080bcf9b47ee5d5096fcb777746d4374"/>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=080bcf9b47ee5d5096fcb777746d4374"/>
+    <sys_hub_action_instance action="DELETE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create or Update Record">ab575ae253b3230034c6ddeeff7b12f1</action_type>
+        <action_type_parent display_value="Create or Update Record">e057d2e253b3230034c6ddeeff7b1261</action_type_parent>
+        <comment/>
+        <compiled_snapshot>ab575ae253b3230034c6ddeeff7b12f1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Copy of Ledger Account Master Data Pull from SAP">cbfa8f9b47ee5d5096fcb777746d43ea</flow>
+        <order>6</order>
+        <parent_ui_id>41b2368a-08f8-48f4-acf3-07e758693dc6</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-10-20 15:38:22</sys_created_on>
+        <sys_id>080bcf9b47ee5d5096fcb777746d4387</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
+        <sys_updated_by>bcone</sys_updated_by>
+        <sys_updated_on>2022-10-20 15:38:22</sys_updated_on>
+        <ui_id>efc389ce-a046-4866-89fe-e8a7ad2ee36c</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="DELETE" query="document_key=080bcf9b47ee5d5096fcb777746d4387"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_action_instance</document>
+        <document_key>080bcf9b47ee5d5096fcb777746d4387</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-10-20 15:38:22</sys_created_on>
+        <sys_id>000bcf9b47ee5d5096fcb777746d4389</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bcone</sys_updated_by>
+        <sys_updated_on>2022-10-20 15:38:22</sys_updated_on>
+        <value>x_snc_com_data_int_look_up_ledger_accounts</value>
+        <variable display_value="Table Name">27575ae253b3230034c6ddeeff7b12f4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="DELETE" query="id=080bcf9b47ee5d5096fcb777746d4387"/>
+    <sys_element_mapping action="DELETE">
+        <field>fields</field>
+        <id>080bcf9b47ee5d5096fcb777746d4387</id>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-10-20 15:38:22</sys_created_on>
+        <sys_id>c80bcf9b47ee5d5096fcb777746d4388</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bcone</sys_updated_by>
+        <sys_updated_on>2022-10-20 15:38:22</sys_updated_on>
+        <table>var__m_sys_hub_action_input_ab575ae253b3230034c6ddeeff7b12f1</table>
+        <value>u_client={{22057d33-ba15-4c7f-88d4-530ac78d22b1.ledger_account_details.MANDT}}^u_company_code={{22057d33-ba15-4c7f-88d4-530ac78d22b1.ledger_account_details.BUKRS}}^u_account_currency={{22057d33-ba15-4c7f-88d4-530ac78d22b1.ledger_account_details.WAERS}}^u_g_l_account_number={{22057d33-ba15-4c7f-88d4-530ac78d22b1.ledger_account_details.SAKNR}}^u_g_l_account_additional_text={{22057d33-ba15-4c7f-88d4-530ac78d22b1.ledger_account_details.STEXT}}^u_id_for_account_details={{22057d33-ba15-4c7f-88d4-530ac78d22b1.ledger_account_details.HKTID}}^u_tax_category_in_account_master_record={{22057d33-ba15-4c7f-88d4-530ac78d22b1.ledger_account_details.MWSKZ}}^u_indicator_open_item_management={{22057d33-ba15-4c7f-88d4-530ac78d22b1.ledger_account_details.XOPVW}}^u_indicator_is_account_blocked_for_posting={{22057d33-ba15-4c7f-88d4-530ac78d22b1.ledger_account_details.XSPEB}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>table_name</field>
+        <id>080bcf9b47ee5d5096fcb777746d4387</id>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-10-20 15:38:22</sys_created_on>
+        <sys_id>8c0bcf9b47ee5d5096fcb777746d4388</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bcone</sys_updated_by>
+        <sys_updated_on>2022-10-20 15:38:22</sys_updated_on>
+        <table>var__m_sys_hub_action_input_ab575ae253b3230034c6ddeeff7b12f1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="DELETE" query="instance=080bcf9b47ee5d5096fcb777746d4387"/>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=080bcf9b47ee5d5096fcb777746d4387"/>
+    <sys_hub_action_instance action="DELETE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type>
+        <action_type_parent display_value="Log">0e0ae8c2531003003bf1d9109ec587c8</action_type_parent>
+        <comment/>
+        <compiled_snapshot>5bc1bcc6531003003bf1d9109ec587d4</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Copy of Ledger Account Master Data Pull from SAP">cbfa8f9b47ee5d5096fcb777746d43ea</flow>
+        <order>9</order>
+        <parent_ui_id>f51ad5c8-c876-42d3-b13f-16169ffe31bc</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-10-20 15:38:22</sys_created_on>
+        <sys_id>5c0bcf9b47ee5d5096fcb777746d438d</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
+        <sys_updated_by>bcone</sys_updated_by>
+        <sys_updated_on>2022-10-20 15:38:23</sys_updated_on>
+        <ui_id>8b47cb10-bbd5-47b8-8a31-ad3bf7208485</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="DELETE" query="document_key=5c0bcf9b47ee5d5096fcb777746d438d"/>
+    <sys_element_mapping action="DELETE" query="id=5c0bcf9b47ee5d5096fcb777746d438d"/>
+    <sys_element_mapping action="DELETE">
+        <field>log_message</field>
+        <id>5c0bcf9b47ee5d5096fcb777746d438d</id>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-10-20 15:38:23</sys_created_on>
+        <sys_id>980bcf9b47ee5d5096fcb777746d438f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bcone</sys_updated_by>
+        <sys_updated_on>2022-10-20 15:38:23</sys_updated_on>
+        <table>var__m_sys_hub_action_input_5bc1bcc6531003003bf1d9109ec587d4</table>
+        <value>{{854a6d37-e668-49f8-a19a-d82aa0be6ca1.err}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="DELETE" query="instance=5c0bcf9b47ee5d5096fcb777746d438d^sys_idNOT IN900bcf9b47ee5d5096fcb777746d438f,980bcf9b47ee5d5096fcb777746d438e"/>
+    <sys_hub_input_scripts action="DELETE">
+        <active>false</active>
+        <input_name>log_message</input_name>
+        <instance>5c0bcf9b47ee5d5096fcb777746d438d</instance>
+        <referenced_table>sys_hub_action_instance</referenced_table>
+        <script>{"log_message":{"scriptActive":false}}</script>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-10-20 15:38:23</sys_created_on>
+        <sys_id>900bcf9b47ee5d5096fcb777746d438f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bcone</sys_updated_by>
+        <sys_updated_on>2022-10-20 15:38:23</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_input_scripts action="DELETE">
+        <active>false</active>
+        <input_name>log_level</input_name>
+        <instance>5c0bcf9b47ee5d5096fcb777746d438d</instance>
+        <referenced_table>sys_hub_action_instance</referenced_table>
+        <script>{"log_level":{"scriptActive":false}}</script>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-10-20 15:38:22</sys_created_on>
+        <sys_id>980bcf9b47ee5d5096fcb777746d438e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bcone</sys_updated_by>
+        <sys_updated_on>2022-10-20 15:38:22</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=5c0bcf9b47ee5d5096fcb777746d438d"/>
+    <sys_hub_action_instance action="DELETE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Parse_RFC_Response">3e5c7ab14756d51096fcb777746d4335</action_type>
+        <action_type_parent display_value="Parse_RFC_Response">d24abebd4716d51096fcb777746d43e6</action_type_parent>
+        <comment/>
+        <compiled_snapshot>3e5c7ab14756d51096fcb777746d4335</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Copy of Ledger Account Master Data Pull from SAP">cbfa8f9b47ee5d5096fcb777746d43ea</flow>
+        <order>3</order>
+        <parent_ui_id>84f30d07-e0ac-414f-9b7c-bc72386e1756</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-10-20 15:38:21</sys_created_on>
+        <sys_id>800bcf9b47ee5d5096fcb777746d436d</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
+        <sys_updated_by>bcone</sys_updated_by>
+        <sys_updated_on>2022-10-20 15:38:22</sys_updated_on>
+        <ui_id>e11c8f9f-9691-4d2f-903c-f7ba106a1727</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="DELETE" query="document_key=800bcf9b47ee5d5096fcb777746d436d"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_action_instance</document>
+        <document_key>800bcf9b47ee5d5096fcb777746d436d</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-10-20 15:38:22</sys_created_on>
+        <sys_id>880bcf9b47ee5d5096fcb777746d436e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bcone</sys_updated_by>
+        <sys_updated_on>2022-10-20 15:38:22</sys_updated_on>
+        <value>,﻿</value>
+        <variable display_value="Delimiter">39b15c20472edd1086887562846d438d</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="DELETE" query="id=800bcf9b47ee5d5096fcb777746d436d"/>
+    <sys_element_mapping action="DELETE">
+        <field>deli</field>
+        <id>800bcf9b47ee5d5096fcb777746d436d</id>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-10-20 15:38:22</sys_created_on>
+        <sys_id>440bcf9b47ee5d5096fcb777746d436e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bcone</sys_updated_by>
+        <sys_updated_on>2022-10-20 15:38:22</sys_updated_on>
+        <table>var__m_sys_hub_action_input_3e5c7ab14756d51096fcb777746d4335</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>json_string</field>
+        <id>800bcf9b47ee5d5096fcb777746d436d</id>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-10-20 15:38:22</sys_created_on>
+        <sys_id>080bcf9b47ee5d5096fcb777746d436e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bcone</sys_updated_by>
+        <sys_updated_on>2022-10-20 15:38:22</sys_updated_on>
+        <table>var__m_sys_hub_action_input_3e5c7ab14756d51096fcb777746d4335</table>
+        <value>{{854a6d37-e668-49f8-a19a-d82aa0be6ca1.output}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="DELETE" query="instance=800bcf9b47ee5d5096fcb777746d436d"/>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=800bcf9b47ee5d5096fcb777746d436d"/>
+    <sys_hub_action_instance action="DELETE">
+        <action_inputs/>
+        <action_type display_value="Execute RFC">878053f3c7043010678d208c95c26025</action_type>
+        <action_type_parent display_value="Execute RFC">006b07ffc7c03010678d208c95c26001</action_type_parent>
+        <comment/>
+        <compiled_snapshot>878053f3c7043010678d208c95c26025</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Copy of Ledger Account Master Data Pull from SAP">cbfa8f9b47ee5d5096fcb777746d43ea</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-10-20 15:38:21</sys_created_on>
+        <sys_id>fbfacf9b47ee5d5096fcb777746d4356</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
+        <sys_updated_by>bcone</sys_updated_by>
+        <sys_updated_on>2022-10-20 15:38:21</sys_updated_on>
+        <ui_id>854a6d37-e668-49f8-a19a-d82aa0be6ca1</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="DELETE" query="document_key=fbfacf9b47ee5d5096fcb777746d4356"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_action_instance</document>
+        <document_key>fbfacf9b47ee5d5096fcb777746d4356</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-10-20 15:38:21</sys_created_on>
+        <sys_id>33facf9b47ee5d5096fcb777746d435a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bcone</sys_updated_by>
+        <sys_updated_on>2022-10-20 15:38:21</sys_updated_on>
+        <value>99d0c7f54756d51096fcb777746d43ca</value>
+        <variable display_value="RFC">478053f3c7043010678d208c95c2602f</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_action_instance</document>
+        <document_key>fbfacf9b47ee5d5096fcb777746d4356</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-10-20 15:38:21</sys_created_on>
+        <sys_id>7ffacf9b47ee5d5096fcb777746d4359</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bcone</sys_updated_by>
+        <sys_updated_on>2022-10-20 15:38:21</sys_updated_on>
+        <value>d0578871dbad8010ea4494d9db9619d9</value>
+        <variable display_value="Connection Alias">4b8053f3c7043010678d208c95c26026</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_action_instance</document>
+        <document_key>fbfacf9b47ee5d5096fcb777746d4356</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-10-20 15:38:21</sys_created_on>
+        <sys_id>bbfacf9b47ee5d5096fcb777746d4359</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bcone</sys_updated_by>
+        <sys_updated_on>2022-10-20 15:38:21</sys_updated_on>
+        <value>{"children":[{"children":[{"name":"TYPE","label":"TYPE","type":"string"},{"name":"ID","label":"ID","type":"string"},{"name":"NUMBER","label":"NUMBER","type":"string"},{"name":"MESSAGE","label":"MESSAGE","type":"string"},{"name":"LOG_NO","label":"LOG_NO","type":"string"},{"name":"LOG_MSG_NO","label":"LOG_MSG_NO","type":"string"},{"name":"MESSAGE_V1","label":"MESSAGE_V1","type":"string"},{"name":"MESSAGE_V2","label":"MESSAGE_V2","type":"string"},{"name":"MESSAGE_V3","label":"MESSAGE_V3","type":"string"},{"name":"MESSAGE_V4","label":"MESSAGE_V4","type":"string"},{"name":"PARAMETER","label":"PARAMETER","type":"string"},{"name":"ROW","label":"ROW","type":"integer"},{"name":"FIELD","label":"FIELD","type":"string"},{"name":"SYSTEM","label":"SYSTEM","type":"string"}],"name":"ET_RETURN","attributes":{"child_type":"object"},"label":"Return table [ ET_RETURN ]","type":"array.object"},{"children":[{"name":"WA","label":"Application data [ WA ]","type":"string"},{"name":"WA1","label":"Application data [ WA1 ]","type":"string"},{"name":"WA2","label":"Application data [ WA2 ]","type":"string"},{"name":"WA3","label":"Application data [ WA3 ]","type":"string"},{"name":"WA4","label":"Application data [ WA4 ]","type":"string"},{"name":"WA5","label":"Application data [ WA5 ]","type":"string"},{"name":"WA6","label":"Application data [ WA6 ]","type":"string"},{"name":"WA7","label":"Application data [ WA7 ]","type":"string"},{"name":"WA8","label":"Application data [ WA8 ]","type":"string"},{"name":"WA9","label":"Application data [ WA9 ]","type":"string"},{"name":"WA10","label":"Application data [ WA10 ]","type":"string"},{"name":"WA11","label":"Application data [ WA11 ]","type":"string"},{"name":"WA12","label":"Application data [ WA12 ]","type":"string"},{"name":"WA13","label":"Application data [ WA13 ]","type":"string"},{"name":"WA14","label":"Application data [ WA14 ]","type":"string"},{"name":"WA15","label":"Application data [ WA15 ]","type":"string"},{"name":"WA16","label":"Application data [ WA16 ]","type":"string"},{"name":"WA17","label":"Application data [ WA17 ]","type":"string"},{"name":"WA18","label":"Application data [ WA18 ]","type":"string"},{"name":"WA19","label":"Application data [ WA19 ]","type":"string"},{"name":"WA20","label":"Application data [ WA20 ]","type":"string"},{"name":"WA21","label":"Application data [ WA21 ]","type":"string"},{"name":"WA22","label":"Application data [ WA22 ]","type":"string"},{"name":"WA23","label":"Application data [ WA23 ]","type":"string"},{"name":"WA24","label":"Application data [ WA24 ]","type":"string"},{"name":"WA25","label":"Application data [ WA25 ]","type":"string"},{"name":"WA26","label":"Application data [ WA26 ]","type":"string"},{"name":"WA27","label":"Application data [ WA27 ]","type":"string"},{"name":"WA28","label":"Application data [ WA28 ]","type":"string"},{"name":"WA29","label":"Application data [ WA29 ]","type":"string"},{"name":"WA30","label":"Application data [ WA30 ]","type":"string"}],"name":"IT_DATA","attributes":{"child_type":"object"},"label":"Search Result Format: 8000-Byte Field [ IT_DATA ]","type":"array.object"},{"children":[{"name":"FIELDNAME","label":"Field Name","type":"string"},{"name":"OFFSET","label":"Offset of a field","type":"string"},{"name":"LENGTH","label":"No of Characters","type":"string"},{"name":"TYPE","label":"ABAP type","type":"string"},{"name":"FIELDTEXT","label":"Short Description","type":"string"}],"name":"IT_FIELDS","attributes":{"child_type":"object"},"label":"RFC Table Read: Description of Fields to Retrieve [ IT_FIELDS ]","type":"array.object"},{"children":[{"name":"TEXT","label":"Text field","type":"string"}],"name":"IT_OPTIONS","attributes":{"child_type":"object"},"label":"RFC Table Read: Select Options / WHERE Clause [ IT_OPTIONS ]","type":"array.object"}],"type":"object","attributes":{"dynamic":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"ec3feb55-c033-40de-b020-c5065f65edc0"}}</value>
+        <variable display_value="Response">078053f3c7043010678d208c95c26045</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_action_instance</document>
+        <document_key>fbfacf9b47ee5d5096fcb777746d4356</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-10-20 15:38:21</sys_created_on>
+        <sys_id>f3facf9b47ee5d5096fcb777746d435a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bcone</sys_updated_by>
+        <sys_updated_on>2022-10-20 15:38:21</sys_updated_on>
+        <value>IV_QUERY_TABLE=SKB1^IV_DELIMITER=#﻿^IV_ROWCOUNT=5</value>
+        <variable display_value="Import and Changing Tab Inputs">878053f3c7043010678d208c95c26037</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="DELETE" query="table=var__m_sys_hub_action_input_878053f3c7043010678d208c95c26025^id=fbfacf9b47ee5d5096fcb777746d4356"/>
+    <sys_hub_input_scripts action="DELETE" query="instance=fbfacf9b47ee5d5096fcb777746d4356"/>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=fbfacf9b47ee5d5096fcb777746d4356"/>
+    <sys_hub_sub_flow_instance action="DELETE" query="flow=cbfa8f9b47ee5d5096fcb777746d43ea"/>
+    <sys_hub_flow_logic action="DELETE" query="flow=cbfa8f9b47ee5d5096fcb777746d43ea^sys_idNOT IN1ffacf9b47ee5d5096fcb777746d4314,67facf9b47ee5d5096fcb777746d4339,6bfacf9b47ee5d5096fcb777746d4332,6ffacf9b47ee5d5096fcb777746d4335,affacf9b47ee5d5096fcb777746d433b"/>
+    <sys_hub_flow_logic action="DELETE">
+        <block display_value="">6fe58f3d4756d51096fcb777746d4350</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Copy of Ledger Account Master Data Pull from SAP">cbfa8f9b47ee5d5096fcb777746d43ea</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-10-20 15:38:19</sys_created_on>
+        <sys_id>1ffacf9b47ee5d5096fcb777746d4314</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>bcone</sys_updated_by>
+        <sys_updated_on>2022-10-20 15:38:19</sys_updated_on>
+        <ui_id>84f30d07-e0ac-414f-9b7c-bc72386e1756</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="DELETE" query="document_key=1ffacf9b47ee5d5096fcb777746d4314"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>1ffacf9b47ee5d5096fcb777746d4314</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-10-20 15:38:19</sys_created_on>
+        <sys_id>5bfacf9b47ee5d5096fcb777746d4331</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bcone</sys_updated_by>
+        <sys_updated_on>2022-10-20 15:38:19</sys_updated_on>
+        <value>Execute RFC is successful</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="DELETE" query="id=1ffacf9b47ee5d5096fcb777746d4314"/>
+    <sys_element_mapping action="DELETE">
+        <field>condition</field>
+        <id>1ffacf9b47ee5d5096fcb777746d4314</id>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-10-20 15:38:19</sys_created_on>
+        <sys_id>d7facf9b47ee5d5096fcb777746d4331</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bcone</sys_updated_by>
+        <sys_updated_on>2022-10-20 15:38:19</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{854a6d37-e668-49f8-a19a-d82aa0be6ca1.status}}=success</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>condition_name</field>
+        <id>1ffacf9b47ee5d5096fcb777746d4314</id>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-10-20 15:38:19</sys_created_on>
+        <sys_id>13facf9b47ee5d5096fcb777746d4331</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bcone</sys_updated_by>
+        <sys_updated_on>2022-10-20 15:38:19</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE" query="table=var__m_sys_hub_flow_output_cbfa8f9b47ee5d5096fcb777746d43ea^id=1ffacf9b47ee5d5096fcb777746d4314"/>
+    <sys_hub_flow_logic_ext_input action="DELETE" query="model=1ffacf9b47ee5d5096fcb777746d4314"/>
+    <sys_hub_input_scripts action="DELETE" query="instance=1ffacf9b47ee5d5096fcb777746d4314"/>
+    <sys_hub_flow_logic action="DELETE">
+        <block display_value="">c95239bc4762d15096fcb777746d43b6</block>
+        <comment/>
+        <connected_to>84f30d07-e0ac-414f-9b7c-bc72386e1756</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Copy of Ledger Account Master Data Pull from SAP">cbfa8f9b47ee5d5096fcb777746d43ea</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>8</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-10-20 15:38:20</sys_created_on>
+        <sys_id>67facf9b47ee5d5096fcb777746d4339</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>bcone</sys_updated_by>
+        <sys_updated_on>2022-10-20 15:38:20</sys_updated_on>
+        <ui_id>f51ad5c8-c876-42d3-b13f-16169ffe31bc</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="DELETE" query="document_key=67facf9b47ee5d5096fcb777746d4339"/>
+    <sys_element_mapping action="DELETE" query="table=var__m_sys_hub_flow_output_cbfa8f9b47ee5d5096fcb777746d43ea^id=67facf9b47ee5d5096fcb777746d4339"/>
+    <sys_hub_flow_logic_ext_input action="DELETE" query="model=67facf9b47ee5d5096fcb777746d4339"/>
+    <sys_hub_input_scripts action="DELETE" query="instance=67facf9b47ee5d5096fcb777746d4339"/>
+    <sys_hub_flow_logic action="DELETE">
+        <block display_value="">73e58f3d4756d51096fcb777746d4377</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Copy of Ledger Account Master Data Pull from SAP">cbfa8f9b47ee5d5096fcb777746d43ea</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>84f30d07-e0ac-414f-9b7c-bc72386e1756</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-10-20 15:38:19</sys_created_on>
+        <sys_id>6bfacf9b47ee5d5096fcb777746d4332</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>bcone</sys_updated_by>
+        <sys_updated_on>2022-10-20 15:38:19</sys_updated_on>
+        <ui_id>41b2368a-08f8-48f4-acf3-07e758693dc6</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="DELETE" query="document_key=6bfacf9b47ee5d5096fcb777746d4332"/>
+    <sys_element_mapping action="DELETE" query="id=6bfacf9b47ee5d5096fcb777746d4332"/>
+    <sys_element_mapping action="DELETE">
+        <field>items</field>
+        <id>6bfacf9b47ee5d5096fcb777746d4332</id>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-10-20 15:38:19</sys_created_on>
+        <sys_id>27facf9b47ee5d5096fcb777746d4335</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bcone</sys_updated_by>
+        <sys_updated_on>2022-10-20 15:38:19</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{e11c8f9f-9691-4d2f-903c-f7ba106a1727.json_array}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE" query="table=var__m_sys_hub_flow_output_cbfa8f9b47ee5d5096fcb777746d43ea^id=6bfacf9b47ee5d5096fcb777746d4332"/>
+    <sys_hub_flow_logic_ext_input action="DELETE" query="model=6bfacf9b47ee5d5096fcb777746d4332"/>
+    <sys_hub_input_scripts action="DELETE" query="instance=6bfacf9b47ee5d5096fcb777746d4332"/>
+    <sys_hub_flow_logic action="DELETE">
+        <block display_value="">1aa8069547a6555096fcb777746d43f9</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Copy of Ledger Account Master Data Pull from SAP">cbfa8f9b47ee5d5096fcb777746d43ea</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>7</order>
+        <outputs_assigned>status</outputs_assigned>
+        <outputs_to_assign/>
+        <parent_ui_id>84f30d07-e0ac-414f-9b7c-bc72386e1756</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-10-20 15:38:19</sys_created_on>
+        <sys_id>6ffacf9b47ee5d5096fcb777746d4335</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>bcone</sys_updated_by>
+        <sys_updated_on>2022-10-20 15:38:20</sys_updated_on>
+        <ui_id>1cd8e237-4a50-46f4-a06c-031e0c54644d</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="DELETE" query="document_key=6ffacf9b47ee5d5096fcb777746d4335"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>6ffacf9b47ee5d5096fcb777746d4335</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-10-20 15:38:20</sys_created_on>
+        <sys_id>ebfacf9b47ee5d5096fcb777746d4338</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bcone</sys_updated_by>
+        <sys_updated_on>2022-10-20 15:38:20</sys_updated_on>
+        <value>Success</value>
+        <variable display_value="Status">93facf9b47ee5d5096fcb777746d4307</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="DELETE" query="table=var__m_sys_hub_flow_output_cbfa8f9b47ee5d5096fcb777746d43ea^id=6ffacf9b47ee5d5096fcb777746d4335"/>
+    <sys_hub_flow_logic_ext_input action="DELETE" query="model=6ffacf9b47ee5d5096fcb777746d4335"/>
+    <sys_hub_input_scripts action="DELETE" query="instance=6ffacf9b47ee5d5096fcb777746d4335"/>
+    <sys_hub_flow_logic action="DELETE">
+        <block display_value="">ec8046494726155096fcb777746d43a2</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Copy of Ledger Account Master Data Pull from SAP">cbfa8f9b47ee5d5096fcb777746d43ea</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>10</order>
+        <outputs_assigned>status,error</outputs_assigned>
+        <outputs_to_assign/>
+        <outputs_to_assign/>
+        <parent_ui_id>f51ad5c8-c876-42d3-b13f-16169ffe31bc</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-10-20 15:38:20</sys_created_on>
+        <sys_id>affacf9b47ee5d5096fcb777746d433b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>bcone</sys_updated_by>
+        <sys_updated_on>2022-10-20 15:38:20</sys_updated_on>
+        <ui_id>e300ec30-ee9f-4bad-9abb-87c077b66f93</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="DELETE" query="document_key=affacf9b47ee5d5096fcb777746d433b"/>
+    <sys_element_mapping action="DELETE" query="id=affacf9b47ee5d5096fcb777746d433b"/>
+    <sys_element_mapping action="DELETE">
+        <field>error</field>
+        <id>affacf9b47ee5d5096fcb777746d433b</id>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-10-20 15:38:20</sys_created_on>
+        <sys_id>e7facf9b47ee5d5096fcb777746d433e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bcone</sys_updated_by>
+        <sys_updated_on>2022-10-20 15:38:20</sys_updated_on>
+        <table>var__m_sys_hub_flow_output_cbfa8f9b47ee5d5096fcb777746d43ea</table>
+        <value>{{854a6d37-e668-49f8-a19a-d82aa0be6ca1.err}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="DELETE" query="model=affacf9b47ee5d5096fcb777746d433b"/>
+    <sys_hub_input_scripts action="DELETE" query="instance=affacf9b47ee5d5096fcb777746d433b"/>
+    <sys_hub_pill_compound action="DELETE" query="attached_to=cbfa8f9b47ee5d5096fcb777746d43ea"/>
+    <sys_hub_flow_variable action="DELETE" query="model=cbfa8f9b47ee5d5096fcb777746d43ea"/>
+    <sys_documentation action="DELETE" query="name=var__m_sys_hub_flow_input_cbfa8f9b47ee5d5096fcb777746d43ea^sys_idNOT INd3facf9b47ee5d5096fcb777746d4305"/>
+    <sys_documentation action="DELETE">
+        <element>service_record</element>
+        <help/>
+        <hint/>
+        <label>Service Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_cbfa8f9b47ee5d5096fcb777746d43ea</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-10-20 15:38:18</sys_created_on>
+        <sys_id>d3facf9b47ee5d5096fcb777746d4305</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Primary Data Integration for SAP" source="x_snc_com_data_int">93c7f5cb875a1950fd73642d0ebb3590</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>bcone</sys_updated_by>
+        <sys_updated_on>2022-10-20 15:38:18</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_flow_input_cbfa8f9b47ee5d5096fcb777746d43ea"/>
+    <sys_documentation action="DELETE" query="name=var__m_sys_hub_flow_output_cbfa8f9b47ee5d5096fcb777746d43ea^sys_idNOT IN97facf9b47ee5d5096fcb777746d430e,97facf9b47ee5d5096fcb777746d4311"/>
+    <sys_documentation action="DELETE">
+        <element>status</element>
+        <help/>
+        <hint/>
+        <label>Status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_cbfa8f9b47ee5d5096fcb777746d43ea</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-10-20 15:38:19</sys_created_on>
+        <sys_id>97facf9b47ee5d5096fcb777746d430e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Primary Data Integration for SAP" source="x_snc_com_data_int">93c7f5cb875a1950fd73642d0ebb3590</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>bcone</sys_updated_by>
+        <sys_updated_on>2022-10-20 15:38:19</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="DELETE">
+        <element>error</element>
+        <help/>
+        <hint/>
+        <label>Error</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_cbfa8f9b47ee5d5096fcb777746d43ea</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-10-20 15:38:19</sys_created_on>
+        <sys_id>97facf9b47ee5d5096fcb777746d4311</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Primary Data Integration for SAP" source="x_snc_com_data_int">93c7f5cb875a1950fd73642d0ebb3590</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>bcone</sys_updated_by>
+        <sys_updated_on>2022-10-20 15:38:19</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_flow_output_cbfa8f9b47ee5d5096fcb777746d43ea^sys_idNOT IN93facf9b47ee5d5096fcb777746d4309,5bfacf9b47ee5d5096fcb777746d430a"/>
+    <sys_choice action="DELETE" field="status" table="var__m_sys_hub_flow_output_cbfa8f9b47ee5d5096fcb777746d43ea">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Success</label>
+            <language>en</language>
+            <name>var__m_sys_hub_flow_output_cbfa8f9b47ee5d5096fcb777746d43ea</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>bcone</sys_created_by>
+            <sys_created_on>2022-10-20 15:38:19</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>93facf9b47ee5d5096fcb777746d4309</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>bcone</sys_updated_by>
+            <sys_updated_on>2022-10-20 15:38:19</sys_updated_on>
+            <value>Success</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Error</label>
+            <language>en</language>
+            <name>var__m_sys_hub_flow_output_cbfa8f9b47ee5d5096fcb777746d43ea</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>bcone</sys_created_by>
+            <sys_created_on>2022-10-20 15:38:19</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5bfacf9b47ee5d5096fcb777746d430a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>bcone</sys_updated_by>
+            <sys_updated_on>2022-10-20 15:38:19</sys_updated_on>
+            <value>Error</value>
+        </sys_choice>
+    </sys_choice>
+    <sys_flow_trigger_plan action="DELETE" query="plan_id=cbfa8f9b47ee5d5096fcb777746d43ea"/>
+    <sys_flow_subflow_plan action="DELETE" query="plan_id=cbfa8f9b47ee5d5096fcb777746d43ea"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</application>
+        <file_path/>
+        <instance_id>a4d93eb7dbce511091232f17d49619a6</instance_id>
+        <instance_name>psmdev02</instance_name>
+        <name>sys_hub_flow_cbfa8f9b47ee5d5096fcb777746d43ea</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_hub_flow"&gt;&lt;sys_hub_flow action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;acls/&gt;&lt;active&gt;false&lt;/active&gt;&lt;annotation/&gt;&lt;callable_by_client_api&gt;false&lt;/callable_by_client_api&gt;&lt;category/&gt;&lt;compiler_build&gt;glide-sandiego-12-22-2021__patch4a-06-21-2022_07-12-2022_1907.zip&lt;/compiler_build&gt;&lt;copied_from&gt;a73ded384762d15096fcb777746d4353&lt;/copied_from&gt;&lt;copied_from_name&gt;Ledger Account Master Data Pull &lt;/copied_from_name&gt;&lt;description/&gt;&lt;internal_name&gt;copy_of_ledger_account_master_data_pull_from_sap&lt;/internal_name&gt;&lt;label_cache&gt;[{"name":"f813fa0c-12d7-49e9-bdd1-feba6dc811c9.ledger_account_details.valuation_group","label":"5➛Ledger Account Details➛Valuation Group","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"f813fa0c-12d7-49e9-bdd1-feba6dc811c9.ledger_account_details.tolerance_group_for_g_l_accounts","label":"5➛Ledger Account Details➛Tolerance Group for G/L Accounts","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"f813fa0c-12d7-49e9-bdd1-feba6dc811c9.ledger_account_details.tax_category_in_account_master_record","label":"5➛Ledger Account Details➛Tax Category in Account Master Record","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"f813fa0c-12d7-49e9-bdd1-feba6dc811c9.ledger_account_details.short_key_for_a_house_bank","label":"5➛Ledger Account Details➛Short key for a house bank","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"f813fa0c-12d7-49e9-bdd1-feba6dc811c9.ledger_account_details.recovery_indicator","label":"5➛Ledger Account Details➛Recovery Indicator","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"f813fa0c-12d7-49e9-bdd1-feba6dc811c9.ledger_account_details.planning_level","label":"5➛Ledger Account Details➛Planning Level","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"f813fa0c-12d7-49e9-bdd1-feba6dc811c9.ledger_account_details.planning_group","label":"5➛Ledger Account Details➛Planning group","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"f813fa0c-12d7-49e9-bdd1-feba6dc811c9.ledger_account_details.name_of_person_who_created_the_object","label":"5➛Ledger Account Details➛Name of Person who Created the Object","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"f813fa0c-12d7-49e9-bdd1-feba6dc811c9.ledger_account_details.mca_key","label":"5➛Ledger Account Details➛MCA Key","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"f813fa0c-12d7-49e9-bdd1-feba6dc811c9.ledger_account_details.key_for_sorting_according_to_assignment_numbers","label":"5➛Ledger Account Details➛Key for sorting according to assignment numbers","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"f813fa0c-12d7-49e9-bdd1-feba6dc811c9.ledger_account_details.key_for_exchange_rate_differences_in_foreign_currency_accts","label":"5➛Ledger Account Details➛Key for Exchange Rate Differences in Foreign Currency Accts","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"f813fa0c-12d7-49e9-bdd1-feba6dc811c9.ledger_account_details.key_date_of_last_interest_calculation","label":"5➛Ledger Account Details➛Key Date of Last Interest Calculation","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"f813fa0c-12d7-49e9-bdd1-feba6dc811c9.ledger_account_details.interest_calculation_indicator","label":"5➛Ledger Account Details➛Interest calculation indicator","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"f813fa0c-12d7-49e9-bdd1-feba6dc811c9.ledger_account_details.interest_calculation_frequency_in_months","label":"5➛Ledger Account Details➛Interest Calculation Frequency in Months","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"f813fa0c-12d7-49e9-bdd1-feba6dc811c9.ledger_account_details.inflation_key","label":"5➛Ledger Account Details➛Inflation Key","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"f813fa0c-12d7-49e9-bdd1-feba6dc811c9.ledger_account_details.indicator_tax_code_is_not_a_required_field","label":"5➛Ledger Account Details➛Indicator: Tax code is not a required field","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"f813fa0c-12d7-49e9-bdd1-feba6dc811c9.ledger_account_details.indicator_supplement_for_automatic_postings","label":"5➛Ledger Account Details➛Indicator: Supplement for automatic postings ?","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"f813fa0c-12d7-49e9-bdd1-feba6dc811c9.ledger_account_details.indicator_reconcil_acct_ready_for_input_at_time_of_posting","label":"5➛Ledger Account Details➛Indicator: Reconcil.acct ready for input at time of posting?","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"f813fa0c-12d7-49e9-bdd1-feba6dc811c9.ledger_account_details.indicator_open_item_management","label":"5➛Ledger Account Details➛Indicator: Open Item Management?","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"f813fa0c-12d7-49e9-bdd1-feba6dc811c9.ledger_account_details.indicator_is_account_only_posted_to_automatically","label":"5➛Ledger Account Details➛Indicator: Is account only posted to automatically?","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"f813fa0c-12d7-49e9-bdd1-feba6dc811c9.ledger_account_details.client","label":"5➛Ledger Account Details➛Client","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"854a6d37-e668-49f8-a19a-d82aa0be6ca1.output","label":"1 - Execute RFC➛Response","reference_display":"Response","type":"dynamic_object","base_type":"dynamic_object","attributes":{"dynamic":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"ec3feb55-c033-40de-b020-c5065f65edc0"}},{"name":"854a6d37-e668-49f8-a19a-d82aa0be6ca1.status","label":"1 - Execute RFC➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"success","order":0.0},{"label":"Error","value":"error","order":1.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"be013fc8-8a66-424c-a986-bc6c2270b27c"}},{"name":"854a6d37-e668-49f8-a19a-d82aa0be6ca1.err","label":"1 - Execute RFC➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"8fb55a2b-1b65-43aa-b9d2-242ee67e399c"}},{"name":"854a6d37-e668-49f8-a19a-d82aa0be6ca1.__action_status__","label":"1 - Execute RFC➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"854a6d37-e668-49f8-a19a-d82aa0be6ca1.__dont_treat_as_error__","label":"1 - Execute RFC➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e11c8f9f-9691-4d2f-903c-f7ba106a1727.json_array","label":"3 - Parse_RFC_Response➛Json array","reference_display":"Json array","type":"array.string","base_type":"array.string","attributes":{"uiTypeLabel":"Array.String","co_type_name":"FD935c7ab1e356d5101cb326721344486c","child_label":"Json_array_obj","child_type_label":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"array.string","child_type":"string","child_name":"Json_array_obj","child_uiUniqueId":"26c7fe1f-0bf2-4ca2-b23c-223c139d7829","uiUniqueId":"4a462491-f357-4b32-a56a-6f38798c3ad3"}},{"name":"e11c8f9f-9691-4d2f-903c-f7ba106a1727.__action_status__","label":"3 - Parse_RFC_Response➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FD575c7ab13c56d51028a081482d93ba6e","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"d12f1232-cf85-4627-95bf-540799baf9fd"}},{"name":"e11c8f9f-9691-4d2f-903c-f7ba106a1727.__dont_treat_as_error__","label":"3 - Parse_RFC_Response➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"0b918dd2-4aeb-4bf6-b06e-83d3b4e98e93"}},{"name":"41b2368a-08f8-48f4-acf3-07e758693dc6.item","label":"4 - For Each➛Json_array_obj","reference_display":"Json_array_obj","type":"string","base_type":"string","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"5df9a504-6cab-4f62-8c7b-f056cf6cd66f.service_master","label":"5 - Segregate Service Master Response➛Service Master","reference_display":"Service Master","type":"object","base_type":"object","attributes":{"sourceId":"4abe81d1-4117-4736-b02b-6c263930bcb8","uiTypeLabel":"Object","co_type_name":"FDb3404fb5a756d51023b08b7b1e7f5bd1","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"step","sourceUiUniqueId":"2b7146b8-f1ec-474d-8648-4eb16d449733","uiType":"object","uiUniqueId":"3fd6a733-f5cd-45a6-a737-dd0dc355e256"}},{"name":"5df9a504-6cab-4f62-8c7b-f056cf6cd66f.__action_status__","label":"5 - Segregate Service Master Response➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FD84504fb59156d510014a9be314993bd3","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"134f731c-bf68-45d3-8d9d-65305cbad7a2"}},{"name":"5df9a504-6cab-4f62-8c7b-f056cf6cd66f.__dont_treat_as_error__","label":"5 - Segregate Service Master Response➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"5ed35a7b-bb3a-463d-9de8-3170db0f0e3c"}},{"name":"efc389ce-a046-4866-89fe-e8a7ad2ee36c.record","label":"6 - Create or Update Record➛Look Up Ledger Accounts Record","reference":"x_snc_com_data_int_look_up_ledger_accounts","reference_display":"Look Up Ledger Accounts","type":"reference","base_type":"reference","attributes":{"uiType":"document_id","uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"efc389ce-a046-4866-89fe-e8a7ad2ee36c.table_name","label":"6 - Create or Update Record➛Look Up Ledger Accounts Table","reference":"x_snc_com_data_int_look_up_ledger_accounts","reference_display":"Look Up Ledger Accounts","type":"table_name","base_type":"table_name","attributes":{"uiType":"table_name","uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"efc389ce-a046-4866-89fe-e8a7ad2ee36c.status","label":"6 - Create or Update Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Created","value":"created","order":1.0},{"label":"Updated","value":"updated","order":2.0},{"label":"Error","value":"error","order":3.0}],"attributes":{"uiType":"choice","uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"efc389ce-a046-4866-89fe-e8a7ad2ee36c.error_message","label":"6 - Create or Update Record➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"efc389ce-a046-4866-89fe-e8a7ad2ee36c.__action_status__","label":"6 - Create or Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"efc389ce-a046-4866-89fe-e8a7ad2ee36c.__dont_treat_as_error__","label":"6 - Create or Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5df9a504-6cab-4f62-8c7b-f056cf6cd66f.service_master.Client","label":"5 - Segregate Service Master Response➛Service Master➛Client","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"5df9a504-6cab-4f62-8c7b-f056cf6cd66f.service_master.Activity_Number","label":"5 - Segregate Service Master Response➛Service Master➛Activity Number","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"5df9a504-6cab-4f62-8c7b-f056cf6cd66f.service_master.Date_on_Which_Record_Was_Created","label":"5 - Segregate Service Master Response➛Service Master➛Date on Which Record Was Created","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"5df9a504-6cab-4f62-8c7b-f056cf6cd66f.service_master.Name_of_Person_Who_Created_the_Object","label":"5 - Segregate Service Master Response➛Service Master➛Name of Person Who Created the Object","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"5df9a504-6cab-4f62-8c7b-f056cf6cd66f.service_master.Date_of_Last_Change","label":"5 - Segregate Service Master Response➛Service Master➛Date of Last Change","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"5df9a504-6cab-4f62-8c7b-f056cf6cd66f.service_master.Name_of_person_who_changed_object","label":"5 - Segregate Service Master Response➛Service Master➛Name of person who changed object","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"5df9a504-6cab-4f62-8c7b-f056cf6cd66f.service_master.Deletion_Indicator","label":"5 - Segregate Service Master Response➛Service Master➛Deletion Indicator","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"5df9a504-6cab-4f62-8c7b-f056cf6cd66f.service_master.Material_Group","label":"5 - Segregate Service Master Response➛Service Master➛Material Group","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"5df9a504-6cab-4f62-8c7b-f056cf6cd66f.service_master.Base_Unit_of_Measure","label":"5 - Segregate Service Master Response➛Service Master➛Base Unit of Measure","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"5df9a504-6cab-4f62-8c7b-f056cf6cd66f.service_master.Service_Category","label":"5 - Segregate Service Master Response➛Service Master➛Service Category","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"5df9a504-6cab-4f62-8c7b-f056cf6cd66f.service_master.Package_number","label":"5 - Segregate Service Master Response➛Service Master➛Package number","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"5df9a504-6cab-4f62-8c7b-f056cf6cd66f.service_master.International_Article_Number","label":"5 - Segregate Service Master Response➛Service Master➛International Article Number","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"5df9a504-6cab-4f62-8c7b-f056cf6cd66f.service_master.Category_of_International_Article_Number","label":"5 - Segregate Service Master Response➛Service Master➛Category of International Article Number","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"5df9a504-6cab-4f62-8c7b-f056cf6cd66f.service_master.Division","label":"5 - Segregate Service Master Response➛Service Master➛Division","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"5df9a504-6cab-4f62-8c7b-f056cf6cd66f.service_master.Authorization_Group","label":"5 - Segregate Service Master Response➛Service Master➛Authorization Group","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"5df9a504-6cab-4f62-8c7b-f056cf6cd66f.service_master.General_Purchasing_Status_for_Serviceq","label":"5 - Segregate Service Master Response➛Service Master➛General Purchasing Status for Serviceq","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"5df9a504-6cab-4f62-8c7b-f056cf6cd66f.service_master.Validity_Date_for_Purchasing_Status","label":"5 - Segregate Service Master Response➛Service Master➛Validity Date for Purchasing Status","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"5df9a504-6cab-4f62-8c7b-f056cf6cd66f.service_master.Valuation_Class","label":"5 - Segregate Service Master Response➛Service Master➛Valuation Class","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"5df9a504-6cab-4f62-8c7b-f056cf6cd66f.service_master.Hierarchy_Service_Number","label":"5 - Segregate Service Master Response➛Service Master➛Hierarchy Service Number","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"5df9a504-6cab-4f62-8c7b-f056cf6cd66f.service_master.Primary_language_for_object_texts","label":"5 - Segregate Service Master Response➛Service Master➛Primary language for object texts","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"5df9a504-6cab-4f62-8c7b-f056cf6cd66f.service_master.Wage_type","label":"5 - Segregate Service Master Response➛Service Master➛Wage type","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"5df9a504-6cab-4f62-8c7b-f056cf6cd66f.service_master.Short_Description_of_Service_Type","label":"5 - Segregate Service Master Response➛Service Master➛Short Description of Service Type","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"5df9a504-6cab-4f62-8c7b-f056cf6cd66f.service_master.Edition_of_Service_Type","label":"5 - Segregate Service Master Response➛Service Master➛Edition of Service Type","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"5df9a504-6cab-4f62-8c7b-f056cf6cd66f.service_master.Standard_Service_Catalog_Item","label":"5 - Segregate Service Master Response➛Service Master➛Standard Service Catalog Item","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"5df9a504-6cab-4f62-8c7b-f056cf6cd66f.service_master.Tax_Indicator_for_Service_Purchasing_","label":"5 - Segregate Service Master Response➛Service Master➛Tax Indicator for Service (Purchasing)","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"5df9a504-6cab-4f62-8c7b-f056cf6cd66f.service_master.Denominator_for_Conversion_MEINS_IWEIN_","label":"5 - Segregate Service Master Response➛Service Master➛Denominator for Conversion (MEINS \u003c-\u003e IWEIN)","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"5df9a504-6cab-4f62-8c7b-f056cf6cd66f.service_master.Unit_for_Work","label":"5 - Segregate Service Master Response➛Service Master➛Unit for Work","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"5df9a504-6cab-4f62-8c7b-f056cf6cd66f.service_master.Formula_Number","label":"5 - Segregate Service Master Response➛Service Master➛Formula Number","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"5df9a504-6cab-4f62-8c7b-f056cf6cd66f.service_master.Uniform_resource_locator","label":"5 - Segregate Service Master Response➛Service Master➛Uniform resource locator","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"5df9a504-6cab-4f62-8c7b-f056cf6cd66f.service_master.Tax_Tariff_Code","label":"5 - Segregate Service Master Response➛Service Master➛Tax Tariff Code","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"5df9a504-6cab-4f62-8c7b-f056cf6cd66f.service_master.Short_Text_Change_Allowed","label":"5 - Segregate Service Master Response➛Service Master➛Short Text Change Allowed","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"5df9a504-6cab-4f62-8c7b-f056cf6cd66f.service_master.Numerator_for_conversion_of_MEINS_into_IWEIN","label":"5 - Segregate Service Master Response➛Service Master➛Numerator for conversion of MEINS into IWEIN","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"75f3e37e-b965-4608-8c13-041e82fb3b2a.__action_status__","label":"5 - Segregate Response Ledger Account➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FD0653638f8c12d9106b3833c5e540e421","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"164cbf55-890e-4aed-bbff-4a113c5a9e2c"}},{"name":"75f3e37e-b965-4608-8c13-041e82fb3b2a.__dont_treat_as_error__","label":"5 - Segregate Response Ledger Account➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"5ef916ba-54c2-42c7-9e58-43bd55fa8906"}},{"name":"75f3e37e-b965-4608-8c13-041e82fb3b2a.ledger_account_details","label":"5 - Segregate Response Ledger Account➛Ledger Account Details","reference_display":"Ledger Account Details","type":"object","base_type":"object","attributes":{"sourceId":"49517c56-dd7f-4847-a7c1-5519ae09bb7e","uiTypeLabel":"Object","co_type_name":"FD4653638f6e12d91081e576a76cb27c23","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"step","sourceUiUniqueId":"0943d0fb-bf0e-441c-bb3c-28607f55c070","uiType":"object","uiUniqueId":"68544708-badc-4f99-afb4-8a73479e441c"}},{"name":"12a4d28b-df3d-4f57-b439-d2574898f8cc.__action_status__","label":"5 - Segregate Response Ledger Account➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FD0653638f8c12d9106b3833c5e540e421","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"164cbf55-890e-4aed-bbff-4a113c5a9e2c"}},{"name":"12a4d28b-df3d-4f57-b439-d2574898f8cc.__dont_treat_as_error__","label":"5 - Segregate Response Ledger Account➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"5ef916ba-54c2-42c7-9e58-43bd55fa8906"}},{"name":"12a4d28b-df3d-4f57-b439-d2574898f8cc.ledger_account_details","label":"5 - Segregate Response Ledger Account➛Ledger Account Details","reference_display":"Ledger Account Details","type":"object","base_type":"object","attributes":{"sourceId":"49517c56-dd7f-4847-a7c1-5519ae09bb7e","uiTypeLabel":"Object","co_type_name":"FD4653638f6e12d91081e576a76cb27c23","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"step","sourceUiUniqueId":"0943d0fb-bf0e-441c-bb3c-28607f55c070","uiType":"object","uiUniqueId":"68544708-badc-4f99-afb4-8a73479e441c"}},{"name":"f813fa0c-12d7-49e9-bdd1-feba6dc811c9.__action_status__","label":"5 - Segregate Ledger Account Response➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FD0653638f8c12d9106b3833c5e540e421","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"faa3c225-cd3a-4ba0-8aaf-300beea1a422"}},{"name":"f813fa0c-12d7-49e9-bdd1-feba6dc811c9.__dont_treat_as_error__","label":"5 - Segregate Ledger Account Response➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"7e619967-aa8b-499e-91a4-d93bb3ae1ab6"}},{"name":"f813fa0c-12d7-49e9-bdd1-feba6dc811c9.ledger_account_details","label":"5 - Segregate Ledger Account Response➛Ledger Account Details","reference_display":"Ledger Account Details","type":"object","base_type":"object","attributes":{"sourceId":"49517c56-dd7f-4847-a7c1-5519ae09bb7e","uiTypeLabel":"Object","co_type_name":"FD4653638f6e12d91081e576a76cb27c23","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"step","sourceUiUniqueId":"0943d0fb-bf0e-441c-bb3c-28607f55c070","uiType":"object","uiUniqueId":"5105244b-b97c-4f52-8f46-6cfa9748f38b"}},{"name":"f813fa0c-12d7-49e9-bdd1-feba6dc811c9.ledger_account_details.Client","label":"5➛Ledger Account Details➛Client","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"f813fa0c-12d7-49e9-bdd1-feba6dc811c9.ledger_account_details.Company_Code","label":"5➛Ledger Account Details➛Company Code","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"f813fa0c-12d7-49e9-bdd1-feba6dc811c9.ledger_account_details.Authorization_Group","label":"5➛Ledger Account Details➛Authorization Group","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"f813fa0c-12d7-49e9-bdd1-feba6dc811c9.ledger_account_details.Accounting_Clerk_Abbreviation","label":"5➛Ledger Account Details➛Accounting Clerk Abbreviation","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"f813fa0c-12d7-49e9-bdd1-feba6dc811c9.ledger_account_details.Account_currency","label":"5➛Ledger Account Details➛Account currency","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"f813fa0c-12d7-49e9-bdd1-feba6dc811c9.ledger_account_details.Account_is_reconciliation_account","label":"5➛Ledger Account Details➛Account is reconciliation account","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"f813fa0c-12d7-49e9-bdd1-feba6dc811c9.ledger_account_details.Alternative_Account_Number_in_Company_Code","label":"5➛Ledger Account Details➛Alternative Account Number in Company Code","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"f813fa0c-12d7-49e9-bdd1-feba6dc811c9.ledger_account_details.Cash_receipt_account","label":"5➛Ledger Account Details➛Cash receipt account","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"f813fa0c-12d7-49e9-bdd1-feba6dc811c9.ledger_account_details.Clearing_Specific_to_Ledger_Groups","label":"5➛Ledger Account Details➛Clearing Specific to Ledger Groups","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"f813fa0c-12d7-49e9-bdd1-feba6dc811c9.ledger_account_details.Commitment_Item","label":"5➛Ledger Account Details➛Commitment Item","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"f813fa0c-12d7-49e9-bdd1-feba6dc811c9.ledger_account_details.G_L_Account_Number","label":"5➛Ledger Account Details➛G/L Account Number","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"f813fa0c-12d7-49e9-bdd1-feba6dc811c9.ledger_account_details.accounting_clerk_abbreviation","label":"5➛Ledger Account Details➛Accounting Clerk Abbreviation","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"f813fa0c-12d7-49e9-bdd1-feba6dc811c9.ledger_account_details.account_currency","label":"5➛Ledger Account Details➛Account currency","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"f813fa0c-12d7-49e9-bdd1-feba6dc811c9.ledger_account_details.account_is_reconciliation_account","label":"5➛Ledger Account Details➛Account is reconciliation account","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"f813fa0c-12d7-49e9-bdd1-feba6dc811c9.ledger_account_details.alternative_account_number_in_company_code","label":"5➛Ledger Account Details➛Alternative Account Number in Company Code","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"f813fa0c-12d7-49e9-bdd1-feba6dc811c9.ledger_account_details.authorization_group","label":"5➛Ledger Account Details➛Authorization Group","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"f813fa0c-12d7-49e9-bdd1-feba6dc811c9.ledger_account_details.cash_receipt_account","label":"5➛Ledger Account Details➛Cash receipt account","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"f813fa0c-12d7-49e9-bdd1-feba6dc811c9.ledger_account_details.clearing_specific_to_ledger_groups","label":"5➛Ledger Account Details➛Clearing Specific to Ledger Groups","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"f813fa0c-12d7-49e9-bdd1-feba6dc811c9.ledger_account_details.commitment_item","label":"5➛Ledger Account Details➛Commitment Item","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"f813fa0c-12d7-49e9-bdd1-feba6dc811c9.ledger_account_details.company_code","label":"5➛Ledger Account Details➛Company Code","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"f813fa0c-12d7-49e9-bdd1-feba6dc811c9.ledger_account_details.date_of_the_last_interest_calculation_run","label":"5➛Ledger Account Details➛Date of the last interest calculation run","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"f813fa0c-12d7-49e9-bdd1-feba6dc811c9.ledger_account_details.date_on_which_the_record_was_created","label":"5➛Ledger Account Details➛Date on which the Record Was Created","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"f813fa0c-12d7-49e9-bdd1-feba6dc811c9.ledger_account_details.field_status_group","label":"5➛Ledger Account Details➛Field status group","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"f813fa0c-12d7-49e9-bdd1-feba6dc811c9.ledger_account_details.financial_budget_item","label":"5➛Ledger Account Details➛Financial Budget Item","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"f813fa0c-12d7-49e9-bdd1-feba6dc811c9.ledger_account_details.g_l_account_additional_text","label":"5➛Ledger Account Details➛G/L account additional text","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"f813fa0c-12d7-49e9-bdd1-feba6dc811c9.ledger_account_details.g_l_account_number","label":"5➛Ledger Account Details➛G/L Account Number","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"f813fa0c-12d7-49e9-bdd1-feba6dc811c9.ledger_account_details.id_for_account_details","label":"5➛Ledger Account Details➛ID for account details","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"f813fa0c-12d7-49e9-bdd1-feba6dc811c9.ledger_account_details.indicator_account_managed_in_external_system","label":"5➛Ledger Account Details➛Indicator: Account Managed in External System","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"f813fa0c-12d7-49e9-bdd1-feba6dc811c9.ledger_account_details.indicator_account_marked_for_deletion","label":"5➛Ledger Account Details➛Indicator: Account marked for deletion?","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"f813fa0c-12d7-49e9-bdd1-feba6dc811c9.ledger_account_details.indicator_can_line_items_be_displayed_by_account","label":"5➛Ledger Account Details➛Indicator: Can Line Items Be Displayed by Account?","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"f813fa0c-12d7-49e9-bdd1-feba6dc811c9.ledger_account_details.indicator_is_account_blocked_for_posting","label":"5➛Ledger Account Details➛Indicator: Is account blocked for posting?","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"8b47cb10-bbd5-47b8-8a31-ad3bf7208485.__action_status__","label":"9 - Log➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"8b47cb10-bbd5-47b8-8a31-ad3bf7208485.__dont_treat_as_error__","label":"9 - Log➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"22057d33-ba15-4c7f-88d4-530ac78d22b1.__action_status__","label":"5 - Segregate Ledger Account Response➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FD20fa6103e32a1d50b225e27daf27d6e2","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"428e1a51-24e2-42c8-9875-1c5b09412099"}},{"name":"22057d33-ba15-4c7f-88d4-530ac78d22b1.__dont_treat_as_error__","label":"5 - Segregate Ledger Account Response➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"2403c26c-9f24-4978-a6ba-e82c0dc12fb1"}},{"name":"22057d33-ba15-4c7f-88d4-530ac78d22b1.ledger_account_details","label":"5 - Segregate Ledger Account Response➛Ledger Account Details","reference_display":"Ledger Account Details","type":"object","base_type":"object","attributes":{"sourceId":"49517c56-dd7f-4847-a7c1-5519ae09bb7e","uiTypeLabel":"Object","co_type_name":"FD24faa103ed2a1d5045ee546a73b28922","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"step","sourceUiUniqueId":"0943d0fb-bf0e-441c-bb3c-28607f55c070","uiType":"object","uiUniqueId":"c4b21ad8-5c88-40af-804d-a2f6410f13e7"}},{"name":"22057d33-ba15-4c7f-88d4-530ac78d22b1.ledger_account_details.client","label":"5 - Segregate Ledger Account Response➛Ledger Account Details➛MANDT","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"22057d33-ba15-4c7f-88d4-530ac78d22b1.ledger_account_details.company_code","label":"5 - Segregate Ledger Account Response➛Ledger Account Details➛Company Code","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"22057d33-ba15-4c7f-88d4-530ac78d22b1.ledger_account_details.BUKRS","label":"5 - Segregate Ledger Account Response➛Ledger Account Details➛Company Code","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"22057d33-ba15-4c7f-88d4-530ac78d22b1.ledger_account_details.MANDT","label":"5 - Segregate Ledger Account Response➛Ledger Account Details➛Client","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"22057d33-ba15-4c7f-88d4-530ac78d22b1.ledger_account_details.WAERS","label":"5 - Segregate Ledger Account Response➛Ledger Account Details➛Account currency","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"22057d33-ba15-4c7f-88d4-530ac78d22b1.ledger_account_details.SAKNR","label":"5 - Segregate Ledger Account Response➛Ledger Account Details➛G/L Account Number","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"22057d33-ba15-4c7f-88d4-530ac78d22b1.ledger_account_details.STEXT","label":"5 - Segregate Ledger Account Response➛Ledger Account Details➛G/L account additional text","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"22057d33-ba15-4c7f-88d4-530ac78d22b1.ledger_account_details.HKTID","label":"5 - Segregate Ledger Account Response➛Ledger Account Details➛ID for account details","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"22057d33-ba15-4c7f-88d4-530ac78d22b1.ledger_account_details.MWSKZ","label":"5 - Segregate Ledger Account Response➛Ledger Account Details➛Tax Category in Account Master Record","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"22057d33-ba15-4c7f-88d4-530ac78d22b1.ledger_account_details.XOPVW","label":"5 - Segregate Ledger Account Response➛Ledger Account Details➛Indicator: Open Item Management?","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"22057d33-ba15-4c7f-88d4-530ac78d22b1.ledger_account_details.XSPEB","label":"5 - Segregate Ledger Account Response➛Ledger Account Details➛Indicator: Is account blocked for posting?","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"22057d33-ba15-4c7f-88d4-530ac78d22b1.ledger_account_details.WMETH","label":"5 - Segregate Ledger Account Response➛Ledger Account Details➛Indicator: Account Managed in External System","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}}]&lt;/label_cache&gt;&lt;latest_snapshot/&gt;&lt;master_snapshot/&gt;&lt;name&gt;Copy of Ledger Account Master Data Pull from SAP&lt;/name&gt;&lt;natlang/&gt;&lt;outputs/&gt;&lt;remote_trigger_id/&gt;&lt;run_as&gt;system&lt;/run_as&gt;&lt;run_with_roles/&gt;&lt;sc_callable&gt;false&lt;/sc_callable&gt;&lt;show_draft_actions&gt;false&lt;/show_draft_actions&gt;&lt;show_triggered_flows&gt;false&lt;/show_triggered_flows&gt;&lt;status&gt;draft&lt;/status&gt;&lt;sys_class_name&gt;sys_hub_flow&lt;/sys_class_name&gt;&lt;sys_created_by&gt;bcone&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-10-20 15:38:17&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;cbfa8f9b47ee5d5096fcb777746d43ea&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;Copy of Ledger Account Master Data Pull from SAP&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Primary Data Integration for SAP" source="x_snc_com_data_int"&gt;93c7f5cb875a1950fd73642d0ebb3590&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Primary Data Integration for SAP"&gt;93c7f5cb875a1950fd73642d0ebb3590&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_hub_flow_cbfa8f9b47ee5d5096fcb777746d43ea&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;bcone&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-10-20 15:38:23&lt;/sys_updated_on&gt;&lt;type&gt;subflow&lt;/type&gt;&lt;/sys_hub_flow&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=cbfa8f9b47ee5d5096fcb777746d43ea"/&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=cbfa8f9b47ee5d5096fcb777746d43ea"/&gt;&lt;sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_cbfa8f9b47ee5d5096fcb777746d43ea^id=cbfa8f9b47ee5d5096fcb777746d43ea"/&gt;&lt;sys_hub_trigger_instance action="delete_multiple" query="flow=cbfa8f9b47ee5d5096fcb777746d43ea"/&gt;&lt;sys_hub_flow_stage action="delete_multiple" query="flow=cbfa8f9b47ee5d5096fcb777746d43ea"/&gt;&lt;sys_flow_cat_variable_model action="delete_multiple" query="id=cbfa8f9b47ee5d5096fcb777746d43ea^sys_idNOT IN47fa8f9b47ee5d5096fcb777746d43eb"/&gt;&lt;sys_flow_cat_variable_model action="INSERT_OR_UPDATE"&gt;&lt;id&gt;cbfa8f9b47ee5d5096fcb777746d43ea&lt;/id&gt;&lt;name&gt;Copy of Ledger Account Master Data Pull from SAP&lt;/name&gt;&lt;sys_created_by&gt;bcone&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-10-20 15:38:18&lt;/sys_created_on&gt;&lt;sys_id&gt;47fa8f9b47ee5d5096fcb777746d43eb&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;bcone&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-10-20 15:38:18&lt;/sys_updated_on&gt;&lt;/sys_flow_cat_variable_model&gt;&lt;sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=47fa8f9b47ee5d5096fcb777746d43eb"/&gt;&lt;sys_hub_flow_input action="delete_multiple" query="model=cbfa8f9b47ee5d5096fcb777746d43ea^sys_idNOT INcffa8f9b47ee5d5096fcb777746d43ff"/&gt;&lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=73ca0c05-4551-4474-8dd7-4541408d5aec&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table&gt;x_snc_com_data_int_integration_service_job_tracker&lt;/choice_table&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;service_record&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="Reference"&gt;reference&lt;/internal_type&gt;&lt;label&gt;Service Record&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;32&lt;/max_length&gt;&lt;model display_value="Copy of Ledger Account Master Data Pull from SAP"&gt;cbfa8f9b47ee5d5096fcb777746d43ea&lt;/model&gt;&lt;model_id&gt;cbfa8f9b47ee5d5096fcb777746d43ea&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_input_cbfa8f9b47ee5d5096fcb777746d43ea&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;1&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference display_value="" name="x_snc_com_data_int_integration_service_job_tracker"&gt;x_snc_com_data_int_integration_service_job_tracker&lt;/reference&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;bcone&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-10-20 15:38:18&lt;/sys_created_on&gt;&lt;sys_id&gt;cffa8f9b47ee5d5096fcb777746d43ff&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Primary Data Integration for SAP"&gt;93c7f5cb875a1950fd73642d0ebb3590&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;bcone&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-10-20 15:38:18&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_input&gt;&lt;sys_hub_flow_output action="delete_multiple" query="model=cbfa8f9b47ee5d5096fcb777746d43ea^sys_idNOT IN53facf9b47ee5d5096fcb777746d430f,93facf9b47ee5d5096fcb777746d4307"/&gt;&lt;sys_hub_flow_output action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=15f4acd0-c4ed-43d7-8968-bbbcf433e481&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;error&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;label&gt;Error&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;8000&lt;/max_length&gt;&lt;model display_value="Copy of Ledger Account Master Data Pull from SAP"&gt;cbfa8f9b47ee5d5096fcb777746d43ea&lt;/model&gt;&lt;model_id&gt;cbfa8f9b47ee5d5096fcb777746d43ea&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_output_cbfa8f9b47ee5d5096fcb777746d43ea&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;2&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_output&lt;/sys_class_name&gt;&lt;sys_created_by&gt;bcone&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-10-20 15:38:19&lt;/sys_created_on&gt;&lt;sys_id&gt;53facf9b47ee5d5096fcb777746d430f&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Primary Data Integration for SAP"&gt;93c7f5cb875a1950fd73642d0ebb3590&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;bcone&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-10-20 15:38:19&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_output&gt;&lt;sys_hub_flow_output action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=choice,uiTypeLabel=Choice,uiUniqueId=d703808a-f7c4-446e-9f82-955137e781e7&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice&gt;3&lt;/choice&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value&gt;Error&lt;/default_value&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;status&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="Choice"&gt;choice&lt;/internal_type&gt;&lt;label&gt;Status&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;32&lt;/max_length&gt;&lt;model display_value="Copy of Ledger Account Master Data Pull from SAP"&gt;cbfa8f9b47ee5d5096fcb777746d43ea&lt;/model&gt;&lt;model_id&gt;cbfa8f9b47ee5d5096fcb777746d43ea&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_output_cbfa8f9b47ee5d5096fcb777746d43ea&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;1&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_output&lt;/sys_class_name&gt;&lt;sys_created_by&gt;bcone&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-10-20 15:38:18&lt;/sys_created_on&gt;&lt;sys_id&gt;93facf9b47ee5d5096fcb777746d4307&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Primary Data Integration for SAP"&gt;93c7f5cb875a1950fd73642d0ebb3590&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;bcone&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-10-20 15:38:19&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_output&gt;&lt;sys_hub_alias_mapping action="delete_multiple" query="source_id=cbfa8f9b47ee5d5096fcb777746d43ea"/&gt;&lt;sys_hub_action_instance action="delete_multiple" query="flow=cbfa8f9b47ee5d5096fcb777746d43ea^sys_idNOT IN080bcf9b47ee5d5096fcb777746d4374,080bcf9b47ee5d5096fcb777746d4387,5c0bcf9b47ee5d5096fcb777746d438d,800bcf9b47ee5d5096fcb777746d436d,fbfacf9b47ee5d5096fcb777746d4356"/&gt;&lt;sys_hub_action_instance action="INSERT_OR_UPDATE"&gt;&lt;action_inputs/&gt;&lt;action_inputs/&gt;&lt;action_type display_value="Segregate Ledger Account Response"&gt;abea6103472a1d5096fcb777746d437f&lt;/action_type&gt;&lt;action_type_parent display_value="Segregate Ledger Account Response"&gt;40d0598347a61d5096fcb777746d4335&lt;/action_type_parent&gt;&lt;comment/&gt;&lt;compiled_snapshot&gt;abea6103472a1d5096fcb777746d437f&lt;/compiled_snapshot&gt;&lt;display_text/&gt;&lt;flow display_value="Copy of Ledger Account Master Data Pull from SAP"&gt;cbfa8f9b47ee5d5096fcb777746d43ea&lt;/flow&gt;&lt;order&gt;5&lt;/order&gt;&lt;parent_ui_id&gt;41b2368a-08f8-48f4-acf3-07e758693dc6&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_action_instance&lt;/sys_class_name&gt;&lt;sys_created_by&gt;bcone&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-10-20 15:38:22&lt;/sys_created_on&gt;&lt;sys_id&gt;080bcf9b47ee5d5096fcb777746d4374&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Primary Data Integration for SAP"&gt;93c7f5cb875a1950fd73642d0ebb3590&lt;/sys_scope&gt;&lt;sys_updated_by&gt;bcone&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-10-20 15:38:22&lt;/sys_updated_on&gt;&lt;ui_id&gt;22057d33-ba15-4c7f-88d4-530ac78d22b1&lt;/ui_id&gt;&lt;/sys_hub_action_instance&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=080bcf9b47ee5d5096fcb777746d4374"/&gt;&lt;sys_element_mapping action="delete_multiple" query="id=080bcf9b47ee5d5096fcb777746d4374"/&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;json_string&lt;/field&gt;&lt;id&gt;080bcf9b47ee5d5096fcb777746d4374&lt;/id&gt;&lt;sys_created_by&gt;bcone&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-10-20 15:38:22&lt;/sys_created_on&gt;&lt;sys_id&gt;480bcf9b47ee5d5096fcb777746d4375&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;bcone&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-10-20 15:38:22&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_abea6103472a1d5096fcb777746d437f&lt;/table&gt;&lt;value&gt;{{41b2368a-08f8-48f4-acf3-07e758693dc6.item}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_hub_input_scripts action="delete_multiple" query="instance=080bcf9b47ee5d5096fcb777746d4374"/&gt;&lt;sys_hub_alias_mapping action="delete_multiple" query="source_id=080bcf9b47ee5d5096fcb777746d4374"/&gt;&lt;sys_hub_action_instance action="INSERT_OR_UPDATE"&gt;&lt;action_inputs/&gt;&lt;action_inputs/&gt;&lt;action_type display_value="Create or Update Record"&gt;ab575ae253b3230034c6ddeeff7b12f1&lt;/action_type&gt;&lt;action_type_parent display_value="Create or Update Record"&gt;e057d2e253b3230034c6ddeeff7b1261&lt;/action_type_parent&gt;&lt;comment/&gt;&lt;compiled_snapshot&gt;ab575ae253b3230034c6ddeeff7b12f1&lt;/compiled_snapshot&gt;&lt;display_text/&gt;&lt;flow display_value="Copy of Ledger Account Master Data Pull from SAP"&gt;cbfa8f9b47ee5d5096fcb777746d43ea&lt;/flow&gt;&lt;order&gt;6&lt;/order&gt;&lt;parent_ui_id&gt;41b2368a-08f8-48f4-acf3-07e758693dc6&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_action_instance&lt;/sys_class_name&gt;&lt;sys_created_by&gt;bcone&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-10-20 15:38:22&lt;/sys_created_on&gt;&lt;sys_id&gt;080bcf9b47ee5d5096fcb777746d4387&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Primary Data Integration for SAP"&gt;93c7f5cb875a1950fd73642d0ebb3590&lt;/sys_scope&gt;&lt;sys_updated_by&gt;bcone&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-10-20 15:38:22&lt;/sys_updated_on&gt;&lt;ui_id&gt;efc389ce-a046-4866-89fe-e8a7ad2ee36c&lt;/ui_id&gt;&lt;/sys_hub_action_instance&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=080bcf9b47ee5d5096fcb777746d4387"/&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_action_instance&lt;/document&gt;&lt;document_key&gt;080bcf9b47ee5d5096fcb777746d4387&lt;/document_key&gt;&lt;order&gt;0&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;bcone&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-10-20 15:38:22&lt;/sys_created_on&gt;&lt;sys_id&gt;000bcf9b47ee5d5096fcb777746d4389&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;bcone&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-10-20 15:38:22&lt;/sys_updated_on&gt;&lt;value&gt;x_snc_com_data_int_look_up_ledger_accounts&lt;/value&gt;&lt;variable display_value="Table Name"&gt;27575ae253b3230034c6ddeeff7b12f4&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_element_mapping action="delete_multiple" query="id=080bcf9b47ee5d5096fcb777746d4387"/&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;fields&lt;/field&gt;&lt;id&gt;080bcf9b47ee5d5096fcb777746d4387&lt;/id&gt;&lt;sys_created_by&gt;bcone&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-10-20 15:38:22&lt;/sys_created_on&gt;&lt;sys_id&gt;c80bcf9b47ee5d5096fcb777746d4388&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;bcone&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-10-20 15:38:22&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_ab575ae253b3230034c6ddeeff7b12f1&lt;/table&gt;&lt;value&gt;u_client={{22057d33-ba15-4c7f-88d4-530ac78d22b1.ledger_account_details.MANDT}}^u_company_code={{22057d33-ba15-4c7f-88d4-530ac78d22b1.ledger_account_details.BUKRS}}^u_account_currency={{22057d33-ba15-4c7f-88d4-530ac78d22b1.ledger_account_details.WAERS}}^u_g_l_account_number={{22057d33-ba15-4c7f-88d4-530ac78d22b1.ledger_account_details.SAKNR}}^u_g_l_account_additional_text={{22057d33-ba15-4c7f-88d4-530ac78d22b1.ledger_account_details.STEXT}}^u_id_for_account_details={{22057d33-ba15-4c7f-88d4-530ac78d22b1.ledger_account_details.HKTID}}^u_tax_category_in_account_master_record={{22057d33-ba15-4c7f-88d4-530ac78d22b1.ledger_account_details.MWSKZ}}^u_indicator_open_item_management={{22057d33-ba15-4c7f-88d4-530ac78d22b1.ledger_account_details.XOPVW}}^u_indicator_is_account_blocked_for_posting={{22057d33-ba15-4c7f-88d4-530ac78d22b1.ledger_account_details.XSPEB}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;table_name&lt;/field&gt;&lt;id&gt;080bcf9b47ee5d5096fcb777746d4387&lt;/id&gt;&lt;sys_created_by&gt;bcone&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-10-20 15:38:22&lt;/sys_created_on&gt;&lt;sys_id&gt;8c0bcf9b47ee5d5096fcb777746d4388&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;bcone&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-10-20 15:38:22&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_ab575ae253b3230034c6ddeeff7b12f1&lt;/table&gt;&lt;value/&gt;&lt;/sys_element_mapping&gt;&lt;sys_hub_input_scripts action="delete_multiple" query="instance=080bcf9b47ee5d5096fcb777746d4387"/&gt;&lt;sys_hub_alias_mapping action="delete_multiple" query="source_id=080bcf9b47ee5d5096fcb777746d4387"/&gt;&lt;sys_hub_action_instance action="INSERT_OR_UPDATE"&gt;&lt;action_inputs/&gt;&lt;action_inputs/&gt;&lt;action_type display_value="Log"&gt;5bc1bcc6531003003bf1d9109ec587d4&lt;/action_type&gt;&lt;action_type_parent display_value="Log"&gt;0e0ae8c2531003003bf1d9109ec587c8&lt;/action_type_parent&gt;&lt;comment/&gt;&lt;compiled_snapshot&gt;5bc1bcc6531003003bf1d9109ec587d4&lt;/compiled_snapshot&gt;&lt;display_text/&gt;&lt;flow display_value="Copy of Ledger Account Master Data Pull from SAP"&gt;cbfa8f9b47ee5d5096fcb777746d43ea&lt;/flow&gt;&lt;order&gt;9&lt;/order&gt;&lt;parent_ui_id&gt;f51ad5c8-c876-42d3-b13f-16169ffe31bc&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_action_instance&lt;/sys_class_name&gt;&lt;sys_created_by&gt;bcone&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-10-20 15:38:22&lt;/sys_created_on&gt;&lt;sys_id&gt;5c0bcf9b47ee5d5096fcb777746d438d&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Primary Data Integration for SAP"&gt;93c7f5cb875a1950fd73642d0ebb3590&lt;/sys_scope&gt;&lt;sys_updated_by&gt;bcone&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-10-20 15:38:23&lt;/sys_updated_on&gt;&lt;ui_id&gt;8b47cb10-bbd5-47b8-8a31-ad3bf7208485&lt;/ui_id&gt;&lt;/sys_hub_action_instance&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=5c0bcf9b47ee5d5096fcb777746d438d"/&gt;&lt;sys_element_mapping action="delete_multiple" query="id=5c0bcf9b47ee5d5096fcb777746d438d"/&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;log_message&lt;/field&gt;&lt;id&gt;5c0bcf9b47ee5d5096fcb777746d438d&lt;/id&gt;&lt;sys_created_by&gt;bcone&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-10-20 15:38:23&lt;/sys_created_on&gt;&lt;sys_id&gt;980bcf9b47ee5d5096fcb777746d438f&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;bcone&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-10-20 15:38:23&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_5bc1bcc6531003003bf1d9109ec587d4&lt;/table&gt;&lt;value&gt;{{854a6d37-e668-49f8-a19a-d82aa0be6ca1.err}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_hub_input_scripts action="delete_multiple" query="instance=5c0bcf9b47ee5d5096fcb777746d438d^sys_idNOT IN900bcf9b47ee5d5096fcb777746d438f,980bcf9b47ee5d5096fcb777746d438e"/&gt;&lt;sys_hub_input_scripts action="INSERT_OR_UPDATE"&gt;&lt;active&gt;false&lt;/active&gt;&lt;input_name&gt;log_message&lt;/input_name&gt;&lt;instance&gt;5c0bcf9b47ee5d5096fcb777746d438d&lt;/instance&gt;&lt;referenced_table&gt;sys_hub_action_instance&lt;/referenced_table&gt;&lt;script&gt;{"log_message":{"scriptActive":false}}&lt;/script&gt;&lt;sys_created_by&gt;bcone&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-10-20 15:38:23&lt;/sys_created_on&gt;&lt;sys_id&gt;900bcf9b47ee5d5096fcb777746d438f&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;bcone&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-10-20 15:38:23&lt;/sys_updated_on&gt;&lt;/sys_hub_input_scripts&gt;&lt;sys_hub_input_scripts action="INSERT_OR_UPDATE"&gt;&lt;active&gt;false&lt;/active&gt;&lt;input_name&gt;log_level&lt;/input_name&gt;&lt;instance&gt;5c0bcf9b47ee5d5096fcb777746d438d&lt;/instance&gt;&lt;referenced_table&gt;sys_hub_action_instance&lt;/referenced_table&gt;&lt;script&gt;{"log_level":{"scriptActive":false}}&lt;/script&gt;&lt;sys_created_by&gt;bcone&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-10-20 15:38:22&lt;/sys_created_on&gt;&lt;sys_id&gt;980bcf9b47ee5d5096fcb777746d438e&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;bcone&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-10-20 15:38:22&lt;/sys_updated_on&gt;&lt;/sys_hub_input_scripts&gt;&lt;sys_hub_alias_mapping action="delete_multiple" query="source_id=5c0bcf9b47ee5d5096fcb777746d438d"/&gt;&lt;sys_hub_action_instance action="INSERT_OR_UPDATE"&gt;&lt;action_inputs/&gt;&lt;action_inputs/&gt;&lt;action_type display_value="Parse_RFC_Response"&gt;3e5c7ab14756d51096fcb777746d4335&lt;/action_type&gt;&lt;action_type_parent display_value="Parse_RFC_Response"&gt;d24abebd4716d51096fcb777746d43e6&lt;/action_type_parent&gt;&lt;comment/&gt;&lt;compiled_snapshot&gt;3e5c7ab14756d51096fcb777746d4335&lt;/compiled_snapshot&gt;&lt;display_text/&gt;&lt;flow display_value="Copy of Ledger Account Master Data Pull from SAP"&gt;cbfa8f9b47ee5d5096fcb777746d43ea&lt;/flow&gt;&lt;order&gt;3&lt;/order&gt;&lt;parent_ui_id&gt;84f30d07-e0ac-414f-9b7c-bc72386e1756&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_action_instance&lt;/sys_class_name&gt;&lt;sys_created_by&gt;bcone&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-10-20 15:38:21&lt;/sys_created_on&gt;&lt;sys_id&gt;800bcf9b47ee5d5096fcb777746d436d&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Primary Data Integration for SAP"&gt;93c7f5cb875a1950fd73642d0ebb3590&lt;/sys_scope&gt;&lt;sys_updated_by&gt;bcone&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-10-20 15:38:22&lt;/sys_updated_on&gt;&lt;ui_id&gt;e11c8f9f-9691-4d2f-903c-f7ba106a1727&lt;/ui_id&gt;&lt;/sys_hub_action_instance&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=800bcf9b47ee5d5096fcb777746d436d"/&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_action_instance&lt;/document&gt;&lt;document_key&gt;800bcf9b47ee5d5096fcb777746d436d&lt;/document_key&gt;&lt;order&gt;2&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;bcone&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-10-20 15:38:22&lt;/sys_created_on&gt;&lt;sys_id&gt;880bcf9b47ee5d5096fcb777746d436e&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;bcone&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-10-20 15:38:22&lt;/sys_updated_on&gt;&lt;value&gt;,﻿&lt;/value&gt;&lt;variable display_value="Delimiter"&gt;39b15c20472edd1086887562846d438d&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_element_mapping action="delete_multiple" query="id=800bcf9b47ee5d5096fcb777746d436d"/&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;deli&lt;/field&gt;&lt;id&gt;800bcf9b47ee5d5096fcb777746d436d&lt;/id&gt;&lt;sys_created_by&gt;bcone&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-10-20 15:38:22&lt;/sys_created_on&gt;&lt;sys_id&gt;440bcf9b47ee5d5096fcb777746d436e&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;bcone&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-10-20 15:38:22&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_3e5c7ab14756d51096fcb777746d4335&lt;/table&gt;&lt;value/&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;json_string&lt;/field&gt;&lt;id&gt;800bcf9b47ee5d5096fcb777746d436d&lt;/id&gt;&lt;sys_created_by&gt;bcone&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-10-20 15:38:22&lt;/sys_created_on&gt;&lt;sys_id&gt;080bcf9b47ee5d5096fcb777746d436e&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;bcone&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-10-20 15:38:22&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_3e5c7ab14756d51096fcb777746d4335&lt;/table&gt;&lt;value&gt;{{854a6d37-e668-49f8-a19a-d82aa0be6ca1.output}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_hub_input_scripts action="delete_multiple" query="instance=800bcf9b47ee5d5096fcb777746d436d"/&gt;&lt;sys_hub_alias_mapping action="delete_multiple" query="source_id=800bcf9b47ee5d5096fcb777746d436d"/&gt;&lt;sys_hub_action_instance action="INSERT_OR_UPDATE"&gt;&lt;action_inputs/&gt;&lt;action_type display_value="Execute RFC"&gt;878053f3c7043010678d208c95c26025&lt;/action_type&gt;&lt;action_type_parent display_value="Execute RFC"&gt;006b07ffc7c03010678d208c95c26001&lt;/action_type_parent&gt;&lt;comment/&gt;&lt;compiled_snapshot&gt;878053f3c7043010678d208c95c26025&lt;/compiled_snapshot&gt;&lt;display_text/&gt;&lt;flow display_value="Copy of Ledger Account Master Data Pull from SAP"&gt;cbfa8f9b47ee5d5096fcb777746d43ea&lt;/flow&gt;&lt;order&gt;1&lt;/order&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_action_instance&lt;/sys_class_name&gt;&lt;sys_created_by&gt;bcone&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-10-20 15:38:21&lt;/sys_created_on&gt;&lt;sys_id&gt;fbfacf9b47ee5d5096fcb777746d4356&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Primary Data Integration for SAP"&gt;93c7f5cb875a1950fd73642d0ebb3590&lt;/sys_scope&gt;&lt;sys_updated_by&gt;bcone&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-10-20 15:38:21&lt;/sys_updated_on&gt;&lt;ui_id&gt;854a6d37-e668-49f8-a19a-d82aa0be6ca1&lt;/ui_id&gt;&lt;/sys_hub_action_instance&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=fbfacf9b47ee5d5096fcb777746d4356"/&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_action_instance&lt;/document&gt;&lt;document_key&gt;fbfacf9b47ee5d5096fcb777746d4356&lt;/document_key&gt;&lt;order&gt;2&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;bcone&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-10-20 15:38:21&lt;/sys_created_on&gt;&lt;sys_id&gt;33facf9b47ee5d5096fcb777746d435a&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;bcone&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-10-20 15:38:21&lt;/sys_updated_on&gt;&lt;value&gt;99d0c7f54756d51096fcb777746d43ca&lt;/value&gt;&lt;variable display_value="RFC"&gt;478053f3c7043010678d208c95c2602f&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_action_instance&lt;/document&gt;&lt;document_key&gt;fbfacf9b47ee5d5096fcb777746d4356&lt;/document_key&gt;&lt;order&gt;1&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;bcone&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-10-20 15:38:21&lt;/sys_created_on&gt;&lt;sys_id&gt;7ffacf9b47ee5d5096fcb777746d4359&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;bcone&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-10-20 15:38:21&lt;/sys_updated_on&gt;&lt;value&gt;d0578871dbad8010ea4494d9db9619d9&lt;/value&gt;&lt;variable display_value="Connection Alias"&gt;4b8053f3c7043010678d208c95c26026&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_action_instance&lt;/document&gt;&lt;document_key&gt;fbfacf9b47ee5d5096fcb777746d4356&lt;/document_key&gt;&lt;order&gt;5&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;bcone&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-10-20 15:38:21&lt;/sys_created_on&gt;&lt;sys_id&gt;bbfacf9b47ee5d5096fcb777746d4359&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;bcone&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-10-20 15:38:21&lt;/sys_updated_on&gt;&lt;value&gt;{"children":[{"children":[{"name":"TYPE","label":"TYPE","type":"string"},{"name":"ID","label":"ID","type":"string"},{"name":"NUMBER","label":"NUMBER","type":"string"},{"name":"MESSAGE","label":"MESSAGE","type":"string"},{"name":"LOG_NO","label":"LOG_NO","type":"string"},{"name":"LOG_MSG_NO","label":"LOG_MSG_NO","type":"string"},{"name":"MESSAGE_V1","label":"MESSAGE_V1","type":"string"},{"name":"MESSAGE_V2","label":"MESSAGE_V2","type":"string"},{"name":"MESSAGE_V3","label":"MESSAGE_V3","type":"string"},{"name":"MESSAGE_V4","label":"MESSAGE_V4","type":"string"},{"name":"PARAMETER","label":"PARAMETER","type":"string"},{"name":"ROW","label":"ROW","type":"integer"},{"name":"FIELD","label":"FIELD","type":"string"},{"name":"SYSTEM","label":"SYSTEM","type":"string"}],"name":"ET_RETURN","attributes":{"child_type":"object"},"label":"Return table [ ET_RETURN ]","type":"array.object"},{"children":[{"name":"WA","label":"Application data [ WA ]","type":"string"},{"name":"WA1","label":"Application data [ WA1 ]","type":"string"},{"name":"WA2","label":"Application data [ WA2 ]","type":"string"},{"name":"WA3","label":"Application data [ WA3 ]","type":"string"},{"name":"WA4","label":"Application data [ WA4 ]","type":"string"},{"name":"WA5","label":"Application data [ WA5 ]","type":"string"},{"name":"WA6","label":"Application data [ WA6 ]","type":"string"},{"name":"WA7","label":"Application data [ WA7 ]","type":"string"},{"name":"WA8","label":"Application data [ WA8 ]","type":"string"},{"name":"WA9","label":"Application data [ WA9 ]","type":"string"},{"name":"WA10","label":"Application data [ WA10 ]","type":"string"},{"name":"WA11","label":"Application data [ WA11 ]","type":"string"},{"name":"WA12","label":"Application data [ WA12 ]","type":"string"},{"name":"WA13","label":"Application data [ WA13 ]","type":"string"},{"name":"WA14","label":"Application data [ WA14 ]","type":"string"},{"name":"WA15","label":"Application data [ WA15 ]","type":"string"},{"name":"WA16","label":"Application data [ WA16 ]","type":"string"},{"name":"WA17","label":"Application data [ WA17 ]","type":"string"},{"name":"WA18","label":"Application data [ WA18 ]","type":"string"},{"name":"WA19","label":"Application data [ WA19 ]","type":"string"},{"name":"WA20","label":"Application data [ WA20 ]","type":"string"},{"name":"WA21","label":"Application data [ WA21 ]","type":"string"},{"name":"WA22","label":"Application data [ WA22 ]","type":"string"},{"name":"WA23","label":"Application data [ WA23 ]","type":"string"},{"name":"WA24","label":"Application data [ WA24 ]","type":"string"},{"name":"WA25","label":"Application data [ WA25 ]","type":"string"},{"name":"WA26","label":"Application data [ WA26 ]","type":"string"},{"name":"WA27","label":"Application data [ WA27 ]","type":"string"},{"name":"WA28","label":"Application data [ WA28 ]","type":"string"},{"name":"WA29","label":"Application data [ WA29 ]","type":"string"},{"name":"WA30","label":"Application data [ WA30 ]","type":"string"}],"name":"IT_DATA","attributes":{"child_type":"object"},"label":"Search Result Format: 8000-Byte Field [ IT_DATA ]","type":"array.object"},{"children":[{"name":"FIELDNAME","label":"Field Name","type":"string"},{"name":"OFFSET","label":"Offset of a field","type":"string"},{"name":"LENGTH","label":"No of Characters","type":"string"},{"name":"TYPE","label":"ABAP type","type":"string"},{"name":"FIELDTEXT","label":"Short Description","type":"string"}],"name":"IT_FIELDS","attributes":{"child_type":"object"},"label":"RFC Table Read: Description of Fields to Retrieve [ IT_FIELDS ]","type":"array.object"},{"children":[{"name":"TEXT","label":"Text field","type":"string"}],"name":"IT_OPTIONS","attributes":{"child_type":"object"},"label":"RFC Table Read: Select Options / WHERE Clause [ IT_OPTIONS ]","type":"array.object"}],"type":"object","attributes":{"dynamic":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"ec3feb55-c033-40de-b020-c5065f65edc0"}}&lt;/value&gt;&lt;variable display_value="Response"&gt;078053f3c7043010678d208c95c26045&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_action_instance&lt;/document&gt;&lt;document_key&gt;fbfacf9b47ee5d5096fcb777746d4356&lt;/document_key&gt;&lt;order&gt;3&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;bcone&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-10-20 15:38:21&lt;/sys_created_on&gt;&lt;sys_id&gt;f3facf9b47ee5d5096fcb777746d435a&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;bcone&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-10-20 15:38:21&lt;/sys_updated_on&gt;&lt;value&gt;IV_QUERY_TABLE=SKB1^IV_DELIMITER=#﻿^IV_ROWCOUNT=5&lt;/value&gt;&lt;variable display_value="Import and Changing Tab Inputs"&gt;878053f3c7043010678d208c95c26037&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_input_878053f3c7043010678d208c95c26025^id=fbfacf9b47ee5d5096fcb777746d4356"/&gt;&lt;sys_hub_input_scripts action="delete_multiple" query="instance=fbfacf9b47ee5d5096fcb777746d4356"/&gt;&lt;sys_hub_alias_mapping action="delete_multiple" query="source_id=fbfacf9b47ee5d5096fcb777746d4356"/&gt;&lt;sys_hub_sub_flow_instance action="delete_multiple" query="flow=cbfa8f9b47ee5d5096fcb777746d43ea"/&gt;&lt;sys_hub_flow_logic action="delete_multiple" query="flow=cbfa8f9b47ee5d5096fcb777746d43ea^sys_idNOT IN1ffacf9b47ee5d5096fcb777746d4314,67facf9b47ee5d5096fcb777746d4339,6bfacf9b47ee5d5096fcb777746d4332,6ffacf9b47ee5d5096fcb777746d4335,affacf9b47ee5d5096fcb777746d433b"/&gt;&lt;sys_hub_flow_logic action="INSERT_OR_UPDATE"&gt;&lt;block display_value=""&gt;6fe58f3d4756d51096fcb777746d4350&lt;/block&gt;&lt;comment/&gt;&lt;connected_to/&gt;&lt;decision_table/&gt;&lt;decision_table_inputs/&gt;&lt;display_text/&gt;&lt;extended_inputs/&gt;&lt;flow display_value="Copy of Ledger Account Master Data Pull from SAP"&gt;cbfa8f9b47ee5d5096fcb777746d43ea&lt;/flow&gt;&lt;flow_variable/&gt;&lt;flow_variables_assigned/&gt;&lt;inputs/&gt;&lt;inputs/&gt;&lt;logic_definition display_value="If"&gt;af4e1945c3e232002841b63b12d3ae3e&lt;/logic_definition&gt;&lt;order&gt;2&lt;/order&gt;&lt;outputs_assigned/&gt;&lt;outputs_to_assign/&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_flow_logic&lt;/sys_class_name&gt;&lt;sys_created_by&gt;bcone&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-10-20 15:38:19&lt;/sys_created_on&gt;&lt;sys_id&gt;1ffacf9b47ee5d5096fcb777746d4314&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;bcone&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-10-20 15:38:19&lt;/sys_updated_on&gt;&lt;ui_id&gt;84f30d07-e0ac-414f-9b7c-bc72386e1756&lt;/ui_id&gt;&lt;workflow_inputs/&gt;&lt;workflow_reference/&gt;&lt;/sys_hub_flow_logic&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=1ffacf9b47ee5d5096fcb777746d4314"/&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_flow_logic&lt;/document&gt;&lt;document_key&gt;1ffacf9b47ee5d5096fcb777746d4314&lt;/document_key&gt;&lt;order&gt;10&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;bcone&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-10-20 15:38:19&lt;/sys_created_on&gt;&lt;sys_id&gt;5bfacf9b47ee5d5096fcb777746d4331&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;bcone&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-10-20 15:38:19&lt;/sys_updated_on&gt;&lt;value&gt;Execute RFC is successful&lt;/value&gt;&lt;variable display_value="Condition Label"&gt;f0af19c1c32632002841b63b12d3aea3&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_element_mapping action="delete_multiple" query="id=1ffacf9b47ee5d5096fcb777746d4314"/&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;condition&lt;/field&gt;&lt;id&gt;1ffacf9b47ee5d5096fcb777746d4314&lt;/id&gt;&lt;sys_created_by&gt;bcone&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-10-20 15:38:19&lt;/sys_created_on&gt;&lt;sys_id&gt;d7facf9b47ee5d5096fcb777746d4331&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;bcone&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-10-20 15:38:19&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e&lt;/table&gt;&lt;value&gt;{{854a6d37-e668-49f8-a19a-d82aa0be6ca1.status}}=success&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;condition_name&lt;/field&gt;&lt;id&gt;1ffacf9b47ee5d5096fcb777746d4314&lt;/id&gt;&lt;sys_created_by&gt;bcone&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-10-20 15:38:19&lt;/sys_created_on&gt;&lt;sys_id&gt;13facf9b47ee5d5096fcb777746d4331&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;bcone&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-10-20 15:38:19&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e&lt;/table&gt;&lt;value/&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_cbfa8f9b47ee5d5096fcb777746d43ea^id=1ffacf9b47ee5d5096fcb777746d4314"/&gt;&lt;sys_hub_flow_logic_ext_input action="delete_multiple" query="model=1ffacf9b47ee5d5096fcb777746d4314"/&gt;&lt;sys_hub_input_scripts action="delete_multiple" query="instance=1ffacf9b47ee5d5096fcb777746d4314"/&gt;&lt;sys_hub_flow_logic action="INSERT_OR_UPDATE"&gt;&lt;block display_value=""&gt;c95239bc4762d15096fcb777746d43b6&lt;/block&gt;&lt;comment/&gt;&lt;connected_to&gt;84f30d07-e0ac-414f-9b7c-bc72386e1756&lt;/connected_to&gt;&lt;decision_table/&gt;&lt;decision_table_inputs/&gt;&lt;display_text/&gt;&lt;extended_inputs/&gt;&lt;flow display_value="Copy of Ledger Account Master Data Pull from SAP"&gt;cbfa8f9b47ee5d5096fcb777746d43ea&lt;/flow&gt;&lt;flow_variable/&gt;&lt;flow_variables_assigned/&gt;&lt;inputs/&gt;&lt;logic_definition display_value="Else"&gt;1f781bf3c32232002841b63b12d3aee6&lt;/logic_definition&gt;&lt;order&gt;8&lt;/order&gt;&lt;outputs_assigned/&gt;&lt;outputs_to_assign/&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_flow_logic&lt;/sys_class_name&gt;&lt;sys_created_by&gt;bcone&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-10-20 15:38:20&lt;/sys_created_on&gt;&lt;sys_id&gt;67facf9b47ee5d5096fcb777746d4339&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;bcone&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-10-20 15:38:20&lt;/sys_updated_on&gt;&lt;ui_id&gt;f51ad5c8-c876-42d3-b13f-16169ffe31bc&lt;/ui_id&gt;&lt;workflow_inputs/&gt;&lt;workflow_reference/&gt;&lt;/sys_hub_flow_logic&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=67facf9b47ee5d5096fcb777746d4339"/&gt;&lt;sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_cbfa8f9b47ee5d5096fcb777746d43ea^id=67facf9b47ee5d5096fcb777746d4339"/&gt;&lt;sys_hub_flow_logic_ext_input action="delete_multiple" query="model=67facf9b47ee5d5096fcb777746d4339"/&gt;&lt;sys_hub_input_scripts action="delete_multiple" query="instance=67facf9b47ee5d5096fcb777746d4339"/&gt;&lt;sys_hub_flow_logic action="INSERT_OR_UPDATE"&gt;&lt;block display_value=""&gt;73e58f3d4756d51096fcb777746d4377&lt;/block&gt;&lt;comment/&gt;&lt;connected_to/&gt;&lt;decision_table/&gt;&lt;decision_table_inputs/&gt;&lt;display_text/&gt;&lt;extended_inputs/&gt;&lt;flow display_value="Copy of Ledger Account Master Data Pull from SAP"&gt;cbfa8f9b47ee5d5096fcb777746d43ea&lt;/flow&gt;&lt;flow_variable/&gt;&lt;flow_variables_assigned/&gt;&lt;inputs/&gt;&lt;inputs/&gt;&lt;logic_definition display_value="For Each"&gt;098e1dc5c3e232002841b63b12d3ae33&lt;/logic_definition&gt;&lt;order&gt;4&lt;/order&gt;&lt;outputs_assigned/&gt;&lt;outputs_to_assign/&gt;&lt;parent_ui_id&gt;84f30d07-e0ac-414f-9b7c-bc72386e1756&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_flow_logic&lt;/sys_class_name&gt;&lt;sys_created_by&gt;bcone&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-10-20 15:38:19&lt;/sys_created_on&gt;&lt;sys_id&gt;6bfacf9b47ee5d5096fcb777746d4332&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;bcone&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-10-20 15:38:19&lt;/sys_updated_on&gt;&lt;ui_id&gt;41b2368a-08f8-48f4-acf3-07e758693dc6&lt;/ui_id&gt;&lt;workflow_inputs/&gt;&lt;workflow_reference/&gt;&lt;/sys_hub_flow_logic&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=6bfacf9b47ee5d5096fcb777746d4332"/&gt;&lt;sys_element_mapping action="delete_multiple" query="id=6bfacf9b47ee5d5096fcb777746d4332"/&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;items&lt;/field&gt;&lt;id&gt;6bfacf9b47ee5d5096fcb777746d4332&lt;/id&gt;&lt;sys_created_by&gt;bcone&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-10-20 15:38:19&lt;/sys_created_on&gt;&lt;sys_id&gt;27facf9b47ee5d5096fcb777746d4335&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;bcone&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-10-20 15:38:19&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33&lt;/table&gt;&lt;value&gt;{{e11c8f9f-9691-4d2f-903c-f7ba106a1727.json_array}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_cbfa8f9b47ee5d5096fcb777746d43ea^id=6bfacf9b47ee5d5096fcb777746d4332"/&gt;&lt;sys_hub_flow_logic_ext_input action="delete_multiple" query="model=6bfacf9b47ee5d5096fcb777746d4332"/&gt;&lt;sys_hub_input_scripts action="delete_multiple" query="instance=6bfacf9b47ee5d5096fcb777746d4332"/&gt;&lt;sys_hub_flow_logic action="INSERT_OR_UPDATE"&gt;&lt;block display_value=""&gt;1aa8069547a6555096fcb777746d43f9&lt;/block&gt;&lt;comment/&gt;&lt;connected_to/&gt;&lt;decision_table/&gt;&lt;decision_table_inputs/&gt;&lt;display_text/&gt;&lt;extended_inputs/&gt;&lt;flow display_value="Copy of Ledger Account Master Data Pull from SAP"&gt;cbfa8f9b47ee5d5096fcb777746d43ea&lt;/flow&gt;&lt;flow_variable/&gt;&lt;flow_variables_assigned/&gt;&lt;inputs/&gt;&lt;logic_definition display_value="Assign Subflow Outputs"&gt;df4e1945c3e232002841b63b12d3ae3e&lt;/logic_definition&gt;&lt;order&gt;7&lt;/order&gt;&lt;outputs_assigned&gt;status&lt;/outputs_assigned&gt;&lt;outputs_to_assign/&gt;&lt;parent_ui_id&gt;84f30d07-e0ac-414f-9b7c-bc72386e1756&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_flow_logic&lt;/sys_class_name&gt;&lt;sys_created_by&gt;bcone&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-10-20 15:38:19&lt;/sys_created_on&gt;&lt;sys_id&gt;6ffacf9b47ee5d5096fcb777746d4335&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;bcone&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-10-20 15:38:20&lt;/sys_updated_on&gt;&lt;ui_id&gt;1cd8e237-4a50-46f4-a06c-031e0c54644d&lt;/ui_id&gt;&lt;workflow_inputs/&gt;&lt;workflow_reference/&gt;&lt;/sys_hub_flow_logic&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=6ffacf9b47ee5d5096fcb777746d4335"/&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_flow_logic&lt;/document&gt;&lt;document_key&gt;6ffacf9b47ee5d5096fcb777746d4335&lt;/document_key&gt;&lt;order&gt;1&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;bcone&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-10-20 15:38:20&lt;/sys_created_on&gt;&lt;sys_id&gt;ebfacf9b47ee5d5096fcb777746d4338&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;bcone&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-10-20 15:38:20&lt;/sys_updated_on&gt;&lt;value&gt;Success&lt;/value&gt;&lt;variable display_value="Status"&gt;93facf9b47ee5d5096fcb777746d4307&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_cbfa8f9b47ee5d5096fcb777746d43ea^id=6ffacf9b47ee5d5096fcb777746d4335"/&gt;&lt;sys_hub_flow_logic_ext_input action="delete_multiple" query="model=6ffacf9b47ee5d5096fcb777746d4335"/&gt;&lt;sys_hub_input_scripts action="delete_multiple" query="instance=6ffacf9b47ee5d5096fcb777746d4335"/&gt;&lt;sys_hub_flow_logic action="INSERT_OR_UPDATE"&gt;&lt;block display_value=""&gt;ec8046494726155096fcb777746d43a2&lt;/block&gt;&lt;comment/&gt;&lt;connected_to/&gt;&lt;decision_table/&gt;&lt;decision_table_inputs/&gt;&lt;display_text/&gt;&lt;extended_inputs/&gt;&lt;flow display_value="Copy of Ledger Account Master Data Pull from SAP"&gt;cbfa8f9b47ee5d5096fcb777746d43ea&lt;/flow&gt;&lt;flow_variable/&gt;&lt;flow_variables_assigned/&gt;&lt;inputs/&gt;&lt;logic_definition display_value="Assign Subflow Outputs"&gt;df4e1945c3e232002841b63b12d3ae3e&lt;/logic_definition&gt;&lt;order&gt;10&lt;/order&gt;&lt;outputs_assigned&gt;status,error&lt;/outputs_assigned&gt;&lt;outputs_to_assign/&gt;&lt;outputs_to_assign/&gt;&lt;parent_ui_id&gt;f51ad5c8-c876-42d3-b13f-16169ffe31bc&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_flow_logic&lt;/sys_class_name&gt;&lt;sys_created_by&gt;bcone&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-10-20 15:38:20&lt;/sys_created_on&gt;&lt;sys_id&gt;affacf9b47ee5d5096fcb777746d433b&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;bcone&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-10-20 15:38:20&lt;/sys_updated_on&gt;&lt;ui_id&gt;e300ec30-ee9f-4bad-9abb-87c077b66f93&lt;/ui_id&gt;&lt;workflow_inputs/&gt;&lt;workflow_reference/&gt;&lt;/sys_hub_flow_logic&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=affacf9b47ee5d5096fcb777746d433b"/&gt;&lt;sys_element_mapping action="delete_multiple" query="id=affacf9b47ee5d5096fcb777746d433b"/&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;error&lt;/field&gt;&lt;id&gt;affacf9b47ee5d5096fcb777746d433b&lt;/id&gt;&lt;sys_created_by&gt;bcone&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-10-20 15:38:20&lt;/sys_created_on&gt;&lt;sys_id&gt;e7facf9b47ee5d5096fcb777746d433e&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;bcone&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-10-20 15:38:20&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_flow_output_cbfa8f9b47ee5d5096fcb777746d43ea&lt;/table&gt;&lt;value&gt;{{854a6d37-e668-49f8-a19a-d82aa0be6ca1.err}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_hub_flow_logic_ext_input action="delete_multiple" query="model=affacf9b47ee5d5096fcb777746d433b"/&gt;&lt;sys_hub_input_scripts action="delete_multiple" query="instance=affacf9b47ee5d5096fcb777746d433b"/&gt;&lt;sys_hub_pill_compound action="delete_multiple" query="attached_to=cbfa8f9b47ee5d5096fcb777746d43ea"/&gt;&lt;sys_hub_flow_variable action="delete_multiple" query="model=cbfa8f9b47ee5d5096fcb777746d43ea"/&gt;&lt;sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_cbfa8f9b47ee5d5096fcb777746d43ea^sys_idNOT INd3facf9b47ee5d5096fcb777746d4305"/&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;service_record&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Service Record&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_cbfa8f9b47ee5d5096fcb777746d43ea&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;bcone&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-10-20 15:38:18&lt;/sys_created_on&gt;&lt;sys_id&gt;d3facf9b47ee5d5096fcb777746d4305&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Primary Data Integration for SAP" source="x_snc_com_data_int"&gt;93c7f5cb875a1950fd73642d0ebb3590&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Primary Data Integration for SAP"&gt;93c7f5cb875a1950fd73642d0ebb3590&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;bcone&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-10-20 15:38:18&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_cbfa8f9b47ee5d5096fcb777746d43ea"/&gt;&lt;sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_cbfa8f9b47ee5d5096fcb777746d43ea^sys_idNOT IN97facf9b47ee5d5096fcb777746d430e,97facf9b47ee5d5096fcb777746d4311"/&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;status&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Status&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_output_cbfa8f9b47ee5d5096fcb777746d43ea&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;bcone&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-10-20 15:38:19&lt;/sys_created_on&gt;&lt;sys_id&gt;97facf9b47ee5d5096fcb777746d430e&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Primary Data Integration for SAP" source="x_snc_com_data_int"&gt;93c7f5cb875a1950fd73642d0ebb3590&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Primary Data Integration for SAP"&gt;93c7f5cb875a1950fd73642d0ebb3590&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;bcone&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-10-20 15:38:19&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;error&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Error&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_output_cbfa8f9b47ee5d5096fcb777746d43ea&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;bcone&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-10-20 15:38:19&lt;/sys_created_on&gt;&lt;sys_id&gt;97facf9b47ee5d5096fcb777746d4311&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Primary Data Integration for SAP" source="x_snc_com_data_int"&gt;93c7f5cb875a1950fd73642d0ebb3590&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Primary Data Integration for SAP"&gt;93c7f5cb875a1950fd73642d0ebb3590&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;bcone&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-10-20 15:38:19&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_cbfa8f9b47ee5d5096fcb777746d43ea^sys_idNOT IN93facf9b47ee5d5096fcb777746d4309,5bfacf9b47ee5d5096fcb777746d430a"/&gt;&lt;sys_choice field="status" table="var__m_sys_hub_flow_output_cbfa8f9b47ee5d5096fcb777746d43ea"&gt;&lt;sys_choice action="INSERT_OR_UPDATE"&gt;&lt;dependent_value/&gt;&lt;element&gt;status&lt;/element&gt;&lt;hint/&gt;&lt;inactive&gt;false&lt;/inactive&gt;&lt;label&gt;Success&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_output_cbfa8f9b47ee5d5096fcb777746d43ea&lt;/name&gt;&lt;sequence&gt;1&lt;/sequence&gt;&lt;synonyms/&gt;&lt;sys_created_by&gt;bcone&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-10-20 15:38:19&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;93facf9b47ee5d5096fcb777746d4309&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;bcone&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-10-20 15:38:19&lt;/sys_updated_on&gt;&lt;value&gt;Success&lt;/value&gt;&lt;/sys_choice&gt;&lt;sys_choice action="INSERT_OR_UPDATE"&gt;&lt;dependent_value/&gt;&lt;element&gt;status&lt;/element&gt;&lt;hint/&gt;&lt;inactive&gt;false&lt;/inactive&gt;&lt;label&gt;Error&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_output_cbfa8f9b47ee5d5096fcb777746d43ea&lt;/name&gt;&lt;sequence&gt;2&lt;/sequence&gt;&lt;synonyms/&gt;&lt;sys_created_by&gt;bcone&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-10-20 15:38:19&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;5bfacf9b47ee5d5096fcb777746d430a&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;bcone&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-10-20 15:38:19&lt;/sys_updated_on&gt;&lt;value&gt;Error&lt;/value&gt;&lt;/sys_choice&gt;&lt;/sys_choice&gt;&lt;sys_flow_trigger_plan action="delete_multiple" query="plan_id=cbfa8f9b47ee5d5096fcb777746d43ea"/&gt;&lt;sys_flow_subflow_plan action="delete_multiple" query="plan_id=cbfa8f9b47ee5d5096fcb777746d43ea"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1016880402</payload_hash>
+        <record_name>Copy of Ledger Account Master Data Pull from SAP</record_name>
+        <reverted_from/>
+        <source>021d99b04722d15096fcb777746d43b2</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-10-20 15:38:25</sys_created_on>
+        <sys_id>3c0bcf9b47ee5d5096fcb777746d43ea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>183f60bb1a60000001</sys_recorded_at>
+        <sys_updated_by>bcone</sys_updated_by>
+        <sys_updated_on>2022-10-20 15:38:25</sys_updated_on>
+        <type>Flow</type>
+        <update_guid>340bcf9bbfee5d50d0848712b2fd13ea</update_guid>
+        <update_guid_history>340bcf9bbfee5d50d0848712b2fd13ea:1016880402,4bfa8f9b8eee5d5087b3662b29c447fd:1079464309</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-10-20 15:42:56</sys_created_on>
+        <sys_db_object display_value="" name="sys_hub_flow">sys_hub_flow</sys_db_object>
+        <sys_id>249db597823e4a7a93c49c6755a4cf24</sys_id>
+        <sys_metadata>cbfa8f9b47ee5d5096fcb777746d43ea</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Copy of Ledger Account Master Data Pull from SAP</sys_name>
+        <sys_package display_value="Primary Data Integration for SAP" source="x_snc_com_data_int">93c7f5cb875a1950fd73642d0ebb3590</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
+        <sys_scope_delete display_value="">3b1319908ebb4a548e7d16c1ed008664</sys_scope_delete>
+        <sys_update_name>sys_hub_flow_cbfa8f9b47ee5d5096fcb777746d43ea</sys_update_name>
+        <sys_update_version display_value="sys_hub_flow_cbfa8f9b47ee5d5096fcb777746d43ea">3c0bcf9b47ee5d5096fcb777746d43ea</sys_update_version>
+        <sys_updated_by>bcone</sys_updated_by>
+        <sys_updated_on>2022-10-20 15:42:56</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

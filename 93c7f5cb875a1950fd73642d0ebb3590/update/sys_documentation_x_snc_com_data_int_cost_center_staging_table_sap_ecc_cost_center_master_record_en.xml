@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="cost_center_master_record" label="Cost Center Master Record" language="en" table="x_snc_com_data_int_cost_center_staging_table_sap_ecc">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>cost_center_master_record</element>
+            <help/>
+            <hint/>
+            <label>Cost Center Master Record</label>
+            <language>en</language>
+            <name>x_snc_com_data_int_cost_center_staging_table_sap_ecc</name>
+            <plural>Cost Center Master Records</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>Swati</sys_created_by>
+            <sys_created_on>2022-10-26 10:03:56</sys_created_on>
+            <sys_id>abf734d147321d1086887562846d43b5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Cost Center Master Record</sys_name>
+            <sys_package display_value="Primary Data Integration for SAP" source="x_snc_com_data_int">93c7f5cb875a1950fd73642d0ebb3590</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
+            <sys_update_name>sys_documentation_x_snc_com_data_int_cost_center_staging_table_sap_ecc_cost_center_master_record_en</sys_update_name>
+            <sys_updated_by>Swati</sys_updated_by>
+            <sys_updated_on>2022-10-26 10:03:56</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

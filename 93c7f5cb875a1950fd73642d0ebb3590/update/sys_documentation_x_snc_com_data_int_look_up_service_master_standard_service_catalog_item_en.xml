@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="standard_service_catalog_item" label="Standard Service Catalog Item" language="en" table="x_snc_com_data_int_look_up_service_master">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>standard_service_catalog_item</element>
+            <help/>
+            <hint/>
+            <label>Standard Service Catalog Item</label>
+            <language>en</language>
+            <name>x_snc_com_data_int_look_up_service_master</name>
+            <plural>Standard Service Catalog Items</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>bcone</sys_created_by>
+            <sys_created_on>2022-10-11 12:18:10</sys_created_on>
+            <sys_id>a3d600a447eadd1086887562846d43c0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Standard Service Catalog Item</sys_name>
+            <sys_package display_value="Primary Data Integration for SAP" source="x_snc_com_data_int">93c7f5cb875a1950fd73642d0ebb3590</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
+            <sys_update_name>sys_documentation_x_snc_com_data_int_look_up_service_master_standard_service_catalog_item_en</sys_update_name>
+            <sys_updated_by>bcone</sys_updated_by>
+            <sys_updated_on>2022-10-11 12:18:10</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

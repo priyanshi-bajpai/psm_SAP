@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="DELETE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>import_purchasing_organisation_from_sap_ecc</internal_name>
+        <label_cache>[{"name":"d95b2dfb-69fb-4720-9534-8eab77a82d2d.__dont_treat_as_error__","label":"1 - Execute RFC➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d95b2dfb-69fb-4720-9534-8eab77a82d2d.__action_status__","label":"1 - Execute RFC➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d95b2dfb-69fb-4720-9534-8eab77a82d2d.err","label":"1 - Execute RFC➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"8fb55a2b-1b65-43aa-b9d2-242ee67e399c"}},{"name":"d95b2dfb-69fb-4720-9534-8eab77a82d2d.status","label":"1 - Execute RFC➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"success","order":0.0},{"label":"Error","value":"error","order":1.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"be013fc8-8a66-424c-a986-bc6c2270b27c"}},{"name":"d95b2dfb-69fb-4720-9534-8eab77a82d2d.output","label":"1 - Execute RFC➛Response","type":"object","base_type":"object","attributes":{"dynamic":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"ec3feb55-c033-40de-b020-c5065f65edc0"}},{"name":"f9ddcdfe-64b6-4b8a-af85-68ca0bd8114f.__action_status__","label":"3 - Parse RFC Response➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"8d185c9a-aa9f-48e3-bd1b-ca6f23f4f1e8"}},{"name":"f9ddcdfe-64b6-4b8a-af85-68ca0bd8114f.__dont_treat_as_error__","label":"3 - Parse RFC Response➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"90fe32d7-5aa9-4dfc-a858-362ac15ccf76"}},{"name":"f9ddcdfe-64b6-4b8a-af85-68ca0bd8114f.json_array","label":"3 - Parse RFC Response➛Json array","reference_display":"Json array","type":"array.string","base_type":"array.string","attributes":{"uiTypeLabel":"Array.String","co_type_name":"FDcc5903326b2d9510f35e33c66940977e","child_label":"Json_array_obj","child_type_label":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"array.string","child_type":"string","child_name":"Json_array_obj","child_uiUniqueId":"bc32dada-1277-4714-ae0a-243958525101","uiUniqueId":"072bc540-9ffc-4e42-a990-e7838cb75a4e"}}]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <name>Import Purchasing Organisation from SAP ECC</name>
+        <natlang/>
+        <outputs/>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>Midhat</sys_created_by>
+        <sys_created_on>2022-10-12 13:07:04</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>71abd5304722d15096fcb777746d43ce</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Import Purchasing Organisation from SAP ECC</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Primary Data Integration for SAP" source="x_snc_com_data_int">93c7f5cb875a1950fd73642d0ebb3590</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
+        <sys_update_name>sys_hub_flow_71abd5304722d15096fcb777746d43ce</sys_update_name>
+        <sys_updated_by>Midhat</sys_updated_by>
+        <sys_updated_on>2022-10-12 13:10:44</sys_updated_on>
+        <type>subflow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="DELETE" query="documentkey=71abd5304722d15096fcb777746d43ce"/>
+    <sys_variable_value action="DELETE" query="document_key=71abd5304722d15096fcb777746d43ce"/>
+    <sys_hub_trigger_instance action="DELETE" query="flow=71abd5304722d15096fcb777746d43ce"/>
+    <sys_hub_flow_stage action="DELETE" query="flow=71abd5304722d15096fcb777746d43ce"/>
+    <sys_flow_cat_variable_model action="DELETE" query="id=71abd5304722d15096fcb777746d43ce^sys_idNOT INfdabd5304722d15096fcb777746d43ce"/>
+    <sys_flow_cat_variable_model action="DELETE">
+        <id>71abd5304722d15096fcb777746d43ce</id>
+        <name>Import Purchasing Organisation from SAP ECC</name>
+        <sys_created_by>Midhat</sys_created_by>
+        <sys_created_on>2022-10-12 13:07:05</sys_created_on>
+        <sys_id>fdabd5304722d15096fcb777746d43ce</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>Midhat</sys_updated_by>
+        <sys_updated_on>2022-10-12 13:07:05</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="DELETE" query="flow_catalog_model=fdabd5304722d15096fcb777746d43ce"/>
+    <sys_hub_flow_input action="DELETE" query="model=71abd5304722d15096fcb777746d43ce"/>
+    <sys_hub_flow_output action="DELETE" query="model=71abd5304722d15096fcb777746d43ce"/>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=71abd5304722d15096fcb777746d43ce"/>
+    <sys_hub_action_instance action="DELETE" query="flow=71abd5304722d15096fcb777746d43ce^sys_idNOT IN922c15704722d15096fcb777746d4377,9f7cd9704722d15096fcb777746d4373"/>
+    <sys_hub_action_instance action="DELETE">
+        <action_inputs/>
+        <action_type display_value="Execute RFC">878053f3c7043010678d208c95c26025</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Import Purchasing Organisation from SAP ECC">71abd5304722d15096fcb777746d43ce</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>Midhat</sys_created_by>
+        <sys_created_on>2022-10-12 13:09:17</sys_created_on>
+        <sys_id>922c15704722d15096fcb777746d4377</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
+        <sys_updated_by>Midhat</sys_updated_by>
+        <sys_updated_on>2022-10-12 13:10:43</sys_updated_on>
+        <ui_id>d95b2dfb-69fb-4720-9534-8eab77a82d2d</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="DELETE" query="document_key=922c15704722d15096fcb777746d4377"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_action_instance</document>
+        <document_key>922c15704722d15096fcb777746d4377</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Midhat</sys_created_by>
+        <sys_created_on>2022-10-12 13:09:17</sys_created_on>
+        <sys_id>122c15704722d15096fcb777746d437b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Midhat</sys_updated_by>
+        <sys_updated_on>2022-10-12 13:09:17</sys_updated_on>
+        <value>99d0c7f54756d51096fcb777746d43ca</value>
+        <variable display_value="RFC">478053f3c7043010678d208c95c2602f</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_action_instance</document>
+        <document_key>922c15704722d15096fcb777746d4377</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Midhat</sys_created_by>
+        <sys_created_on>2022-10-12 13:09:17</sys_created_on>
+        <sys_id>5e2c15704722d15096fcb777746d437a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Midhat</sys_updated_by>
+        <sys_updated_on>2022-10-12 13:09:17</sys_updated_on>
+        <value>d0578871dbad8010ea4494d9db9619d9</value>
+        <variable display_value="Connection Alias">4b8053f3c7043010678d208c95c26026</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_action_instance</document>
+        <document_key>922c15704722d15096fcb777746d4377</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Midhat</sys_created_by>
+        <sys_created_on>2022-10-12 13:09:17</sys_created_on>
+        <sys_id>962c15704722d15096fcb777746d437a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>Midhat</sys_updated_by>
+        <sys_updated_on>2022-10-12 13:10:28</sys_updated_on>
+        <value>{"children":[{"children":[{"name":"TYPE","label":"TYPE","type":"string"},{"name":"ID","label":"ID","type":"string"},{"name":"NUMBER","label":"NUMBER","type":"string"},{"name":"MESSAGE","label":"MESSAGE","type":"string"},{"name":"LOG_NO","label":"LOG_NO","type":"string"},{"name":"LOG_MSG_NO","label":"LOG_MSG_NO","type":"string"},{"name":"MESSAGE_V1","label":"MESSAGE_V1","type":"string"},{"name":"MESSAGE_V2","label":"MESSAGE_V2","type":"string"},{"name":"MESSAGE_V3","label":"MESSAGE_V3","type":"string"},{"name":"MESSAGE_V4","label":"MESSAGE_V4","type":"string"},{"name":"PARAMETER","label":"PARAMETER","type":"string"},{"name":"ROW","label":"ROW","type":"integer"},{"name":"FIELD","label":"FIELD","type":"string"},{"name":"SYSTEM","label":"SYSTEM","type":"string"}],"name":"ET_RETURN","attributes":{"child_type":"object"},"label":"Return table [ ET_RETURN ]","type":"array.object"},{"children":[{"name":"WA","label":"Application data [ WA ]","type":"string"},{"name":"WA1","label":"Application data [ WA1 ]","type":"string"},{"name":"WA2","label":"Application data [ WA2 ]","type":"string"},{"name":"WA3","label":"Application data [ WA3 ]","type":"string"},{"name":"WA4","label":"Application data [ WA4 ]","type":"string"},{"name":"WA5","label":"Application data [ WA5 ]","type":"string"},{"name":"WA6","label":"Application data [ WA6 ]","type":"string"},{"name":"WA7","label":"Application data [ WA7 ]","type":"string"},{"name":"WA8","label":"Application data [ WA8 ]","type":"string"},{"name":"WA9","label":"Application data [ WA9 ]","type":"string"},{"name":"WA10","label":"Application data [ WA10 ]","type":"string"},{"name":"WA11","label":"Application data [ WA11 ]","type":"string"},{"name":"WA12","label":"Application data [ WA12 ]","type":"string"},{"name":"WA13","label":"Application data [ WA13 ]","type":"string"},{"name":"WA14","label":"Application data [ WA14 ]","type":"string"},{"name":"WA15","label":"Application data [ WA15 ]","type":"string"},{"name":"WA16","label":"Application data [ WA16 ]","type":"string"},{"name":"WA17","label":"Application data [ WA17 ]","type":"string"},{"name":"WA18","label":"Application data [ WA18 ]","type":"string"},{"name":"WA19","label":"Application data [ WA19 ]","type":"string"},{"name":"WA20","label":"Application data [ WA20 ]","type":"string"},{"name":"WA21","label":"Application data [ WA21 ]","type":"string"},{"name":"WA22","label":"Application data [ WA22 ]","type":"string"},{"name":"WA23","label":"Application data [ WA23 ]","type":"string"},{"name":"WA24","label":"Application data [ WA24 ]","type":"string"},{"name":"WA25","label":"Application data [ WA25 ]","type":"string"},{"name":"WA26","label":"Application data [ WA26 ]","type":"string"},{"name":"WA27","label":"Application data [ WA27 ]","type":"string"},{"name":"WA28","label":"Application data [ WA28 ]","type":"string"},{"name":"WA29","label":"Application data [ WA29 ]","type":"string"},{"name":"WA30","label":"Application data [ WA30 ]","type":"string"}],"name":"IT_DATA","attributes":{"child_type":"object"},"label":"Search Result Format: 8000-Byte Field [ IT_DATA ]","type":"array.object"},{"children":[{"name":"FIELDNAME","label":"Field Name","type":"string"},{"name":"OFFSET","label":"Offset of a field","type":"string"},{"name":"LENGTH","label":"No of Characters","type":"string"},{"name":"TYPE","label":"ABAP type","type":"string"},{"name":"FIELDTEXT","label":"Short Description","type":"string"}],"name":"IT_FIELDS","attributes":{"child_type":"object"},"label":"RFC Table Read: Description of Fields to Retrieve [ IT_FIELDS ]","type":"array.object"},{"children":[{"name":"TEXT","label":"Text field","type":"string"}],"name":"IT_OPTIONS","attributes":{"child_type":"object"},"label":"RFC Table Read: Select Options / WHERE Clause [ IT_OPTIONS ]","type":"array.object"}],"type":"object","attributes":{"dynamic":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"ec3feb55-c033-40de-b020-c5065f65edc0"}}</value>
+        <variable display_value="Response">078053f3c7043010678d208c95c26045</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_action_instance</document>
+        <document_key>922c15704722d15096fcb777746d4377</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Midhat</sys_created_by>
+        <sys_created_on>2022-10-12 13:09:17</sys_created_on>
+        <sys_id>d22c15704722d15096fcb777746d437b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Midhat</sys_updated_by>
+        <sys_updated_on>2022-10-12 13:09:17</sys_updated_on>
+        <value>IV_QUERY_TABLE=T024E﻿^IV_DELIMITER=,﻿</value>
+        <variable display_value="Import and Changing Tab Inputs">878053f3c7043010678d208c95c26037</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="DELETE" query="table=var__m_sys_hub_action_input_878053f3c7043010678d208c95c26025^id=922c15704722d15096fcb777746d4377"/>
+    <sys_hub_input_scripts action="DELETE" query="instance=922c15704722d15096fcb777746d4377"/>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=922c15704722d15096fcb777746d4377"/>
+    <sys_hub_action_instance action="DELETE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Parse RFC Response">8d49cffe97e995106ef838a71153afd1</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Import Purchasing Organisation from SAP ECC">71abd5304722d15096fcb777746d43ce</flow>
+        <order>3</order>
+        <parent_ui_id>a1de77db-91b9-4e3c-a998-89223fb91ade</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>Midhat</sys_created_by>
+        <sys_created_on>2022-10-12 13:10:43</sys_created_on>
+        <sys_id>9f7cd9704722d15096fcb777746d4373</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
+        <sys_updated_by>Midhat</sys_updated_by>
+        <sys_updated_on>2022-10-12 13:10:44</sys_updated_on>
+        <ui_id>f9ddcdfe-64b6-4b8a-af85-68ca0bd8114f</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="DELETE" query="document_key=9f7cd9704722d15096fcb777746d4373"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_action_instance</document>
+        <document_key>9f7cd9704722d15096fcb777746d4373</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Midhat</sys_created_by>
+        <sys_created_on>2022-10-12 13:10:44</sys_created_on>
+        <sys_id>937cd9704722d15096fcb777746d4375</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Midhat</sys_updated_by>
+        <sys_updated_on>2022-10-12 13:10:44</sys_updated_on>
+        <value>,﻿</value>
+        <variable display_value="Delimiter">f18efc5f976119106ef838a71153af66</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="DELETE" query="id=9f7cd9704722d15096fcb777746d4373"/>
+    <sys_element_mapping action="DELETE">
+        <field>delimiter</field>
+        <id>9f7cd9704722d15096fcb777746d4373</id>
+        <sys_created_by>Midhat</sys_created_by>
+        <sys_created_on>2022-10-12 13:10:44</sys_created_on>
+        <sys_id>5f7cd9704722d15096fcb777746d4374</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Midhat</sys_updated_by>
+        <sys_updated_on>2022-10-12 13:10:44</sys_updated_on>
+        <table>var__m_sys_hub_action_input_8d49cffe97e995106ef838a71153afd1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>json_string</field>
+        <id>9f7cd9704722d15096fcb777746d4373</id>
+        <sys_created_by>Midhat</sys_created_by>
+        <sys_created_on>2022-10-12 13:10:44</sys_created_on>
+        <sys_id>137cd9704722d15096fcb777746d4375</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Midhat</sys_updated_by>
+        <sys_updated_on>2022-10-12 13:10:44</sys_updated_on>
+        <table>var__m_sys_hub_action_input_8d49cffe97e995106ef838a71153afd1</table>
+        <value>{{d95b2dfb-69fb-4720-9534-8eab77a82d2d.output}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="DELETE" query="instance=9f7cd9704722d15096fcb777746d4373"/>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=9f7cd9704722d15096fcb777746d4373"/>
+    <sys_hub_sub_flow_instance action="DELETE" query="flow=71abd5304722d15096fcb777746d43ce"/>
+    <sys_hub_flow_logic action="DELETE" query="flow=71abd5304722d15096fcb777746d43ce^sys_idNOT IN177cd9704722d15096fcb777746d436a"/>
+    <sys_hub_flow_logic action="DELETE">
+        <block display_value="">5f7cd9704722d15096fcb777746d4369</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Import Purchasing Organisation from SAP ECC">71abd5304722d15096fcb777746d43ce</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>Midhat</sys_created_by>
+        <sys_created_on>2022-10-12 13:10:43</sys_created_on>
+        <sys_id>177cd9704722d15096fcb777746d436a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
+        <sys_updated_by>Midhat</sys_updated_by>
+        <sys_updated_on>2022-10-12 13:10:43</sys_updated_on>
+        <ui_id>a1de77db-91b9-4e3c-a998-89223fb91ade</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="DELETE" query="document_key=177cd9704722d15096fcb777746d436a"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>177cd9704722d15096fcb777746d436a</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Midhat</sys_created_by>
+        <sys_created_on>2022-10-12 13:10:43</sys_created_on>
+        <sys_id>937cd9704722d15096fcb777746d436d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Midhat</sys_updated_by>
+        <sys_updated_on>2022-10-12 13:10:43</sys_updated_on>
+        <value>Execute RFC is successful</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="DELETE" query="id=177cd9704722d15096fcb777746d436a"/>
+    <sys_element_mapping action="DELETE">
+        <field>condition</field>
+        <id>177cd9704722d15096fcb777746d436a</id>
+        <sys_created_by>Midhat</sys_created_by>
+        <sys_created_on>2022-10-12 13:10:43</sys_created_on>
+        <sys_id>137cd9704722d15096fcb777746d436d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Midhat</sys_updated_by>
+        <sys_updated_on>2022-10-12 13:10:43</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{d95b2dfb-69fb-4720-9534-8eab77a82d2d.status}}=success</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>condition_name</field>
+        <id>177cd9704722d15096fcb777746d436a</id>
+        <sys_created_by>Midhat</sys_created_by>
+        <sys_created_on>2022-10-12 13:10:43</sys_created_on>
+        <sys_id>5f7cd9704722d15096fcb777746d436c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Midhat</sys_updated_by>
+        <sys_updated_on>2022-10-12 13:10:43</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="DELETE" query="model=177cd9704722d15096fcb777746d436a"/>
+    <sys_hub_input_scripts action="DELETE" query="instance=177cd9704722d15096fcb777746d436a"/>
+    <sys_hub_pill_compound action="DELETE" query="attached_to=71abd5304722d15096fcb777746d43ce"/>
+    <sys_hub_flow_variable action="DELETE" query="model=71abd5304722d15096fcb777746d43ce"/>
+    <sys_documentation action="DELETE" query="name=var__m_sys_hub_flow_input_71abd5304722d15096fcb777746d43ce"/>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_flow_input_71abd5304722d15096fcb777746d43ce"/>
+    <sys_documentation action="DELETE" query="name=var__m_sys_hub_flow_output_71abd5304722d15096fcb777746d43ce"/>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_flow_output_71abd5304722d15096fcb777746d43ce"/>
+    <sys_flow_trigger_plan action="DELETE" query="plan_id=71abd5304722d15096fcb777746d43ce"/>
+    <sys_flow_subflow_plan action="DELETE" query="plan_id=71abd5304722d15096fcb777746d43ce"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</application>
+        <file_path/>
+        <instance_id>a4d93eb7dbce511091232f17d49619a6</instance_id>
+        <instance_name>psmdev02</instance_name>
+        <name>sys_hub_flow_71abd5304722d15096fcb777746d43ce</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow"><sys_hub_flow action="INSERT_OR_UPDATE"><access>public</access><acls/><active>false</active><annotation/><callable_by_client_api>false</callable_by_client_api><category/><compiler_build/><copied_from/><copied_from_name/><description/><internal_name>import_purchasing_organisation_from_sap_ecc</internal_name><label_cache>[{"name":"d95b2dfb-69fb-4720-9534-8eab77a82d2d.__dont_treat_as_error__","label":"1 - Execute RFC➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d95b2dfb-69fb-4720-9534-8eab77a82d2d.__action_status__","label":"1 - Execute RFC➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d95b2dfb-69fb-4720-9534-8eab77a82d2d.err","label":"1 - Execute RFC➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"8fb55a2b-1b65-43aa-b9d2-242ee67e399c"}},{"name":"d95b2dfb-69fb-4720-9534-8eab77a82d2d.status","label":"1 - Execute RFC➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"success","order":0.0},{"label":"Error","value":"error","order":1.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"be013fc8-8a66-424c-a986-bc6c2270b27c"}},{"name":"d95b2dfb-69fb-4720-9534-8eab77a82d2d.output","label":"1 - Execute RFC➛Response","type":"object","base_type":"object","attributes":{"dynamic":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"ec3feb55-c033-40de-b020-c5065f65edc0"}},{"name":"f9ddcdfe-64b6-4b8a-af85-68ca0bd8114f.__action_status__","label":"3 - Parse RFC Response➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"8d185c9a-aa9f-48e3-bd1b-ca6f23f4f1e8"}},{"name":"f9ddcdfe-64b6-4b8a-af85-68ca0bd8114f.__dont_treat_as_error__","label":"3 - Parse RFC Response➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"90fe32d7-5aa9-4dfc-a858-362ac15ccf76"}},{"name":"f9ddcdfe-64b6-4b8a-af85-68ca0bd8114f.json_array","label":"3 - Parse RFC Response➛Json array","reference_display":"Json array","type":"array.string","base_type":"array.string","attributes":{"uiTypeLabel":"Array.String","co_type_name":"FDcc5903326b2d9510f35e33c66940977e","child_label":"Json_array_obj","child_type_label":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"array.string","child_type":"string","child_name":"Json_array_obj","child_uiUniqueId":"bc32dada-1277-4714-ae0a-243958525101","uiUniqueId":"072bc540-9ffc-4e42-a990-e7838cb75a4e"}}]</label_cache><latest_snapshot/><master_snapshot/><name>Import Purchasing Organisation from SAP ECC</name><natlang/><outputs/><remote_trigger_id/><run_as>system</run_as><run_with_roles/><sc_callable>false</sc_callable><show_draft_actions>false</show_draft_actions><show_triggered_flows>false</show_triggered_flows><status>draft</status><sys_class_name>sys_hub_flow</sys_class_name><sys_created_by>Midhat</sys_created_by><sys_created_on>2022-10-12 13:07:04</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>71abd5304722d15096fcb777746d43ce</sys_id><sys_mod_count>3</sys_mod_count><sys_name>Import Purchasing Organisation from SAP ECC</sys_name><sys_overrides/><sys_package display_value="Primary Data Integration for SAP" source="x_snc_com_data_int">93c7f5cb875a1950fd73642d0ebb3590</sys_package><sys_policy/><sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope><sys_update_name>sys_hub_flow_71abd5304722d15096fcb777746d43ce</sys_update_name><sys_updated_by>Midhat</sys_updated_by><sys_updated_on>2022-10-12 13:10:44</sys_updated_on><type>subflow</type></sys_hub_flow><sys_translated_text action="delete_multiple" query="documentkey=71abd5304722d15096fcb777746d43ce"/><sys_variable_value action="delete_multiple" query="document_key=71abd5304722d15096fcb777746d43ce"/><sys_hub_trigger_instance action="delete_multiple" query="flow=71abd5304722d15096fcb777746d43ce"/><sys_hub_flow_stage action="delete_multiple" query="flow=71abd5304722d15096fcb777746d43ce"/><sys_flow_cat_variable_model action="delete_multiple" query="id=71abd5304722d15096fcb777746d43ce^sys_idNOT INfdabd5304722d15096fcb777746d43ce"/><sys_flow_cat_variable_model action="INSERT_OR_UPDATE"><id>71abd5304722d15096fcb777746d43ce</id><name>Import Purchasing Organisation from SAP ECC</name><sys_created_by>Midhat</sys_created_by><sys_created_on>2022-10-12 13:07:05</sys_created_on><sys_id>fdabd5304722d15096fcb777746d43ce</sys_id><sys_mod_count>0</sys_mod_count><sys_scope/><sys_updated_by>Midhat</sys_updated_by><sys_updated_on>2022-10-12 13:07:05</sys_updated_on></sys_flow_cat_variable_model><sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=fdabd5304722d15096fcb777746d43ce"/><sys_hub_flow_input action="delete_multiple" query="model=71abd5304722d15096fcb777746d43ce"/><sys_hub_flow_output action="delete_multiple" query="model=71abd5304722d15096fcb777746d43ce"/><sys_hub_alias_mapping action="delete_multiple" query="source_id=71abd5304722d15096fcb777746d43ce"/><sys_hub_action_instance action="delete_multiple" query="flow=71abd5304722d15096fcb777746d43ce^sys_idNOT IN922c15704722d15096fcb777746d4377,9f7cd9704722d15096fcb777746d4373"/><sys_hub_action_instance action="INSERT_OR_UPDATE"><action_inputs/><action_type display_value="Execute RFC">878053f3c7043010678d208c95c26025</action_type><action_type_parent/><comment/><compiled_snapshot/><display_text/><flow display_value="Import Purchasing Organisation from SAP ECC">71abd5304722d15096fcb777746d43ce</flow><order>1</order><parent_ui_id/><sys_class_name>sys_hub_action_instance</sys_class_name><sys_created_by>Midhat</sys_created_by><sys_created_on>2022-10-12 13:09:17</sys_created_on><sys_id>922c15704722d15096fcb777746d4377</sys_id><sys_mod_count>6</sys_mod_count><sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope><sys_updated_by>Midhat</sys_updated_by><sys_updated_on>2022-10-12 13:10:43</sys_updated_on><ui_id>d95b2dfb-69fb-4720-9534-8eab77a82d2d</ui_id></sys_hub_action_instance><sys_variable_value action="delete_multiple" query="document_key=922c15704722d15096fcb777746d4377"/><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_hub_action_instance</document><document_key>922c15704722d15096fcb777746d4377</document_key><order>2</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>Midhat</sys_created_by><sys_created_on>2022-10-12 13:09:17</sys_created_on><sys_id>122c15704722d15096fcb777746d437b</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>Midhat</sys_updated_by><sys_updated_on>2022-10-12 13:09:17</sys_updated_on><value>99d0c7f54756d51096fcb777746d43ca</value><variable display_value="RFC">478053f3c7043010678d208c95c2602f</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_hub_action_instance</document><document_key>922c15704722d15096fcb777746d4377</document_key><order>1</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>Midhat</sys_created_by><sys_created_on>2022-10-12 13:09:17</sys_created_on><sys_id>5e2c15704722d15096fcb777746d437a</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>Midhat</sys_updated_by><sys_updated_on>2022-10-12 13:09:17</sys_updated_on><value>d0578871dbad8010ea4494d9db9619d9</value><variable display_value="Connection Alias">4b8053f3c7043010678d208c95c26026</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_hub_action_instance</document><document_key>922c15704722d15096fcb777746d4377</document_key><order>5</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>Midhat</sys_created_by><sys_created_on>2022-10-12 13:09:17</sys_created_on><sys_id>962c15704722d15096fcb777746d437a</sys_id><sys_mod_count>1</sys_mod_count><sys_updated_by>Midhat</sys_updated_by><sys_updated_on>2022-10-12 13:10:28</sys_updated_on><value>{"children":[{"children":[{"name":"TYPE","label":"TYPE","type":"string"},{"name":"ID","label":"ID","type":"string"},{"name":"NUMBER","label":"NUMBER","type":"string"},{"name":"MESSAGE","label":"MESSAGE","type":"string"},{"name":"LOG_NO","label":"LOG_NO","type":"string"},{"name":"LOG_MSG_NO","label":"LOG_MSG_NO","type":"string"},{"name":"MESSAGE_V1","label":"MESSAGE_V1","type":"string"},{"name":"MESSAGE_V2","label":"MESSAGE_V2","type":"string"},{"name":"MESSAGE_V3","label":"MESSAGE_V3","type":"string"},{"name":"MESSAGE_V4","label":"MESSAGE_V4","type":"string"},{"name":"PARAMETER","label":"PARAMETER","type":"string"},{"name":"ROW","label":"ROW","type":"integer"},{"name":"FIELD","label":"FIELD","type":"string"},{"name":"SYSTEM","label":"SYSTEM","type":"string"}],"name":"ET_RETURN","attributes":{"child_type":"object"},"label":"Return table [ ET_RETURN ]","type":"array.object"},{"children":[{"name":"WA","label":"Application data [ WA ]","type":"string"},{"name":"WA1","label":"Application data [ WA1 ]","type":"string"},{"name":"WA2","label":"Application data [ WA2 ]","type":"string"},{"name":"WA3","label":"Application data [ WA3 ]","type":"string"},{"name":"WA4","label":"Application data [ WA4 ]","type":"string"},{"name":"WA5","label":"Application data [ WA5 ]","type":"string"},{"name":"WA6","label":"Application data [ WA6 ]","type":"string"},{"name":"WA7","label":"Application data [ WA7 ]","type":"string"},{"name":"WA8","label":"Application data [ WA8 ]","type":"string"},{"name":"WA9","label":"Application data [ WA9 ]","type":"string"},{"name":"WA10","label":"Application data [ WA10 ]","type":"string"},{"name":"WA11","label":"Application data [ WA11 ]","type":"string"},{"name":"WA12","label":"Application data [ WA12 ]","type":"string"},{"name":"WA13","label":"Application data [ WA13 ]","type":"string"},{"name":"WA14","label":"Application data [ WA14 ]","type":"string"},{"name":"WA15","label":"Application data [ WA15 ]","type":"string"},{"name":"WA16","label":"Application data [ WA16 ]","type":"string"},{"name":"WA17","label":"Application data [ WA17 ]","type":"string"},{"name":"WA18","label":"Application data [ WA18 ]","type":"string"},{"name":"WA19","label":"Application data [ WA19 ]","type":"string"},{"name":"WA20","label":"Application data [ WA20 ]","type":"string"},{"name":"WA21","label":"Application data [ WA21 ]","type":"string"},{"name":"WA22","label":"Application data [ WA22 ]","type":"string"},{"name":"WA23","label":"Application data [ WA23 ]","type":"string"},{"name":"WA24","label":"Application data [ WA24 ]","type":"string"},{"name":"WA25","label":"Application data [ WA25 ]","type":"string"},{"name":"WA26","label":"Application data [ WA26 ]","type":"string"},{"name":"WA27","label":"Application data [ WA27 ]","type":"string"},{"name":"WA28","label":"Application data [ WA28 ]","type":"string"},{"name":"WA29","label":"Application data [ WA29 ]","type":"string"},{"name":"WA30","label":"Application data [ WA30 ]","type":"string"}],"name":"IT_DATA","attributes":{"child_type":"object"},"label":"Search Result Format: 8000-Byte Field [ IT_DATA ]","type":"array.object"},{"children":[{"name":"FIELDNAME","label":"Field Name","type":"string"},{"name":"OFFSET","label":"Offset of a field","type":"string"},{"name":"LENGTH","label":"No of Characters","type":"string"},{"name":"TYPE","label":"ABAP type","type":"string"},{"name":"FIELDTEXT","label":"Short Description","type":"string"}],"name":"IT_FIELDS","attributes":{"child_type":"object"},"label":"RFC Table Read: Description of Fields to Retrieve [ IT_FIELDS ]","type":"array.object"},{"children":[{"name":"TEXT","label":"Text field","type":"string"}],"name":"IT_OPTIONS","attributes":{"child_type":"object"},"label":"RFC Table Read: Select Options / WHERE Clause [ IT_OPTIONS ]","type":"array.object"}],"type":"object","attributes":{"dynamic":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"ec3feb55-c033-40de-b020-c5065f65edc0"}}</value><variable display_value="Response">078053f3c7043010678d208c95c26045</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_hub_action_instance</document><document_key>922c15704722d15096fcb777746d4377</document_key><order>3</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>Midhat</sys_created_by><sys_created_on>2022-10-12 13:09:17</sys_created_on><sys_id>d22c15704722d15096fcb777746d437b</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>Midhat</sys_updated_by><sys_updated_on>2022-10-12 13:09:17</sys_updated_on><value>IV_QUERY_TABLE=T024E﻿^IV_DELIMITER=,﻿</value><variable display_value="Import and Changing Tab Inputs">878053f3c7043010678d208c95c26037</variable></sys_variable_value><sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_input_878053f3c7043010678d208c95c26025^id=922c15704722d15096fcb777746d4377"/><sys_hub_input_scripts action="delete_multiple" query="instance=922c15704722d15096fcb777746d4377"/><sys_hub_alias_mapping action="delete_multiple" query="source_id=922c15704722d15096fcb777746d4377"/><sys_hub_action_instance action="INSERT_OR_UPDATE"><action_inputs/><action_inputs/><action_type display_value="Parse RFC Response">8d49cffe97e995106ef838a71153afd1</action_type><action_type_parent/><comment/><compiled_snapshot/><display_text/><flow display_value="Import Purchasing Organisation from SAP ECC">71abd5304722d15096fcb777746d43ce</flow><order>3</order><parent_ui_id>a1de77db-91b9-4e3c-a998-89223fb91ade</parent_ui_id><sys_class_name>sys_hub_action_instance</sys_class_name><sys_created_by>Midhat</sys_created_by><sys_created_on>2022-10-12 13:10:43</sys_created_on><sys_id>9f7cd9704722d15096fcb777746d4373</sys_id><sys_mod_count>2</sys_mod_count><sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope><sys_updated_by>Midhat</sys_updated_by><sys_updated_on>2022-10-12 13:10:44</sys_updated_on><ui_id>f9ddcdfe-64b6-4b8a-af85-68ca0bd8114f</ui_id></sys_hub_action_instance><sys_variable_value action="delete_multiple" query="document_key=9f7cd9704722d15096fcb777746d4373"/><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_hub_action_instance</document><document_key>9f7cd9704722d15096fcb777746d4373</document_key><order>2</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>Midhat</sys_created_by><sys_created_on>2022-10-12 13:10:44</sys_created_on><sys_id>937cd9704722d15096fcb777746d4375</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>Midhat</sys_updated_by><sys_updated_on>2022-10-12 13:10:44</sys_updated_on><value>,﻿</value><variable display_value="Delimiter">f18efc5f976119106ef838a71153af66</variable></sys_variable_value><sys_element_mapping action="delete_multiple" query="id=9f7cd9704722d15096fcb777746d4373"/><sys_element_mapping action="INSERT_OR_UPDATE"><field>delimiter</field><id>9f7cd9704722d15096fcb777746d4373</id><sys_created_by>Midhat</sys_created_by><sys_created_on>2022-10-12 13:10:44</sys_created_on><sys_id>5f7cd9704722d15096fcb777746d4374</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>Midhat</sys_updated_by><sys_updated_on>2022-10-12 13:10:44</sys_updated_on><table>var__m_sys_hub_action_input_8d49cffe97e995106ef838a71153afd1</table><value/></sys_element_mapping><sys_element_mapping action="INSERT_OR_UPDATE"><field>json_string</field><id>9f7cd9704722d15096fcb777746d4373</id><sys_created_by>Midhat</sys_created_by><sys_created_on>2022-10-12 13:10:44</sys_created_on><sys_id>137cd9704722d15096fcb777746d4375</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>Midhat</sys_updated_by><sys_updated_on>2022-10-12 13:10:44</sys_updated_on><table>var__m_sys_hub_action_input_8d49cffe97e995106ef838a71153afd1</table><value>{{d95b2dfb-69fb-4720-9534-8eab77a82d2d.output}}</value></sys_element_mapping><sys_hub_input_scripts action="delete_multiple" query="instance=9f7cd9704722d15096fcb777746d4373"/><sys_hub_alias_mapping action="delete_multiple" query="source_id=9f7cd9704722d15096fcb777746d4373"/><sys_hub_sub_flow_instance action="delete_multiple" query="flow=71abd5304722d15096fcb777746d43ce"/><sys_hub_flow_logic action="delete_multiple" query="flow=71abd5304722d15096fcb777746d43ce^sys_idNOT IN177cd9704722d15096fcb777746d436a"/><sys_hub_flow_logic action="INSERT_OR_UPDATE"><block display_value="">5f7cd9704722d15096fcb777746d4369</block><comment/><connected_to/><decision_table/><decision_table_inputs/><display_text/><extended_inputs/><flow display_value="Import Purchasing Organisation from SAP ECC">71abd5304722d15096fcb777746d43ce</flow><flow_variable/><flow_variables_assigned/><inputs/><inputs/><logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition><order>2</order><outputs_assigned/><outputs_to_assign/><parent_ui_id/><sys_class_name>sys_hub_flow_logic</sys_class_name><sys_created_by>Midhat</sys_created_by><sys_created_on>2022-10-12 13:10:43</sys_created_on><sys_id>177cd9704722d15096fcb777746d436a</sys_id><sys_mod_count>1</sys_mod_count><sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope><sys_updated_by>Midhat</sys_updated_by><sys_updated_on>2022-10-12 13:10:43</sys_updated_on><ui_id>a1de77db-91b9-4e3c-a998-89223fb91ade</ui_id><workflow_inputs/><workflow_reference/></sys_hub_flow_logic><sys_variable_value action="delete_multiple" query="document_key=177cd9704722d15096fcb777746d436a"/><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_hub_flow_logic</document><document_key>177cd9704722d15096fcb777746d436a</document_key><order>10</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>Midhat</sys_created_by><sys_created_on>2022-10-12 13:10:43</sys_created_on><sys_id>937cd9704722d15096fcb777746d436d</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>Midhat</sys_updated_by><sys_updated_on>2022-10-12 13:10:43</sys_updated_on><value>Execute RFC is successful</value><variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable></sys_variable_value><sys_element_mapping action="delete_multiple" query="id=177cd9704722d15096fcb777746d436a"/><sys_element_mapping action="INSERT_OR_UPDATE"><field>condition</field><id>177cd9704722d15096fcb777746d436a</id><sys_created_by>Midhat</sys_created_by><sys_created_on>2022-10-12 13:10:43</sys_created_on><sys_id>137cd9704722d15096fcb777746d436d</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>Midhat</sys_updated_by><sys_updated_on>2022-10-12 13:10:43</sys_updated_on><table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table><value>{{d95b2dfb-69fb-4720-9534-8eab77a82d2d.status}}=success</value></sys_element_mapping><sys_element_mapping action="INSERT_OR_UPDATE"><field>condition_name</field><id>177cd9704722d15096fcb777746d436a</id><sys_created_by>Midhat</sys_created_by><sys_created_on>2022-10-12 13:10:43</sys_created_on><sys_id>5f7cd9704722d15096fcb777746d436c</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>Midhat</sys_updated_by><sys_updated_on>2022-10-12 13:10:43</sys_updated_on><table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table><value/></sys_element_mapping><sys_hub_flow_logic_ext_input action="delete_multiple" query="model=177cd9704722d15096fcb777746d436a"/><sys_hub_input_scripts action="delete_multiple" query="instance=177cd9704722d15096fcb777746d436a"/><sys_hub_pill_compound action="delete_multiple" query="attached_to=71abd5304722d15096fcb777746d43ce"/><sys_hub_flow_variable action="delete_multiple" query="model=71abd5304722d15096fcb777746d43ce"/><sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_71abd5304722d15096fcb777746d43ce"/><sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_71abd5304722d15096fcb777746d43ce"/><sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_71abd5304722d15096fcb777746d43ce"/><sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_71abd5304722d15096fcb777746d43ce"/><sys_flow_trigger_plan action="delete_multiple" query="plan_id=71abd5304722d15096fcb777746d43ce"/><sys_flow_subflow_plan action="delete_multiple" query="plan_id=71abd5304722d15096fcb777746d43ce"/></record_update>]]></payload>
+        <payload_hash>-1398816085</payload_hash>
+        <record_name>Import Purchasing Organisation from SAP ECC</record_name>
+        <reverted_from/>
+        <source>2f266a87475e991086887562846d43ff</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Midhat</sys_created_by>
+        <sys_created_on>2022-10-12 13:10:44</sys_created_on>
+        <sys_id>a77cd9704722d15096fcb777746d43a8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>183cc519fb90000001</sys_recorded_at>
+        <sys_updated_by>Midhat</sys_updated_by>
+        <sys_updated_on>2022-10-12 13:10:44</sys_updated_on>
+        <type>Flow</type>
+        <update_guid>637cd970a822d150182880337ad48d8f</update_guid>
+        <update_guid_history>637cd970a822d150182880337ad48d8f:-1398816085,4c7c9970c022d150d2607bd0db4c470e:-1437938636,2a2c1570a622d15041baa068976aab8a:-1796189763,86abd5302722d1502777ccd9fe40bdd4:-1903927330</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Midhat</sys_created_by>
+        <sys_created_on>2022-10-12 13:12:26</sys_created_on>
+        <sys_db_object display_value="" name="sys_hub_flow">sys_hub_flow</sys_db_object>
+        <sys_id>24ebe03841ed4842918aa931ff130689</sys_id>
+        <sys_metadata>71abd5304722d15096fcb777746d43ce</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Import Purchasing Organisation from SAP ECC</sys_name>
+        <sys_package display_value="Primary Data Integration for SAP" source="x_snc_com_data_int">93c7f5cb875a1950fd73642d0ebb3590</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
+        <sys_scope_delete display_value="">3b1319908ebb4a548e7d16c1ed008664</sys_scope_delete>
+        <sys_update_name>sys_hub_flow_71abd5304722d15096fcb777746d43ce</sys_update_name>
+        <sys_update_version display_value="sys_hub_flow_71abd5304722d15096fcb777746d43ce">a77cd9704722d15096fcb777746d43a8</sys_update_version>
+        <sys_updated_by>Midhat</sys_updated_by>
+        <sys_updated_on>2022-10-12 13:12:26</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

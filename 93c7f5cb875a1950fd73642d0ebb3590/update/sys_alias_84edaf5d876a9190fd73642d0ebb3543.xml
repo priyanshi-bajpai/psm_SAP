@@ -6,7 +6,7 @@
         <multiple_connections>false</multiple_connections>
         <name>SAP ECC GE 800</name>
         <parent/>
-        <retry_policy display_value="Default HTTP Retry Policy">ef751ff07301330025d71afe2ff6a7f9</retry_policy>
+        <retry_policy display_value="Global">ef751ff07301330025d71afe2ff6a7f9</retry_policy>
         <sys_class_name>sys_alias</sys_class_name>
         <sys_created_by>Mayank</sys_created_by>
         <sys_created_on>2022-10-14 13:03:02</sys_created_on>

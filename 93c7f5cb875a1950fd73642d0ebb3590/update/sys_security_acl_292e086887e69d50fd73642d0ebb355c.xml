@@ -6,7 +6,7 @@
         <condition/>
         <description>Default access control on x_snc_com_data_int_integration_source</description>
         <name>x_snc_com_data_int_integration_source</name>
-        <operation display_value="delete">delete</operation>
+        <operation display_value="Global">delete</operation>
         <script/>
         <sys_class_name>sys_security_acl</sys_class_name>
         <sys_created_by>Mayank</sys_created_by>
@@ -20,6 +20,6 @@
         <sys_update_name>sys_security_acl_292e086887e69d50fd73642d0ebb355c</sys_update_name>
         <sys_updated_by>Mayank</sys_updated_by>
         <sys_updated_on>2022-10-11 12:49:59</sys_updated_on>
-        <type display_value="record">record</type>
+        <type display_value="Global">record</type>
     </sys_security_acl>
 </record_update>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="sys_import_set_row" label="Imp Tmpl Sn Fin Gl Account" max_length="40" name="u_imp_tmpl_sn_fin_gl_account" sizeclass="0" type="collection">
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Account currency" label="Account currency" max_length="32" name="u_account_currency" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Account name" label="Account name" max_length="160" name="u_account_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Created" label="Created" max_length="40" name="u_created" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Created by" label="Created by" max_length="40" name="u_created_by" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Entity" label="Entity" max_length="32" name="u_entity" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Ledger account" label="Ledger account" max_length="40" name="u_ledger_account" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Local currency" label="Local currency" max_length="32" name="u_local_currency" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Number" label="Number" max_length="40" name="u_number" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Reporting currency" label="Reporting currency" max_length="32" name="u_reporting_currency" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Risk rating" label="Risk rating" max_length="40" name="u_risk_rating" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Short description" label="Short description" max_length="160" name="u_short_description" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Updated" label="Updated" max_length="40" name="u_updated" type="glide_date_time"/>
+    </element>
+</database>

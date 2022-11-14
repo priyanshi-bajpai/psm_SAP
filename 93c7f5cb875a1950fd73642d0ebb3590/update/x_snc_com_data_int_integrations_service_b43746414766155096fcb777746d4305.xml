@@ -6,18 +6,18 @@
         <name>Plant Address Master Data From SAP</name>
         <order>399</order>
         <properties/>
-        <source display_value="SAP ECC">b59ee0a087aa9d50fd73642d0ebb35f8</source>
+        <source display_value="SAP ECC US">b59ee0a087aa9d50fd73642d0ebb35f8</source>
         <sys_class_name>x_snc_com_data_int_integrations_service</sys_class_name>
         <sys_created_by>bcone</sys_created_by>
         <sys_created_on>2022-10-13 10:57:35</sys_created_on>
         <sys_id>b43746414766155096fcb777746d4305</sys_id>
-        <sys_mod_count>3</sys_mod_count>
-        <sys_name>Plant Address Master Data From SAP</sys_name>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>93c7f5cb875a1950fd73642d0ebb3590</sys_name>
         <sys_package display_value="Primary Data Integration for SAP" source="x_snc_com_data_int">93c7f5cb875a1950fd73642d0ebb3590</sys_package>
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name>x_snc_com_data_int_integrations_service_b43746414766155096fcb777746d4305</sys_update_name>
         <sys_updated_by>bcone</sys_updated_by>
-        <sys_updated_on>2022-10-13 11:57:10</sys_updated_on>
+        <sys_updated_on>2022-10-25 09:33:56</sys_updated_on>
     </x_snc_com_data_int_integrations_service>
 </record_update>

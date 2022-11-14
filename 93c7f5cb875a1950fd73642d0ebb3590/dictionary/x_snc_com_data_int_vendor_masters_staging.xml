@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="sys_import_set_row" label="Vendor Masters Staging" max_length="40" name="x_snc_com_data_int_vendor_masters_staging" sizeclass="0" type="collection">
+        <element label="Account Number of Vendor or Creditor" max_length="120" name="account_number_of_vendor_or_creditor" type="string"/>
+        <element label="Company Code" max_length="120" name="company_code" type="string"/>
+        <element label="Currency" max_length="40" name="currency" type="string"/>
+        <element label="Customer Number" max_length="120" name="customer_number" type="string"/>
+        <element label="Date on which the Record Was Created" max_length="40" name="date_on_which_the_record_was_created" type="string"/>
+        <element label="District 1" max_length="120" name="district_1" type="string"/>
+        <element label="District 2" max_length="120" name="district_2" type="string"/>
+        <element label="Fax Number" max_length="120" name="fax_number" type="string"/>
+        <element label="First telephone number" max_length="120" name="first_telephone_number" type="string"/>
+        <element label="Incoterms (Part 1)" max_length="120" name="incoterms_part_1" type="string"/>
+        <element label="Name 1" max_length="120" name="name_1" type="string"/>
+        <element label="Postal Code" max_length="40" name="postal_code" type="string"/>
+        <element label="PO Box" max_length="40" name="po_box" type="string"/>
+        <element label="Purchasing Organization" max_length="120" name="purchasing_organization" type="string"/>
+        <element label="Reconciliation Account in General Ledger" max_length="120" name="reconciliation_account_in_general_ledger" type="string"/>
+        <element label="Region (State, Province, County)" max_length="120" name="region_state_province_county" type="string"/>
+        <element label="Street and House Number" max_length="120" name="street_and_house_number" type="string"/>
+        <element label="Tax Jurisdiction" max_length="120" name="tax_jurisdiction" type="string"/>
+        <element label="Terms of Payment Key" max_length="40" name="terms_of_payment_key" type="string"/>
+        <element label="Title" max_length="120" name="title" type="string"/>
+    </element>
+</database>

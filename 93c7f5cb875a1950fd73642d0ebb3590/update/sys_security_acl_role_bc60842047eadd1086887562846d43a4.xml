@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-10-11 11:49:50</sys_created_on>
+        <sys_id>bc60842047eadd1086887562846d43a4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_com_data_int_look_up_service_master.x_snc_com_data_int.look_up_service_master_user</sys_name>
+        <sys_package display_value="Primary Data Integration for SAP" source="x_snc_com_data_int">93c7f5cb875a1950fd73642d0ebb3590</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
+        <sys_security_acl display_value="Primary Data Integration for SAP">b060842047eadd1086887562846d43a2</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_bc60842047eadd1086887562846d43a4</sys_update_name>
+        <sys_updated_by>bcone</sys_updated_by>
+        <sys_updated_on>2022-10-11 11:49:50</sys_updated_on>
+        <sys_user_role display_value="Primary Data Integration for SAP" name="x_snc_com_data_int.look_up_service_master_user">0060842047eadd1086887562846d436e</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+</record_update>

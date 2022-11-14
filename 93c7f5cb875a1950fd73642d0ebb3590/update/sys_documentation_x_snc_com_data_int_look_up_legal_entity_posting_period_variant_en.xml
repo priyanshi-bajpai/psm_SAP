@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="posting_period_variant" label="Posting Period Variant" language="en" table="x_snc_com_data_int_look_up_legal_entity">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>posting_period_variant</element>
+            <help/>
+            <hint/>
+            <label>Posting Period Variant</label>
+            <language>en</language>
+            <name>x_snc_com_data_int_look_up_legal_entity</name>
+            <plural>Posting Period Variants</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>akash</sys_created_by>
+            <sys_created_on>2022-10-11 08:12:09</sys_created_on>
+            <sys_id>449e8750472add1086887562846d4398</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Posting Period Variant</sys_name>
+            <sys_package display_value="Primary Data Integration for SAP" source="x_snc_com_data_int">93c7f5cb875a1950fd73642d0ebb3590</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
+            <sys_update_name>sys_documentation_x_snc_com_data_int_look_up_legal_entity_posting_period_variant_en</sys_update_name>
+            <sys_updated_by>akash</sys_updated_by>
+            <sys_updated_on>2022-10-11 08:12:09</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

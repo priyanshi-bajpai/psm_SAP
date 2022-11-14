@@ -28,15 +28,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>bc42629987c35d1093264085dabb354b</sys_id>
-        <sys_mod_count>17</sys_mod_count>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>Retrieve Vendors from SAP ECC</sys_name>
         <sys_overrides/>
         <sys_package display_value="Primary Data Integration for SAP" source="x_snc_com_data_int">93c7f5cb875a1950fd73642d0ebb3590</sys_package>
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name>sys_hub_flow_bc42629987c35d1093264085dabb354b</sys_update_name>
-        <sys_updated_by>Prama</sys_updated_by>
-        <sys_updated_on>2022-11-10 05:06:32</sys_updated_on>
+        <sys_updated_by>bcone</sys_updated_by>
+        <sys_updated_on>2022-11-10 10:17:49</sys_updated_on>
         <type>subflow</type>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=bc42629987c35d1093264085dabb354b"/>
@@ -2164,11 +2164,11 @@
         <sys_created_on>2022-11-08 04:20:55</sys_created_on>
         <sys_id>3526669d87c35d1093264085dabb3590</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Service Record</sys_name>
         <sys_package display_value="Primary Data Integration for SAP" source="x_snc_com_data_int">93c7f5cb875a1950fd73642d0ebb3590</sys_package>
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_bc42629987c35d1093264085dabb354b_service_record_en</sys_update_name>
         <sys_updated_by>Prama</sys_updated_by>
         <sys_updated_on>2022-11-08 04:20:55</sys_updated_on>
         <url/>
@@ -2187,11 +2187,11 @@
         <sys_created_on>2022-11-08 04:20:55</sys_created_on>
         <sys_id>a126669d87c35d1093264085dabb3588</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Temp Row Count</sys_name>
         <sys_package display_value="Primary Data Integration for SAP" source="x_snc_com_data_int">93c7f5cb875a1950fd73642d0ebb3590</sys_package>
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_bc42629987c35d1093264085dabb354b_temp_row_count_en</sys_update_name>
         <sys_updated_by>Prama</sys_updated_by>
         <sys_updated_on>2022-11-08 04:20:55</sys_updated_on>
         <url/>
@@ -2210,11 +2210,11 @@
         <sys_created_on>2022-11-08 04:20:55</sys_created_on>
         <sys_id>a126669d87c35d1093264085dabb358b</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Temp Until Rows</sys_name>
         <sys_package display_value="Primary Data Integration for SAP" source="x_snc_com_data_int">93c7f5cb875a1950fd73642d0ebb3590</sys_package>
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_bc42629987c35d1093264085dabb354b_temp_until_rows_en</sys_update_name>
         <sys_updated_by>Prama</sys_updated_by>
         <sys_updated_on>2022-11-08 04:20:55</sys_updated_on>
         <url/>
@@ -2235,11 +2235,11 @@
         <sys_created_on>2022-11-08 04:20:56</sys_created_on>
         <sys_id>3926669d87c35d1093264085dabb35a6</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Status</sys_name>
         <sys_package display_value="Primary Data Integration for SAP" source="x_snc_com_data_int">93c7f5cb875a1950fd73642d0ebb3590</sys_package>
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_output_bc42629987c35d1093264085dabb354b_status_en</sys_update_name>
         <sys_updated_by>Prama</sys_updated_by>
         <sys_updated_on>2022-11-08 04:20:56</sys_updated_on>
         <url/>
@@ -4469,11 +4469,11 @@
         <sys_created_on>2022-11-09 13:22:36</sys_created_on>
         <sys_id>0abb2539870f9d1093264085dabb355d</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Temp Until Rows</sys_name>
         <sys_package display_value="Primary Data Integration for SAP" source="x_snc_com_data_int">93c7f5cb875a1950fd73642d0ebb3590</sys_package>
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_f9bb2539870f9d1093264085dabb3533_temp_until_rows_en</sys_update_name>
         <sys_updated_by>Prama</sys_updated_by>
         <sys_updated_on>2022-11-09 13:22:36</sys_updated_on>
         <url/>
@@ -4492,11 +4492,11 @@
         <sys_created_on>2022-11-09 13:22:35</sys_created_on>
         <sys_id>8ebb2539870f9d1093264085dabb3555</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Temp Row Count</sys_name>
         <sys_package display_value="Primary Data Integration for SAP" source="x_snc_com_data_int">93c7f5cb875a1950fd73642d0ebb3590</sys_package>
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_f9bb2539870f9d1093264085dabb3533_temp_row_count_en</sys_update_name>
         <sys_updated_by>Prama</sys_updated_by>
         <sys_updated_on>2022-11-09 13:22:35</sys_updated_on>
         <url/>
@@ -4515,11 +4515,11 @@
         <sys_created_on>2022-11-09 13:22:36</sys_created_on>
         <sys_id>debb2539870f9d1093264085dabb3575</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Service Record</sys_name>
         <sys_package display_value="Primary Data Integration for SAP" source="x_snc_com_data_int">93c7f5cb875a1950fd73642d0ebb3590</sys_package>
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_f9bb2539870f9d1093264085dabb3533_service_record_en</sys_update_name>
         <sys_updated_by>Prama</sys_updated_by>
         <sys_updated_on>2022-11-09 13:22:36</sys_updated_on>
         <url/>
@@ -4540,11 +4540,11 @@
         <sys_created_on>2022-11-09 13:22:37</sys_created_on>
         <sys_id>1ebb2539870f9d1093264085dabb3586</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Status</sys_name>
         <sys_package display_value="Primary Data Integration for SAP" source="x_snc_com_data_int">93c7f5cb875a1950fd73642d0ebb3590</sys_package>
         <sys_policy/>
         <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_output_f9bb2539870f9d1093264085dabb3533_status_en</sys_update_name>
         <sys_updated_by>Prama</sys_updated_by>
         <sys_updated_on>2022-11-09 13:22:37</sys_updated_on>
         <url/>

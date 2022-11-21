@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_transform_entry">
+    <sys_transform_entry action="DELETE">
+        <choice_action>create</choice_action>
+        <coalesce>false</coalesce>
+        <coalesce_case_sensitive>false</coalesce_case_sensitive>
+        <coalesce_empty_fields>false</coalesce_empty_fields>
+        <date_format>yyyy-MM-dd HH:mm:ss</date_format>
+        <map display_value="Primary Data Integration for SAP">a46d288d472a515086887562846d4310</map>
+        <reference_value_field/>
+        <source_field>date_on_which_record_was_created</source_field>
+        <source_script><![CDATA[answer = (function transformEntry(source) {
+
+	// Add your code here
+	return ""; // return the value to be put into the target field
+
+})(source);]]></source_script>
+        <source_table>x_snc_com_data_int_look_up_service_master</source_table>
+        <sys_class_name>sys_transform_entry</sys_class_name>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-10-30 12:28:22</sys_created_on>
+        <sys_id>853f39224776111096fcb777746d43ed</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>date_on_which_record_was_created</sys_name>
+        <sys_package display_value="Primary Data Integration for SAP" source="x_snc_com_data_int">93c7f5cb875a1950fd73642d0ebb3590</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
+        <sys_update_name>sys_transform_entry_853f39224776111096fcb777746d43ed</sys_update_name>
+        <sys_updated_by>bcone</sys_updated_by>
+        <sys_updated_on>2022-10-30 12:28:22</sys_updated_on>
+        <target_field>sys_created_on</target_field>
+        <target_table>cmdb_service_product_model</target_table>
+        <use_source_script>false</use_source_script>
+    </sys_transform_entry>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</application>
+        <file_path/>
+        <instance_id>a4d93eb7dbce511091232f17d49619a6</instance_id>
+        <instance_name>psmdev02</instance_name>
+        <name>sys_transform_entry_853f39224776111096fcb777746d43ed</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_transform_entry"&gt;&lt;sys_transform_entry action="INSERT_OR_UPDATE"&gt;&lt;choice_action&gt;create&lt;/choice_action&gt;&lt;coalesce&gt;false&lt;/coalesce&gt;&lt;coalesce_case_sensitive&gt;false&lt;/coalesce_case_sensitive&gt;&lt;coalesce_empty_fields&gt;false&lt;/coalesce_empty_fields&gt;&lt;date_format&gt;yyyy-MM-dd HH:mm:ss&lt;/date_format&gt;&lt;map display_value="Primary Data Integration for SAP"&gt;a46d288d472a515086887562846d4310&lt;/map&gt;&lt;reference_value_field/&gt;&lt;source_field&gt;date_on_which_record_was_created&lt;/source_field&gt;&lt;source_script&gt;&lt;![CDATA[answer = (function transformEntry(source) {
+
+	// Add your code here
+	return ""; // return the value to be put into the target field
+
+})(source);]]&gt;&lt;/source_script&gt;&lt;source_table&gt;x_snc_com_data_int_look_up_service_master&lt;/source_table&gt;&lt;sys_class_name&gt;sys_transform_entry&lt;/sys_class_name&gt;&lt;sys_created_by&gt;bcone&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-10-30 12:28:22&lt;/sys_created_on&gt;&lt;sys_id&gt;853f39224776111096fcb777746d43ed&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;date_on_which_record_was_created&lt;/sys_name&gt;&lt;sys_package display_value="Primary Data Integration for SAP" source="x_snc_com_data_int"&gt;93c7f5cb875a1950fd73642d0ebb3590&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Primary Data Integration for SAP"&gt;93c7f5cb875a1950fd73642d0ebb3590&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_transform_entry_853f39224776111096fcb777746d43ed&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;bcone&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-10-30 12:28:22&lt;/sys_updated_on&gt;&lt;target_field&gt;sys_created_on&lt;/target_field&gt;&lt;target_table&gt;cmdb_service_product_model&lt;/target_table&gt;&lt;use_source_script&gt;false&lt;/use_source_script&gt;&lt;/sys_transform_entry&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1623662742</payload_hash>
+        <record_name>date_on_which_record_was_created</record_name>
+        <reverted_from/>
+        <source>64ff7fdc47aadd1086887562846d437d</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-10-30 12:28:22</sys_created_on>
+        <sys_id>d66f35224776111096fcb777746d435d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18428dd4dc50000001</sys_recorded_at>
+        <sys_updated_by>bcone</sys_updated_by>
+        <sys_updated_on>2022-10-30 12:28:22</sys_updated_on>
+        <type>Field Map</type>
+        <update_guid>126f3522067611101bb48928195a955d</update_guid>
+        <update_guid_history>126f3522067611101bb48928195a955d:-1623662742</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>krishna</sys_created_by>
+        <sys_created_on>2022-11-19 13:44:52</sys_created_on>
+        <sys_db_object display_value="" name="sys_transform_entry">sys_transform_entry</sys_db_object>
+        <sys_id>390096e0760048b0b1d1af95c9102640</sys_id>
+        <sys_metadata>853f39224776111096fcb777746d43ed</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>date_on_which_record_was_created</sys_name>
+        <sys_package display_value="Primary Data Integration for SAP" source="x_snc_com_data_int">93c7f5cb875a1950fd73642d0ebb3590</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
+        <sys_scope_delete display_value="">3b1319908ebb4a548e7d16c1ed008664</sys_scope_delete>
+        <sys_update_name>sys_transform_entry_853f39224776111096fcb777746d43ed</sys_update_name>
+        <sys_update_version display_value="sys_transform_entry_853f39224776111096fcb777746d43ed">d66f35224776111096fcb777746d435d</sys_update_version>
+        <sys_updated_by>krishna</sys_updated_by>
+        <sys_updated_on>2022-11-19 13:44:52</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

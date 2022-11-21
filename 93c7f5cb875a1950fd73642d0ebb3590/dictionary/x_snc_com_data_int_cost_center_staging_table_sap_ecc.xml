@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element extends="sys_import_set_row" label="Cost Center Staging Table (SAP ECC)" max_length="40" name="x_snc_com_data_int_cost_center_staging_table_sap_ecc" sizeclass="10628" type="collection">
+    <element extends="sys_import_set_row" label="Cost Center Staging Table (SAP ECC)" max_length="40" name="x_snc_com_data_int_cost_center_staging_table_sap_ecc" sizeclass="5315" type="collection">
         <element label="Alternative function of cost center" max_length="40" name="alternative_function_of_cost_center" type="string"/>
         <element label="Append structure for Regulatory Reporting" max_length="40" name="append_structure_for_regulatory_reporting" type="string"/>
         <element label="Application" max_length="40" name="application" type="string"/>
@@ -12,7 +12,6 @@
         <element label="Costing Sheet" max_length="40" name="costing_sheet" type="string"/>
         <element label="Cost Center" max_length="40" name="cost_center" type="string"/>
         <element label="Cost Center Category" max_length="40" name="cost_center_category" type="string"/>
-        <element label="Cost Center Master Record" max_length="40" name="cost_center_master_record" type="string"/>
         <element label="Cost collector key" max_length="40" name="cost_collector_key" type="string"/>
         <element label="Country Key" max_length="40" name="country_key" type="string"/>
         <element label="CO-CCA Overhead Key" max_length="40" name="co_cca_overhead_key" type="string"/>
@@ -28,7 +27,6 @@
         <element label="First telephone number" max_length="40" name="first_telephone_number" type="string"/>
         <element label="Functional Area" max_length="40" name="functional_area" type="string"/>
         <element label="Function of cost center" max_length="40" name="function_of_cost_center" type="string"/>
-        <element label="General assignments of application objects" max_length="40" name="general_assignments_of_application_objects" type="string"/>
         <element label="Indicator for Allowed Allocation Methods" max_length="40" name="indicator_for_allowed_allocation_methods" type="string"/>
         <element label="Indicator for Recording Consumption Quantities" max_length="40" name="indicator_for_recording_consumption_quantities" type="string"/>
         <element label="Indicator. object is statistical" max_length="40" name="indicator_object_is_statistical" type="string"/>
@@ -36,7 +34,6 @@
         <element label="JIB/JIBE Subclass A" max_length="40" name="jib_jibe_subclass_a" type="string"/>
         <element label="Joint venture" max_length="40" name="joint_venture" type="string"/>
         <element label="Joint Venture Object Type" max_length="40" name="joint_venture_object_type" type="string"/>
-        <element label="JV data: (vname,recid,etype),jv_otype,jv_jibcl,jv_jibsa" max_length="40" name="jv_data_vname_recid_etype_jv_otype_jv_jibcl_jv_jibsa" type="string"/>
         <element label="Language Key" max_length="40" name="language_key" type="string"/>
         <element label="Lock Indicator for Actual Primary Postings" max_length="40" name="lock_indicator_for_actual_primary_postings" type="string"/>
         <element label="Lock Indicator for Actual Revenue Postings" max_length="40" name="lock_indicator_for_actual_revenue_postings" type="string"/>
@@ -77,8 +74,8 @@
         <element label="Title" max_length="40" name="title" type="string"/>
         <element label="Usage of the condition table" max_length="40" name="usage_of_the_condition_table" type="string"/>
         <element label="User Responsible" max_length="40" name="user_responsible" type="string"/>
-        <element label="Valid from Date" max_length="40" name="valid_from_date" type="glide_date"/>
-        <element label="Valid to Date" max_length="40" name="valid_to_date" type="glide_date"/>
+        <element label="Valid from Date" max_length="40" name="valid_from_date" type="glide_date_time"/>
+        <element label="Valid to Date" max_length="40" name="valid_to_date" type="glide_date_time"/>
         <index name="index">
             <element name="erp_source"/>
         </index>

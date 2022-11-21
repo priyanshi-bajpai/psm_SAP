@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="ERP Plant Address Mapping " max_length="40" name="x_snc_com_data_int_erp_plnt_adr_map" sizeclass="13" type="collection">
+        <element label="Country" max_length="50" name="country" type="string"/>
+        <element label="ERP Location Id" max_length="30" name="erp_location_id" type="string"/>
+        <element label="ERP source" max_length="20" name="erp_source" type="string"/>
+        <element label="Legal entity" max_length="30" name="legal_entity" type="string"/>
+        <element label="location" max_length="100" name="location" type="string"/>
+        <element label="Name" max_length="100" name="name" type="string"/>
+    </element>
+</database>

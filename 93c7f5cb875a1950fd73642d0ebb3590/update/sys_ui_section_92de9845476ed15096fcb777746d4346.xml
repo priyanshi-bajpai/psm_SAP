@@ -938,6 +938,48 @@
             <sys_user/>
             <type>.end_split</type>
         </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>erp_source</element>
+            <position>67</position>
+            <sys_created_by>Priyanshi</sys_created_by>
+            <sys_created_on>2022-11-19 16:20:35</sys_created_on>
+            <sys_id>c7543dc94757511086887562846d43d2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_com_data_int_look_up_plant_address" sys_domain="global" view="Default view">92de9845476ed15096fcb777746d4346</sys_ui_section>
+            <sys_updated_by>Priyanshi</sys_updated_by>
+            <sys_updated_on>2022-11-19 16:20:35</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_erp_source</element>
+            <position>68</position>
+            <sys_created_by>Priyanshi</sys_created_by>
+            <sys_created_on>2022-11-19 16:25:23</sys_created_on>
+            <sys_id>1575bd4d4757511086887562846d433e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_com_data_int_look_up_plant_address" sys_domain="global" view="Default view">92de9845476ed15096fcb777746d4346</sys_ui_section>
+            <sys_updated_by>Priyanshi</sys_updated_by>
+            <sys_updated_on>2022-11-19 16:25:23</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_company_code</element>
+            <position>69</position>
+            <sys_created_by>Priyanshi</sys_created_by>
+            <sys_created_on>2022-11-21 12:22:03</sys_created_on>
+            <sys_id>64f0d3ed475fd11086887562846d43e4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_com_data_int_look_up_plant_address" sys_domain="global" view="Default view">92de9845476ed15096fcb777746d4346</sys_ui_section>
+            <sys_updated_by>Priyanshi</sys_updated_by>
+            <sys_updated_on>2022-11-21 12:22:03</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
         <sys_ui_section action="INSERT_OR_UPDATE">
             <caption/>
             <header>false</header>

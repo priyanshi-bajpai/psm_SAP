@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="x_snc_com_data_int_integrations_source">
+    <x_snc_com_data_int_integrations_source action="DELETE">
+        <connection>d0578871dbad8010ea4494d9db9619d9</connection>
+        <name>Service Master New</name>
+        <properties/>
+        <sys_class_name>x_snc_com_data_int_integrations_source</sys_class_name>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-11-10 13:49:31</sys_created_on>
+        <sys_id>131b3ace47cb1d1096fcb777746d4340</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Service Master New</sys_name>
+        <sys_package display_value="Primary Data Integration for SAP" source="x_snc_com_data_int">93c7f5cb875a1950fd73642d0ebb3590</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
+        <sys_update_name>x_snc_com_data_int_integrations_source_131b3ace47cb1d1096fcb777746d4340</sys_update_name>
+        <sys_updated_by>bcone</sys_updated_by>
+        <sys_updated_on>2022-11-10 13:49:31</sys_updated_on>
+    </x_snc_com_data_int_integrations_source>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</application>
+        <file_path/>
+        <instance_id>a4d93eb7dbce511091232f17d49619a6</instance_id>
+        <instance_name>psmdev02</instance_name>
+        <name>x_snc_com_data_int_integrations_source_131b3ace47cb1d1096fcb777746d4340</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_snc_com_data_int_integrations_source"><x_snc_com_data_int_integrations_source action="INSERT_OR_UPDATE"><connection>d0578871dbad8010ea4494d9db9619d9</connection><name>Service Master New</name><properties/><sys_class_name>x_snc_com_data_int_integrations_source</sys_class_name><sys_created_by>bcone</sys_created_by><sys_created_on>2022-11-10 13:49:31</sys_created_on><sys_id>131b3ace47cb1d1096fcb777746d4340</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Service Master New</sys_name><sys_package display_value="Primary Data Integration for SAP" source="x_snc_com_data_int">93c7f5cb875a1950fd73642d0ebb3590</sys_package><sys_policy/><sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope><sys_update_name>x_snc_com_data_int_integrations_source_131b3ace47cb1d1096fcb777746d4340</sys_update_name><sys_updated_by>bcone</sys_updated_by><sys_updated_on>2022-11-10 13:49:31</sys_updated_on></x_snc_com_data_int_integrations_source></record_update>]]></payload>
+        <payload_hash>-1320525390</payload_hash>
+        <record_name>Service Master New</record_name>
+        <reverted_from/>
+        <source>64ff7fdc47aadd1086887562846d437d</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-11-10 13:49:31</sys_created_on>
+        <sys_id>9e7bbece47cb1d1096fcb777746d438d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18461cd8ccf0000001</sys_recorded_at>
+        <sys_updated_by>bcone</sys_updated_by>
+        <sys_updated_on>2022-11-10 13:49:31</sys_updated_on>
+        <type>Integration Source</type>
+        <update_guid>967bbece32cb1d10a2dcf62dd005c08d</update_guid>
+        <update_guid_history>967bbece32cb1d10a2dcf62dd005c08d:-1320525390</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Service Master New">a0a70d44479f155096fcb777746d431b</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-11-16 10:31:16</sys_created_on>
+        <sys_db_object display_value="" name="x_snc_com_data_int_integrations_source">x_snc_com_data_int_integrations_source</sys_db_object>
+        <sys_id>3d296052d8244a48afd2ff427d2dd910</sys_id>
+        <sys_metadata>131b3ace47cb1d1096fcb777746d4340</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Service Master New</sys_name>
+        <sys_package display_value="Primary Data Integration for SAP" source="x_snc_com_data_int">93c7f5cb875a1950fd73642d0ebb3590</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
+        <sys_scope_delete display_value="">3b1319908ebb4a548e7d16c1ed008664</sys_scope_delete>
+        <sys_update_name>x_snc_com_data_int_integrations_source_131b3ace47cb1d1096fcb777746d4340</sys_update_name>
+        <sys_update_version display_value="x_snc_com_data_int_integrations_source_131b3ace47cb1d1096fcb777746d4340">9e7bbece47cb1d1096fcb777746d438d</sys_update_version>
+        <sys_updated_by>bcone</sys_updated_by>
+        <sys_updated_on>2022-11-16 10:31:16</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

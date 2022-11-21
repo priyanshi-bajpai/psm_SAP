@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element extends="sys_import_set_row" label="FX Exchange Rate Staging" max_length="40" name="x_snc_com_data_int_fx_exchange_rate_staging" sizeclass="211172" type="collection">
+    <element extends="sys_import_set_row" label="FX Exchange Rate Staging" max_length="40" name="x_snc_com_data_int_fx_exchange_rate_staging" sizeclass="0" type="collection">
         <element label="Client" max_length="100" name="client" type="string"/>
         <element label="Date As of Which the Exchange Rate Is Effective" max_length="500" name="effective_date" type="string"/>
         <element label="Exchange Rate" max_length="500" name="exchange_rate" type="string"/>
@@ -8,5 +8,6 @@
         <element label="Ratio for the &quot;from&quot; currency units" max_length="500" name="from_ratio" type="string"/>
         <element label="To currency" max_length="100" name="to_currency" type="string"/>
         <element label="Ratio for the &quot;to&quot; currency units" max_length="500" name="to_ratio" type="string"/>
+        <element label="ERP Source" max_length="100" name="u_erp_source" type="string"/>
     </element>
 </database>

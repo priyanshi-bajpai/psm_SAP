@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element extends="sys_import_set_row" label="Look Up Plant Address" max_length="40" name="x_snc_com_data_int_look_up_plant_address" sizeclass="1184" type="collection">
+    <element extends="sys_import_set_row" label="Look Up Plant Address" max_length="40" name="x_snc_com_data_int_look_up_plant_address" sizeclass="30" type="collection">
         <element label="Activating requirements planning" max_length="1" name="u_activating_requirements_planning" type="string"/>
         <element label="Address" max_length="10" name="u_address" type="string"/>
         <element label=" Batch Record: Type of DMS Used" max_length="1" name="u_batch_record_type_of_dms_used" type="string"/>
@@ -8,6 +8,7 @@
         <element label="City" max_length="25" name="u_city" type="string"/>
         <element label=" City Code" max_length="4" name="u_city_code" type="string"/>
         <element label="Client" max_length="3" name="u_client" type="string"/>
+        <element label="Company Code" max_length="40" name="u_company_code" type="string"/>
         <element label=" Control data for fashion BOM maintenance" max_length="1" name="u_control_data_for_fashion_bom_maintenance" type="string"/>
         <element label="Control of Credit of Cost Centers" max_length="1" name="u_control_of_credit_of_cost_centers" type="string"/>
         <element label=" Cost Object Controlling linking active" max_length="1" name="u_cost_object_controlling_linking_active" type="string"/>
@@ -17,6 +18,7 @@
         <element label=" Distribution channel for intercompany billing" max_length="2" name="u_distribution_channel_for_intercompany_billing" type="string"/>
         <element label=" Distribution profile at plant level" max_length="3" name="u_distribution_profile_at_plant_level" type="string"/>
         <element label=" Division for intercompany billing" max_length="2" name="u_division_for_intercompany_billing" type="string"/>
+        <element label="ERP source" max_length="30" name="u_erp_source" type="string"/>
         <element label=" Exchange valuation indicator" max_length="1" name="u_exchange_valuation_indicator" type="string"/>
         <element label=" Factory calendar key" max_length="2" name="u_factory_calendar_key" type="string"/>
         <element label="Indicator: batch status management active" max_length="1" name="u_indicator_batch_status_management_active" type="string"/>

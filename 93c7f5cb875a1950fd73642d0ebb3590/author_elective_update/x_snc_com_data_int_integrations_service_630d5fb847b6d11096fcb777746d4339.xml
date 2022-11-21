@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="x_snc_com_data_int_integrations_service">
+    <x_snc_com_data_int_integrations_service action="DELETE">
+        <active>true</active>
+        <flow display_value="Fetch services from SAP ECC">2f5744a447eadd1086887562846d4338</flow>
+        <import_set_tables>x_snc_com_data_int_look_up_service_master</import_set_tables>
+        <name>Service Master</name>
+        <order>200</order>
+        <properties/>
+        <source display_value="Service Master">ea1c9f7847b6d11096fcb777746d4324</source>
+        <sys_class_name>x_snc_com_data_int_integrations_service</sys_class_name>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-10-25 08:49:29</sys_created_on>
+        <sys_id>630d5fb847b6d11096fcb777746d4339</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>93c7f5cb875a1950fd73642d0ebb3590</sys_name>
+        <sys_package display_value="Primary Data Integration for SAP" source="x_snc_com_data_int">93c7f5cb875a1950fd73642d0ebb3590</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
+        <sys_update_name>x_snc_com_data_int_integrations_service_630d5fb847b6d11096fcb777746d4339</sys_update_name>
+        <sys_updated_by>bcone</sys_updated_by>
+        <sys_updated_on>2022-11-16 10:36:31</sys_updated_on>
+    </x_snc_com_data_int_integrations_service>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</application>
+        <file_path/>
+        <instance_id>a4d93eb7dbce511091232f17d49619a6</instance_id>
+        <instance_name>psmdev02</instance_name>
+        <name>x_snc_com_data_int_integrations_service_630d5fb847b6d11096fcb777746d4339</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_snc_com_data_int_integrations_service"><x_snc_com_data_int_integrations_service action="INSERT_OR_UPDATE"><active>true</active><flow display_value="Fetch services from SAP ECC">2f5744a447eadd1086887562846d4338</flow><import_set_tables>x_snc_com_data_int_look_up_service_master</import_set_tables><name>Service Master</name><order>200</order><properties/><source display_value="Service Master">ea1c9f7847b6d11096fcb777746d4324</source><sys_class_name>x_snc_com_data_int_integrations_service</sys_class_name><sys_created_by>bcone</sys_created_by><sys_created_on>2022-10-25 08:49:29</sys_created_on><sys_id>630d5fb847b6d11096fcb777746d4339</sys_id><sys_mod_count>3</sys_mod_count><sys_name>93c7f5cb875a1950fd73642d0ebb3590</sys_name><sys_package display_value="Primary Data Integration for SAP" source="x_snc_com_data_int">93c7f5cb875a1950fd73642d0ebb3590</sys_package><sys_policy/><sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope><sys_update_name>x_snc_com_data_int_integrations_service_630d5fb847b6d11096fcb777746d4339</sys_update_name><sys_updated_by>bcone</sys_updated_by><sys_updated_on>2022-11-16 10:36:31</sys_updated_on></x_snc_com_data_int_integrations_service></record_update>]]></payload>
+        <payload_hash>-1077377901</payload_hash>
+        <record_name>93c7f5cb875a1950fd73642d0ebb3590</record_name>
+        <reverted_from/>
+        <source>7d5d7f23478f115086887562846d434f</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-11-16 10:36:31</sys_created_on>
+        <sys_id>b5d8c1c4479f155096fcb777746d433b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>184800303680000001</sys_recorded_at>
+        <sys_updated_by>bcone</sys_updated_by>
+        <sys_updated_on>2022-11-16 10:36:31</sys_updated_on>
+        <type>Integration Service</type>
+        <update_guid>fdd8c1c4109f1550ac0be3d93671573a</update_guid>
+        <update_guid_history>fdd8c1c4109f1550ac0be3d93671573a:-1077377901,1dbc3642730f1d10bbd2e910bbb545c2:-1559442289,1f8d17f8a5b6d1100d684e84868d3f58:-1406869484,935d93f840b6d110f15d0e96af160766:-512457131</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Primary Data Integration for SAP">9c9b47a4475f111086887562846d4393</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>bcone</sys_created_by>
+        <sys_created_on>2022-11-18 09:24:38</sys_created_on>
+        <sys_db_object display_value="" name="x_snc_com_data_int_integrations_service">x_snc_com_data_int_integrations_service</sys_db_object>
+        <sys_id>28f17b1641ac4f1191a4fa677bf13159</sys_id>
+        <sys_metadata>630d5fb847b6d11096fcb777746d4339</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>93c7f5cb875a1950fd73642d0ebb3590</sys_name>
+        <sys_package display_value="Primary Data Integration for SAP" source="x_snc_com_data_int">93c7f5cb875a1950fd73642d0ebb3590</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
+        <sys_scope_delete display_value="">3b1319908ebb4a548e7d16c1ed008664</sys_scope_delete>
+        <sys_update_name>x_snc_com_data_int_integrations_service_630d5fb847b6d11096fcb777746d4339</sys_update_name>
+        <sys_update_version display_value="x_snc_com_data_int_integrations_service_630d5fb847b6d11096fcb777746d4339">b5d8c1c4479f155096fcb777746d433b</sys_update_version>
+        <sys_updated_by>bcone</sys_updated_by>
+        <sys_updated_on>2022-11-18 09:24:38</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

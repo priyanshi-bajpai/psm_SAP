@@ -10,8 +10,8 @@
             <plural>Valid to Dates</plural>
             <sys_class_name>sys_documentation</sys_class_name>
             <sys_created_by>Midhat</sys_created_by>
-            <sys_created_on>2022-10-20 08:29:25</sys_created_on>
-            <sys_id>64d8651f472a5d5096fcb777746d43e1</sys_id>
+            <sys_created_on>2022-11-21 12:20:45</sys_created_on>
+            <sys_id>19a0dfad4713151096fcb777746d43f5</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>Valid to Date</sys_name>
             <sys_package display_value="Primary Data Integration for SAP" source="x_snc_com_data_int">93c7f5cb875a1950fd73642d0ebb3590</sys_package>
@@ -19,7 +19,7 @@
             <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
             <sys_update_name>sys_documentation_x_snc_com_data_int_cost_center_staging_table_sap_ecc_valid_to_date_en</sys_update_name>
             <sys_updated_by>Midhat</sys_updated_by>
-            <sys_updated_on>2022-10-20 08:29:25</sys_updated_on>
+            <sys_updated_on>2022-11-21 12:20:45</sys_updated_on>
             <url/>
             <url_target/>
         </sys_documentation>

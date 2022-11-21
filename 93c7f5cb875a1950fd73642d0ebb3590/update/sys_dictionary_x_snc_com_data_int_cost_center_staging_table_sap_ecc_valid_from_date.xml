@@ -32,7 +32,7 @@
         <foreign_database/>
         <function_definition/>
         <function_field>false</function_field>
-        <internal_type display_value="">glide_date</internal_type>
+        <internal_type display_value="">glide_date_time</internal_type>
         <mandatory>false</mandatory>
         <max_length>40</max_length>
         <name>x_snc_com_data_int_cost_center_staging_table_sap_ecc</name>
@@ -52,8 +52,8 @@
         <staged>false</staged>
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>Midhat</sys_created_by>
-        <sys_created_on>2022-10-20 08:29:23</sys_created_on>
-        <sys_id>a6982ddb472a5d5096fcb777746d435a</sys_id>
+        <sys_created_on>2022-11-21 12:21:40</sys_created_on>
+        <sys_id>2ac0d3ed4713151096fcb777746d4376</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Valid from Date</sys_name>
         <sys_package display_value="Primary Data Integration for SAP" source="x_snc_com_data_int">93c7f5cb875a1950fd73642d0ebb3590</sys_package>
@@ -61,7 +61,7 @@
         <sys_scope display_value="Primary Data Integration for SAP">93c7f5cb875a1950fd73642d0ebb3590</sys_scope>
         <sys_update_name>sys_dictionary_x_snc_com_data_int_cost_center_staging_table_sap_ecc_valid_from_date</sys_update_name>
         <sys_updated_by>Midhat</sys_updated_by>
-        <sys_updated_on>2022-10-20 08:29:23</sys_updated_on>
+        <sys_updated_on>2022-11-21 12:21:40</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

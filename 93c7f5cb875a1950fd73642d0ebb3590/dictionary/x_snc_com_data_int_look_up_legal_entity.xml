@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element extends="sys_import_set_row" label="Look up Legal Entity" max_length="40" name="x_snc_com_data_int_look_up_legal_entity" sizeclass="510" type="collection">
+    <element extends="sys_import_set_row" label="Look up Legal Entities" max_length="40" name="x_snc_com_data_int_look_up_legal_entity" sizeclass="3311" type="collection">
         <element label="Accounts Receivable Pledging Active" max_length="40" name="accounts_receivable_pledging_active" type="string"/>
         <element label="Activate Account Assignment Derivation in Funds Management" max_length="40" name="activate_account_assignment_derivation_in_funds_management" type="string"/>
         <element label="Activate Update in Funds Management" max_length="40" name="activate_update_in_funds_management" type="string"/>
@@ -24,6 +24,7 @@
         <element label="Document Type for Provisions for Taxes on Services Received" max_length="40" name="document_type_for_provisions_for_taxes_on_services_received" type="string"/>
         <element label="Document Type for Remittance Challans" max_length="40" name="document_type_for_remittance_challans" type="string"/>
         <element label="Enable Amount Split" max_length="40" name="enable_amount_split" type="string"/>
+        <element label="ERP Source" max_length="32" name="erp_source" reference="sn_fin_erp_source" type="reference"/>
         <element label="Field Status Variant" max_length="40" name="field_status_variant" type="string"/>
         <element label="Financial Management Area" max_length="40" name="financial_management_area" type="string"/>
         <element label="Fiscal Year Variant" max_length="40" name="fiscal_year_variant" type="string"/>
@@ -80,5 +81,8 @@
         <element label="Tax Reporting Date Active in Documents" max_length="40" name="tax_reporting_date_active_in_documents" type="string"/>
         <element label="VAT Registration Number" max_length="40" name="vat_registration_number" type="string"/>
         <element label="Workflow variant" max_length="40" name="workflow_variant" type="string"/>
+        <index name="index">
+            <element name="erp_source"/>
+        </index>
     </element>
 </database>
